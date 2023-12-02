@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RaceSelectionController : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class RaceSelectionController : MonoBehaviour
     public GameObject currentRaceSelectedText;
 
     int currentRace;
+
+    public GameObject[] baseSoldiers;
 
     // Start is called before the first frame update
     void Start()
@@ -38,5 +41,12 @@ public class RaceSelectionController : MonoBehaviour
 
             currentRaceSelectedText.GetComponent<TextMeshProUGUI>().text = racesContainerGameObject.GetComponent<RacesManager>().racesNames[currentRace];
         }
+    }
+
+    public void setCurrentRaceAndContinue(){
+        GameManager.Instance.PlayerRace = currentRaceSelectedText.GetComponent<TextMeshProUGUI>().text;
+        GameManager.Instance.PlayerSoldiers.AddRange(baseSoldiers);
+        SceneManager.LoadScene("MapScene");
+
     }
 }

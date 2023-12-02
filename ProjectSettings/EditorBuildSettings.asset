@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RaceSelectionScene.unity
     guid: 4632a4b5afc9fae40a1cf24c95a47336
+  - enabled: 1
+    path: Assets/Scenes/MapScene.unity
+    guid: e5feb8e44937a3f438009cb5b2dd6a41
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: 8e8cc3c32a1bde945833ee4482fef5df
+  - enabled: 1
+    path: Assets/Scenes/MarketScene.unity
+    guid: b1236781e4d949c4f93f7fc33930971d
   m_configObjects: {}

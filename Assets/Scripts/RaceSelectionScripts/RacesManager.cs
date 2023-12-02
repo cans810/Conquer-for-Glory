@@ -8,10 +8,11 @@ public class RacesManager : MonoBehaviour
     public List<string> racesNames;
 
     public void Awake(){
-        racesNames.Add("human");
-        racesNames.Add("elf");
-        racesNames.Add("orc");
-        racesNames.Add("goblin");
+        racesNames.Add("Human");
+        racesNames.Add("Elf");
+        racesNames.Add("Orc");
+        racesNames.Add("Demon");
+        racesNames.Add("Troll");
     }
 
     // Start is called before the first frame update

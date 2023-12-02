@@ -1,0 +1,3 @@
+tüm ırklar çizilecek
+kılıç, mızrak vb silahlar çizilecek
+asker türüne göre animasyonlar yapılacak
