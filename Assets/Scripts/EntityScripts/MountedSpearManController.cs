@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordsManController : MonoBehaviour
+public class MountedSpearManController : MonoBehaviour
 {
 
     public void Awake(){
@@ -10,39 +10,39 @@ public class SwordsManController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Human")){
-            entity.HP = 5;
+            entity.HP = 10;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.1f;
-            entity.speed = 0.65f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 1.2f;
         }
         else if (entity.race.Equals("Orc")){
-            entity.HP = 6;
+            entity.HP = 11;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.1f;
-            entity.speed = 0.65f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 1.2f;
         }
         else if (entity.race.Equals("Troll")){
-            entity.HP = 5;
+            entity.HP = 11;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.1f;
-            entity.speed = 0.65f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 1.2f;
         }
         else if (entity.race.Equals("Demon")){
-            entity.HP = 6;
+            entity.HP = 13;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.1f;
-            entity.speed = 0.65f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 1.2f;
         }
         else if (entity.race.Equals("Elf")){
-            entity.HP = 4;
+            entity.HP = 9;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.1f;
-            entity.speed = 0.65f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 1.2f;
         }
     }
 
@@ -55,12 +55,12 @@ public class SwordsManController : MonoBehaviour
     {
         if (!GetComponent<Entity>().dead){
             if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null){
-                gameObject.GetComponent<Entity>().animator.SetBool("Walk",false);
-                gameObject.GetComponent<Entity>().animator.SetBool("Swordsman_Attack",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("MountedSoldier_Walk",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("MountedSpearman_Attack",true);
             }
-            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack){
-                gameObject.GetComponent<Entity>().animator.SetBool("Swordsman_Attack",false);
-                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding){
+                gameObject.GetComponent<Entity>().animator.SetBool("MountedSpearman_Attack",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("MountedSoldier_Walk",true);
                 GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
             }
         }

@@ -13,6 +13,8 @@ public class EnemySummonController : MonoBehaviour
     Transform parentTransformSummonPoints;
     Transform parentTransformSoldierContainers;
 
+    public bool chosenRandomSoldier;
+
     public void Awake(){
         currentSelectedSummonPoint = 0;
         currentSelectedSoldierContainer = 0;
@@ -36,41 +38,42 @@ public class EnemySummonController : MonoBehaviour
     }
 
     // Update is called once per frame
-    private bool hasSummoned = false;
+    //private bool hasSummoned = false;
 
     void Update()
     {
-        // if (!hasSummoned)
-        // {
-            chooseRandomSoldierToSummon();
+            if (!chosenRandomSoldier){
+                chooseRandomSoldierToSummon();
+            }
+
             if (parentTransformSoldierContainers != null){
-                if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon){
-                    chooseRandomSummonPoint();
+                    if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon){
+                        chooseRandomSummonPoint();
 
-                    Transform summonPoint = parentTransformSummonPoints.GetChild(currentSelectedSummonPoint);
+                        Transform summonPoint = parentTransformSummonPoints.GetChild(currentSelectedSummonPoint);
 
-                    float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
+                        float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
 
-                    Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
+                        Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
 
-                    GameObject enemySoldier = Instantiate(
-                        parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
-                        spawnPosition,
-                        Quaternion.identity);
+                        GameObject enemySoldier = Instantiate(
+                            parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
+                            spawnPosition,
+                            Quaternion.identity);
 
-                    enemySoldier.GetComponent<Entity>().race = GameManager.Instance.CurrentEnemyRace;    
-                    enemySoldier.GetComponent<Entity>().gameObject.tag = "Enemy";
-                    //enemySoldier.GetComponent<Entity>().gameObject.layer = 7;
-                    enemySoldier.GetComponent<EntityCommonActions>().ChangeDirection("left");
-                    enemySoldier.GetComponent<Entity>().direction = "left";
+                        enemySoldier.GetComponent<Entity>().race = GameManager.Instance.CurrentEnemyRace;    
+                        enemySoldier.GetComponent<Entity>().gameObject.tag = "Enemy";
+                        //enemySoldier.GetComponent<Entity>().gameObject.layer = 7;
+                        enemySoldier.GetComponent<EntityCommonActions>().ChangeDirection("left");
+                        enemySoldier.GetComponent<Entity>().direction = "left";
 
-                    // Set the flag to true to indicate that summoning has occurred
-                    hasSummoned = true;
+                        // Set the flag to true to indicate that summoning has occurred
+                        //hasSummoned = true;
 
-                    // summonladıktan sonra hepsini resetle
-                    ResetPlayerSoldierContainers();
+                        // summonladıktan sonra hepsini resetle
+                        ResetPlayerSoldierContainers();
+                        chosenRandomSoldier = false;
                 }
-            // }
         }
     }
 
@@ -84,7 +87,7 @@ public class EnemySummonController : MonoBehaviour
         int randomSoldier = UnityEngine.Random.Range(0, soldierCount);
         currentSelectedSoldierContainer = randomSoldier;
 
-
+        chosenRandomSoldier = true;
     }
 
     public void chooseRandomSummonPoint(){
@@ -140,6 +143,57 @@ public class EnemySummonController : MonoBehaviour
             }
         }
         else if (soldier.GetComponent<Entity>().soldierType.Equals("Archer")){
+            if (soldier.GetComponent<Entity>().race.Equals("Human")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+        }
+        else if (soldier.GetComponent<Entity>().soldierType.Equals("AxeMan")){
+            if (soldier.GetComponent<Entity>().race.Equals("Human")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+        }
+        else if (soldier.GetComponent<Entity>().soldierType.Equals("MountedSpearman")){
+            if (soldier.GetComponent<Entity>().race.Equals("Human")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
+                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
+            }
+        }
+        else if (soldier.GetComponent<Entity>().soldierType.Equals("MountedSwordsman")){
             if (soldier.GetComponent<Entity>().race.Equals("Human")){
                 soldier.GetComponent<Entity>().timeToSummon = 2.1f;
             }

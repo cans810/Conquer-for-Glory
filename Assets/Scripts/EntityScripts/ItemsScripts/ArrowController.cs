@@ -4,23 +4,56 @@ public class ArrowController : MonoBehaviour
 {
     public GameObject sourceEntity;
     public Rigidbody2D rb;
-    public float upwardForce = 10f;
     public float forwardForce = 5f;
-
-    public float DestroyAfterYPos;
 
     void Start()
     {
-        // Apply initial force to simulate arrow shooting
+        if (sourceEntity.GetComponent<Entity>().direction.Equals("right")){
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        }
+        else if (sourceEntity.GetComponent<Entity>().direction.Equals("left")){
+            transform.eulerAngles = new Vector3(0f, 0f, 180f);
+        }
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(forwardForce, upwardForce);
+        Vector2 direction = GetDirectionFromEntity();
 
-        DestroyAfterYPos = sourceEntity.GetComponent<Entity>().HitBox.GetComponent<BoxCollider2D>().bounds.min.y;
+        // Apply force in the direction specified by the entity's direction string
+        rb.velocity = direction * forwardForce;
+    }
+
+    Vector2 GetDirectionFromEntity()
+    {
+        Entity entityComponent = sourceEntity.GetComponent<Entity>();
+        if (entityComponent != null)
+        {
+            string directionString = entityComponent.direction; // Assuming direction is stored as a string in the Entity component
+            Vector2 direction = Vector2.zero;
+
+            // Set the direction based on the string value
+            switch (directionString)
+            {
+                case "right":
+                    direction = Vector2.right;
+                    break;
+                case "left":
+                    direction = Vector2.left;
+                    break;
+                // Add more cases for other directions if needed
+                default:
+                    break;
+            }
+
+            return direction.normalized; // Normalize the direction vector before using it for velocity
+        }
+
+        return Vector2.zero;
     }
 
     void Update()
     {
-        if (transform.position.y <= DestroyAfterYPos){
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+        if (screenPos.x < 0 || screenPos.x > Screen.width)
+        {
             Destroy(gameObject);
         }
     }
@@ -31,6 +64,7 @@ public class ArrowController : MonoBehaviour
             {
                 collision.GetComponent<Entity>().HP -= 1;
                 Debug.Log("hit");
+                Destroy(gameObject);
             }
         }
         else if (sourceEntity.tag.Equals("Enemy")){
@@ -38,6 +72,7 @@ public class ArrowController : MonoBehaviour
             {
                 collision.GetComponent<Entity>().HP -= 1;
                 Debug.Log("hit");
+                Destroy(gameObject);
             }
         }
     }

@@ -1529,7 +1529,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2829206, y: 9.009017}
+  m_Offset: {x: -1.5840766, y: 9.425101}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1540,7 +1540,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.991321, y: 4.161543}
+  m_Size: {x: 4.389009, y: 11.4935055}
   m_EdgeRadius: 0
 --- !u!50 &7855149648092598505
 Rigidbody2D:
@@ -1597,10 +1597,12 @@ MonoBehaviour:
   damage: 0
   knockbackForce: 0
   knockbackDuration: 0
+  gettingKnockedBack: 0
   timeToSummon: 1
   summonedByPlayer: 1
   direction: 
   soldierType: SpearMan
+  dead: 0
 --- !u!114 &5656764914482664436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,7 +1711,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.059918642, y: 8.996064}
+  m_Offset: {x: -0.8162867, y: 8.996064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1720,7 +1722,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.656961, y: 3.2438393}
+  m_Size: {x: 7.9045515, y: 3.2438393}
   m_EdgeRadius: 0
 --- !u!114 &6459925251251433555
 MonoBehaviour:

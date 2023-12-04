@@ -413,7 +413,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -7801002148008026480, guid: 97d6d12b8a918684e8c085473738a74a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -594,7 +594,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2167165271830523349, guid: dcb5234068f85cd45995a4c4a42482fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -981,8 +981,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 5743528858794072494}
   m_Bounds:
-    m_Center: {x: 1.3944753, y: -0.1830163, z: 0}
-    m_Extent: {x: 1.0518354, y: 1.6160026, z: 0}
+    m_Center: {x: 1.0536442, y: -0.24616075, z: 0}
+    m_Extent: {x: 0.864149, y: 1.6797557, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1107,7 +1107,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2686961660314424428, guid: dcb5234068f85cd45995a4c4a42482fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1477,6 +1477,7 @@ GameObject:
   - component: {fileID: 3768041874962901433}
   - component: {fileID: 8846428955143244970}
   - component: {fileID: 5656764914482664436}
+  - component: {fileID: 1997951721710550965}
   - component: {fileID: 9138387151500720390}
   - component: {fileID: 318671454321742506}
   m_Layer: 0
@@ -1528,7 +1529,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2829206, y: 9.009017}
+  m_Offset: {x: -1.5840766, y: 9.425101}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1539,7 +1540,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.991321, y: 4.161543}
+  m_Size: {x: 4.389009, y: 11.4935055}
   m_EdgeRadius: 0
 --- !u!50 &7855149648092598505
 Rigidbody2D:
@@ -1596,10 +1597,12 @@ MonoBehaviour:
   damage: 0
   knockbackForce: 0
   knockbackDuration: 0
+  gettingKnockedBack: 0
   timeToSummon: 1
   summonedByPlayer: 1
   direction: 
   soldierType: AxeMan
+  dead: 0
 --- !u!114 &5656764914482664436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,6 +1613,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e103f491f62a3f40a97af7fb7d94623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1997951721710550965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079369688937038354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c881b7113204df45aee7f5e98763daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &9138387151500720390
@@ -1947,8 +1962,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8094211579349713380}
   m_Bounds:
-    m_Center: {x: 3.8036666, y: 0.8157886, z: 0}
-    m_Extent: {x: 1.5466428, y: 1.0025711, z: 0}
+    m_Center: {x: 2.7208328, y: 0.06567752, z: 0}
+    m_Extent: {x: 1.2953862, y: 1.3982458, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

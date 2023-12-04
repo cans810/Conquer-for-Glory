@@ -10,16 +10,17 @@ public class Entity : MonoBehaviour
     public Animator animator;
 
     public string race;
-    public int HP;
+    public float HP;
     public float speed;
-    public int damage;
+    public float damage;
     public float knockbackForce;
     public float knockbackDuration;    
-    private Coroutine resetVelocityCoroutine;
+    public bool gettingKnockedBack;
     public float timeToSummon;
     public bool summonedByPlayer;
     public string direction;
     public string soldierType;
+    public bool dead;
 
     public void Awake(){
 
@@ -43,8 +44,29 @@ public class Entity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HP <= 0){
-            Destroy(gameObject);
+        if (HP <= 0 && !dead){
+            dead = true;
+            
+            if (GetComponent<BoxCollider2D>() != null)
+            {
+                GetComponent<BoxCollider2D>().enabled = false; // Disable the BoxCollider2D
+            }
+
+            // Get all parameters in the Animator controller
+            AnimatorControllerParameter[] parameters = animator.parameters;
+
+            foreach (AnimatorControllerParameter param in parameters)
+            {
+                // Check if the parameter is a boolean and not the "Death" parameter
+                if (param.type == AnimatorControllerParameterType.Bool && param.name != "Death")
+                {
+                    // Set all other boolean parameters to false
+                    animator.SetBool(param.name, false);
+                }
+            }
+            animator.SetBool("Death", true);
+
+            StartCoroutine(DestroyAfterDelay(5f));
         }
     }
 
@@ -58,31 +80,29 @@ public class Entity : MonoBehaviour
             {
                 opponentEntity.HP -= damage;
 
-                // Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
-                // Rigidbody2D enemyRigidbody = opponentEntity.GetComponent<Rigidbody2D>();
+                Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
 
-                // if (enemyRigidbody != null)
-                // {
-                //     enemyRigidbody.velocity = Vector2.zero; // Reset velocity before applying knockback
-                //     enemyRigidbody.AddForce(direction, ForceMode2D.Impulse);
+                opponentEntity.GetComponent<Rigidbody2D>().AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+                opponentEntity.GetComponent<Entity>().gettingKnockedBack = true;
 
-                //     if (resetVelocityCoroutine != null)
-                //     {
-                //         StopCoroutine(resetVelocityCoroutine); // Stop previous coroutine if running
-                //     }
-                //     resetVelocityCoroutine = StartCoroutine(ResetVelocityAfterKnockback(enemyRigidbody, knockbackDuration));
-                // }
+                StartCoroutine(StopKnockback(opponentEntity.GetComponent<Rigidbody2D>()));
             }
         }
     }
 
-    // IEnumerator ResetVelocityAfterKnockback(Rigidbody2D rigidbody, float duration)
-    // {
-    //     yield return new WaitForSeconds(duration);
+    IEnumerator StopKnockback(Rigidbody2D rb)
+    {
+        yield return new WaitForSeconds(knockbackDuration);
 
-    //     if (rigidbody != null)
-    //     {
-    //         rigidbody.velocity = Vector2.zero;
-    //     }
-    // }
+        rb.gameObject.GetComponent<Entity>().gettingKnockedBack = false;
+        rb.velocity = Vector2.zero; // Stops the knockback after the specified duration
+    }
+
+    IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Destroy the GameObject after the delay
+        Destroy(gameObject);
+    }
 }

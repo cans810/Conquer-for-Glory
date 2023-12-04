@@ -20,36 +20,36 @@ public class ArcherController : MonoBehaviour
             entity.HP = 5;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.5f;
-            entity.speed = 0.7f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Orc")){
             entity.HP = 6;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.5f;
-            entity.speed = 0.7f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Troll")){
             entity.HP = 5;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.5f;
-            entity.speed = 0.7f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Demon")){
             entity.HP = 6;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.5f;
-            entity.speed = 0.7f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Elf")){
             entity.HP = 4;
             entity.damage = 1;
             entity.knockbackForce = 1f;
-            entity.knockbackDuration = 0.5f;
-            entity.speed = 0.7f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 0.8f;
         }
 
         isWalking = true;
@@ -57,26 +57,24 @@ public class ArcherController : MonoBehaviour
         walkTimer = 0;
     }
 
-    public void initAttributes(){
-
-    }
-
     void Update()
     {
-        if (isWalking && !shouldShoot && !GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding)
-        {
-            gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",false);
-            gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
-            GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
-            walkTimer += Time.deltaTime; 
-            if (walkTimer >= 2.5f){
-                isWalking = false;
-                shouldShoot = true;
+        if (!gameObject.GetComponent<Entity>().dead){
+            if (isWalking && !shouldShoot && !GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack)
+            {
+                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
+                walkTimer += Time.deltaTime; 
+                if (walkTimer >= 2.5f){
+                    isWalking = false;
+                    shouldShoot = true;
+                }
             }
-        }
-        else if(shouldShoot && !isWalking){
-            gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",true);
-            gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+            else if(shouldShoot && !isWalking){
+                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+            }
         }
     }
 
