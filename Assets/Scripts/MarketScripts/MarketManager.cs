@@ -67,14 +67,28 @@ public class MarketManager : MonoBehaviour
         GameObject actualSoldierGameObject = null;
 
         if (currentSelectedSoldier.name.Equals("AxeMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().buyableSoldiers[0];
-
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[0];
         }
         else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().buyableSoldiers[1];
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[1];
         }
         else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().buyableSoldiers[2];
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[2];
+        }
+        else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[3];
+        }
+        else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[4];
+        }
+        else if (currentSelectedSoldier.name.Equals("DoubleSwordsMan")){
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[0];
+        }
+        else if (currentSelectedSoldier.name.Equals("KingsKnight")){
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
+        }
+        else if (currentSelectedSoldier.name.Equals("DoubleEdgedBladeMan")){
+            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
         }
 
         GameManager.Instance.PlayerSoldiers.Add(actualSoldierGameObject);

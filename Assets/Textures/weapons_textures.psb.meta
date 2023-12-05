@@ -93,6 +93,138 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: sword_kingsknight
+    originalName: 
+    pivot: {x: 0.490765, y: 0.118386894}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 379
+      width: 140
+      height: 454
+    spriteID: e1eb5cc977f392a47894b934f62c9c8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 379}
+    spritePosition: {x: 180, y: 18}
+  - name: shield_kingsknight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 4
+      width: 221
+      height: 279
+    spriteID: 5007133ecc151f14cb52ef65db18b720
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 376, y: 4}
+    spritePosition: {x: 138, y: 111}
+  - name: doubleedgedblade
+    originalName: 
+    pivot: {x: 0.6616189, y: 0.4972899}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 379
+      width: 56
+      height: 477
+    spriteID: faa085583b0ecf145a1b11013fb5a2af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 532, y: 379}
+    spritePosition: {x: 225, y: 16}
+  - name: doublesword_basic
+    originalName: 
+    pivot: {x: 0.5587718, y: 0.13560534}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 458
+      y: 379
+      width: 66
+      height: 479
+    spriteID: 1939e10b356e5c14186dfd7f1ed111b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 458, y: 379}
+    spritePosition: {x: 208, y: 9}
+  - name: magic_bulb
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 605
+      y: 4
+      width: 223
+      height: 195
+    spriteID: 6f0739d270beea8418a635428ec3eea8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 605, y: 4}
+    spritePosition: {x: 118, y: 211}
+  - name: hatchet_basic
+    originalName: 
+    pivot: {x: 0.12876424, y: 0.14657024}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 836
+      y: 4
+      width: 101
+      height: 289
+    spriteID: 7e549a454acabdc45bb2136d85922558
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 836, y: 4}
+    spritePosition: {x: 230, y: 79}
   - name: axe_basic
     originalName: 
     pivot: {x: 0.211156, y: 0.15450005}
@@ -100,7 +232,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 126
+      x: 274
       y: 379
       width: 94
       height: 479
@@ -113,7 +245,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 126, y: 379}
+    uvTransform: {x: 274, y: 379}
     spritePosition: {x: 224, y: 13}
   - name: arrow
     originalName: 
@@ -122,8 +254,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 228
-      y: 848
+      x: 836
+      y: 301
       width: 97
       height: 20
     spriteID: 3782d2a02d0d54446be2a2782820e3bf
@@ -135,7 +267,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 228, y: 848}
+    uvTransform: {x: 836, y: 301}
     spritePosition: {x: 150, y: 240}
   - name: bow
     originalName: 
@@ -144,7 +276,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 376
+      x: 945
       y: 4
       width: 70
       height: 322
@@ -157,7 +289,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 376, y: 4}
+    uvTransform: {x: 945, y: 4}
     spritePosition: {x: 280, y: 89}
   - name: spear_basic
     originalName: 
@@ -166,7 +298,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 228
+      x: 376
       y: 379
       width: 74
       height: 461
@@ -179,7 +311,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 228, y: 379}
+    uvTransform: {x: 376, y: 379}
     spritePosition: {x: 213, y: 19}
   - name: shield_basic
     originalName: 
@@ -210,7 +342,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 152
       y: 379
       width: 114
       height: 428
@@ -223,7 +355,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 379}
+    uvTransform: {x: 152, y: 379}
     spritePosition: {x: 193, y: 54}
   characterData:
     bones: []
@@ -255,13 +387,73 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: sword_kingsknight
+    spriteName: sword_kingsknight
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e1eb5cc977f392a47894b934f62c9c8e
+    layerID: 22
+    mosaicPosition: {x: 4, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: shield_kingsknight
+    spriteName: shield_kingsknight
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5007133ecc151f14cb52ef65db18b720
+    layerID: 25
+    mosaicPosition: {x: 376, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: doubleedgedblade
+    spriteName: doubleedgedblade
+    isGroup: 0
+    parentIndex: -1
+    spriteID: faa085583b0ecf145a1b11013fb5a2af
+    layerID: 27
+    mosaicPosition: {x: 532, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: doublesword_basic
+    spriteName: doublesword_basic
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1939e10b356e5c14186dfd7f1ed111b7
+    layerID: 18
+    mosaicPosition: {x: 458, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: magic_bulb
+    spriteName: magic_bulb
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6f0739d270beea8418a635428ec3eea8
+    layerID: 15
+    mosaicPosition: {x: 605, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: hatchet_basic
+    spriteName: hatchet_basic
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7e549a454acabdc45bb2136d85922558
+    layerID: 13
+    mosaicPosition: {x: 836, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: axe_basic
     spriteName: axe_basic
     isGroup: 0
     parentIndex: -1
     spriteID: c778669735fd7954292f34e110f417eb
     layerID: 10
-    mosaicPosition: {x: 126, y: 379}
+    mosaicPosition: {x: 274, y: 379}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -271,7 +463,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 3782d2a02d0d54446be2a2782820e3bf
     layerID: 9
-    mosaicPosition: {x: 228, y: 848}
+    mosaicPosition: {x: 836, y: 301}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -281,7 +473,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: ee91ca9ec4ce0394a95e86d2986ea54d
     layerID: 8
-    mosaicPosition: {x: 376, y: 4}
+    mosaicPosition: {x: 945, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -291,7 +483,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: f2d38ab5a24deb84898c7e744ab645ad
     layerID: 7
-    mosaicPosition: {x: 228, y: 379}
+    mosaicPosition: {x: 376, y: 379}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -311,7 +503,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8e173aede2fa8df49b567d3e47c524a0
     layerID: 5
-    mosaicPosition: {x: 4, y: 379}
+    mosaicPosition: {x: 152, y: 379}
     flatten: 0
     isImported: 1
     isVisible: 1

@@ -441,6 +441,14 @@ PrefabInstance:
       propertyPath: cityRaceType
       value: Orc
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c7c5d0637d82e604aa420ae7fd4c764d, type: 3}
     - target: {fileID: 4359788547078753437, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_text
       value: 
@@ -1644,7 +1652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[0]
@@ -1658,6 +1666,30 @@ PrefabInstance:
       propertyPath: Soldiers.Array.data[2]
       value: 
       objectReference: {fileID: 6079369688937038354, guid: ac36bc7cd19dbfc4b85688cfcc99b732, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 9628ef4f6e7de7148a5d07d01c8632ae, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c02af6e6d7ebc584f895046b8c88ec6b, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[5]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 52583e7dc0a26c243837ecda49138e9b, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[6]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 8d8813b5c46fc6049b1c793f56bd0a03, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[7]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f357639f7f8a2524a86410fc857ca113, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[8]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 1f05aa0ff4e364b4a9d166a7899b1c87, type: 3}
     - target: {fileID: 4359788547078753437, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_text
       value: 

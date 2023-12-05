@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwordsManController : MonoBehaviour
 {
 
-    public void Awake(){
+    void Start(){
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
@@ -44,10 +44,6 @@ public class SwordsManController : MonoBehaviour
             entity.knockbackDuration = 0.1f;
             entity.speed = 0.65f;
         }
-    }
-
-    void Start(){
-
     }
 
     // Update is called once per frame

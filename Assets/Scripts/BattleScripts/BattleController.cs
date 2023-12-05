@@ -19,15 +19,6 @@ public class BattleController : MonoBehaviour
 
         Transform parentTransformSoldierContainers = PlayerSoldierContainers.transform;
         parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().selected = true;
-
-        foreach (Transform child in parentTransformSoldierContainers)
-        {
-            child.gameObject.GetComponent<SoldierContainerManager>().SoldierContained.GetComponent<Entity>().race = GameManager.Instance.PlayerRace;
-            child.gameObject.GetComponent<SoldierContainerManager>().SoldierContained.GetComponent<Entity>().summonedByPlayer = true;
-            SetSummonTimers(child.gameObject.GetComponent<SoldierContainerManager>().SoldierContained);
-        }
-        
-
     }
 
     // Start is called before the first frame update
@@ -107,6 +98,9 @@ public class BattleController : MonoBehaviour
                     spawnPosition,
                     Quaternion.identity);
 
+                playerSoldier.tag = "Player";
+                playerSoldier.GetComponent<Entity>().direction = "right";
+
                 // summonladıktan sonra hepsini resetle
                 ResetPlayerSoldierContainers();
             }
@@ -123,110 +117,4 @@ public class BattleController : MonoBehaviour
             child.gameObject.GetComponent<SoldierContainerManager>().canSummon = false;
         }
     }
-
-    public void SetSummonTimers(GameObject soldier){
-        if (soldier.GetComponent<Entity>().soldierType.Equals("SpearMan")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.3f;
-            }
-        }
-        else if (soldier.GetComponent<Entity>().soldierType.Equals("SwordsMan")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
-                soldier.GetComponent<Entity>().timeToSummon = 3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 3f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 3f;
-            }
-        }
-        else if (soldier.GetComponent<Entity>().soldierType.Equals("Archer")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-        }
-        else if (soldier.GetComponent<Entity>().soldierType.Equals("AxeMan")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-        }
-        else if (soldier.GetComponent<Entity>().soldierType.Equals("MountedSpearman")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-        }
-        else if (soldier.GetComponent<Entity>().soldierType.Equals("MountedSwordsman")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Orc")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-            else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.1f;
-            }
-        }
-    }
-
 }

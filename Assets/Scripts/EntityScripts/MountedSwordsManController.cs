@@ -5,7 +5,7 @@ using UnityEngine;
 public class MountedSwordsManController : MonoBehaviour
 {
 
-    public void Awake(){
+    void Start(){
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
@@ -44,10 +44,6 @@ public class MountedSwordsManController : MonoBehaviour
             entity.knockbackDuration = 0.2f;
             entity.speed = 1.2f;
         }
-    }
-
-    void Start(){
-
     }
 
     // Update is called once per frame

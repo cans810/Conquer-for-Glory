@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AxeManController : MonoBehaviour
 {
-
-    public void Awake(){
+    void Start(){
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
@@ -44,10 +43,6 @@ public class AxeManController : MonoBehaviour
             entity.knockbackDuration = 0.1f;
             entity.speed = 0.6f;
         }
-    }
-
-    void Start(){
-
     }
 
     // Update is called once per frame

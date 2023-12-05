@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherController : MonoBehaviour
+public class SorcererController : MonoBehaviour
 {
 
-    public GameObject arrowPrefab;
-    public GameObject archerArm;
+    public GameObject magicBulbPrefab;
+    public GameObject sorcererArm;
 
     public bool isWalking;
     public bool shouldShoot;
@@ -62,25 +62,29 @@ public class ArcherController : MonoBehaviour
         if (!gameObject.GetComponent<Entity>().dead){
             if (isWalking && !shouldShoot && !GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack)
             {
-                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Sorcerer_Attack",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
                 GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
                 walkTimer += Time.deltaTime; 
-                if (walkTimer >= 2.5f){
+                if (walkTimer >= 2f){
                     isWalking = false;
                     shouldShoot = true;
                 }
             }
             else if(shouldShoot && !isWalking){
-                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("Sorcerer_Attack",true);
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
             }
         }
     }
 
-    public void InstantiateAndShootArrow(){
-        GameObject arrowObject = Instantiate(arrowPrefab,archerArm.transform.position,archerArm.transform.rotation);
-        arrowObject.GetComponent<ArrowController>().sourceEntity = gameObject;
+    public void InstantiateAndShootMagicBulb()
+    {
+        float yOffset = -0.5f; // Adjust this value to change the offset
+        Vector3 spawnPosition = sorcererArm.transform.position + new Vector3(0f, yOffset, 0f);
+
+        GameObject magicBulbObject = Instantiate(magicBulbPrefab, spawnPosition, sorcererArm.transform.rotation);
+        magicBulbObject.GetComponent<MagicBulbController>().sourceEntity = gameObject;
     }
 
 }

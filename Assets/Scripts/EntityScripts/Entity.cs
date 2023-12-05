@@ -17,22 +17,11 @@ public class Entity : MonoBehaviour
     public float knockbackDuration;    
     public bool gettingKnockedBack;
     public float timeToSummon;
-    public bool summonedByPlayer;
     public string direction;
     public string soldierType;
     public bool dead;
 
     public void Awake(){
-
-        if (summonedByPlayer){
-            direction = "right";
-            gameObject.tag = "Player";
-            //gameObject.layer = 6;
-        }
-        else{
-            direction = "left";
-            //gameObject.tag = "Enemy";
-        }
     }
 
     // Start is called before the first frame update
@@ -90,7 +79,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    IEnumerator StopKnockback(Rigidbody2D rb)
+    public IEnumerator StopKnockback(Rigidbody2D rb)
     {
         yield return new WaitForSeconds(knockbackDuration);
 
