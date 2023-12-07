@@ -43,6 +43,8 @@ public class AxeManController : MonoBehaviour
             entity.knockbackDuration = 0.1f;
             entity.speed = 0.6f;
         }
+
+        entity.canGetKnockedBack = true;
     }
 
     // Update is called once per frame

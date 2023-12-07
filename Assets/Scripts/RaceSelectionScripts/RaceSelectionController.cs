@@ -12,7 +12,11 @@ public class RaceSelectionController : MonoBehaviour
 
     int currentRace;
 
-    public GameObject[] baseSoldiers;
+    public GameObject[] baseHumanSoldiers;
+    public GameObject[] baseElfSoldiers;
+    public GameObject[] baseOrcSoldiers;
+    public GameObject[] baseDemonSoldiers;
+    public GameObject[] baseTrollSoldiers;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +49,24 @@ public class RaceSelectionController : MonoBehaviour
 
     public void setCurrentRaceAndContinue(){
         GameManager.Instance.PlayerRace = currentRaceSelectedText.GetComponent<TextMeshProUGUI>().text;
-        GameManager.Instance.PlayerSoldiers.AddRange(baseSoldiers);
+        
+        if (GameManager.Instance.PlayerRace.Equals("Human")){
+            GameManager.Instance.PlayerSoldiers.AddRange(baseHumanSoldiers);
+        }
+        if (GameManager.Instance.PlayerRace.Equals("Elf")){
+            GameManager.Instance.PlayerSoldiers.AddRange(baseElfSoldiers);
+        }
+        if (GameManager.Instance.PlayerRace.Equals("Orc")){
+            GameManager.Instance.PlayerSoldiers.AddRange(baseOrcSoldiers);
+        }
+        if (GameManager.Instance.PlayerRace.Equals("Demon")){
+            GameManager.Instance.PlayerSoldiers.AddRange(baseDemonSoldiers);
+        }
+        if (GameManager.Instance.PlayerRace.Equals("Troll")){
+            GameManager.Instance.PlayerSoldiers.AddRange(baseTrollSoldiers);
+        }
+
+
         SceneManager.LoadScene("MapScene");
 
     }

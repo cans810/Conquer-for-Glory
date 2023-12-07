@@ -55,6 +55,7 @@ public class ArcherController : MonoBehaviour
         isWalking = true;
         shouldShoot = false;
         walkTimer = 0;
+        entity.canGetKnockedBack = true;
     }
 
     void Update()

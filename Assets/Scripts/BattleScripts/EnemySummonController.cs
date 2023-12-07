@@ -21,16 +21,9 @@ public class EnemySummonController : MonoBehaviour
 
         parentTransformSummonPoints = EnemySummonPoints.transform;
         parentTransformSoldierContainers = EnemySoldierContainers.transform;
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        parentTransformSoldierContainers.gameObject.GetComponent<EnemySideSoldierContainersManager>().initContainers();
     }
-
-    // Update is called once per frame
-    //private bool hasSummoned = false;
 
     void Update()
     {
@@ -39,29 +32,29 @@ public class EnemySummonController : MonoBehaviour
             }
 
             if (parentTransformSoldierContainers != null){
-                    if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon){
-                        chooseRandomSummonPoint();
+                if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon){
+                    chooseRandomSummonPoint();
 
-                        Transform summonPoint = parentTransformSummonPoints.GetChild(currentSelectedSummonPoint);
+                    Transform summonPoint = parentTransformSummonPoints.GetChild(currentSelectedSummonPoint);
 
-                        float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
+                    float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
 
-                        Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
+                    Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
 
-                        GameObject enemySoldier = Instantiate(
-                            parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
-                            spawnPosition,
-                            Quaternion.identity);
+                    GameObject enemySoldier = Instantiate(
+                        parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
+                        spawnPosition,
+                        Quaternion.identity);
 
-                        enemySoldier.GetComponent<Entity>().gameObject.tag = "Enemy";
-                        enemySoldier.GetComponent<EntityCommonActions>().ChangeDirection("left");
-                        enemySoldier.GetComponent<Entity>().direction = "left";
+                    enemySoldier.GetComponent<Entity>().gameObject.tag = "Enemy";
+                    enemySoldier.GetComponent<EntityCommonActions>().ChangeDirection("left");
+                    enemySoldier.GetComponent<Entity>().direction = "left";
 
-                        // summonladıktan sonra hepsini resetle
-                        ResetPlayerSoldierContainers();
-                        chosenRandomSoldier = false;
+                    // summonladıktan sonra hepsini resetle
+                    ResetPlayerSoldierContainers();
+                    chosenRandomSoldier = false;
                 }
-        }
+            }
     }
 
     public void chooseRandomSoldierToSummon(){
@@ -78,12 +71,9 @@ public class EnemySummonController : MonoBehaviour
     }
 
     public void chooseRandomSummonPoint(){
-
         int randomPoint = UnityEngine.Random.Range(0, 8);
         currentSelectedSummonPoint = randomPoint;
-
     }
-
 
     public void ResetPlayerSoldierContainers(){
         Transform parentTransformSoldierContainers = EnemySoldierContainers.transform;

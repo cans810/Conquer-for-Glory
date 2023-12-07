@@ -14,6 +14,7 @@ public class SoldierContainerManager : MonoBehaviour
 
     public float timer;
     public bool canSummon;
+    public string soldierRace;
 
     public void Awake(){
         timer = 0;
@@ -28,6 +29,8 @@ public class SoldierContainerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        soldierRace = SoldierContained.GetComponent<Entity>().race;
+        
         timer += Time.deltaTime;
 
         float fillAmount = Mathf.Clamp01(timer / SoldierContained.GetComponent<Entity>().timeToSummon);

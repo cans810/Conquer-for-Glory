@@ -10,7 +10,7 @@ public class SwordsManController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Human")){
-            entity.HP = 5;
+            entity.HP = 6;
             entity.damage = 1;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.1f;
@@ -44,6 +44,7 @@ public class SwordsManController : MonoBehaviour
             entity.knockbackDuration = 0.1f;
             entity.speed = 0.65f;
         }
+        entity.canGetKnockedBack = true;
     }
 
     // Update is called once per frame

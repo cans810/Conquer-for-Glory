@@ -19,6 +19,7 @@ public class KingsKnightController : MonoBehaviour
             entity.knockbackDuration = 0.15f;
             entity.speed = 0.65f;
         }
+        entity.canGetKnockedBack = true;
     }
 
     // Update is called once per frame
@@ -38,6 +39,15 @@ public class KingsKnightController : MonoBehaviour
                     gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",false);
                     gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",true);
                 }
+
+                setAttackAnimPlaying();
+            }
+            else if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && playingAttackAnim && GetComponent<Entity>().gettingKnockedBack){
+                playingAttackAnim = false;
+                gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
             }
             else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding){
                 playingAttackAnim = false;

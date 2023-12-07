@@ -16,6 +16,7 @@ public class Entity : MonoBehaviour
     public float knockbackForce;
     public float knockbackDuration;    
     public bool gettingKnockedBack;
+    public bool canGetKnockedBack;
     public float timeToSummon;
     public string direction;
     public string soldierType;
@@ -69,12 +70,14 @@ public class Entity : MonoBehaviour
             {
                 opponentEntity.HP -= damage;
 
-                Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
+                if (opponentEntity.canGetKnockedBack){
+                    Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
 
-                opponentEntity.GetComponent<Rigidbody2D>().AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-                opponentEntity.GetComponent<Entity>().gettingKnockedBack = true;
+                    opponentEntity.GetComponent<Rigidbody2D>().AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+                    opponentEntity.GetComponent<Entity>().gettingKnockedBack = true;
 
-                StartCoroutine(StopKnockback(opponentEntity.GetComponent<Rigidbody2D>()));
+                    StartCoroutine(StopKnockback(opponentEntity.GetComponent<Rigidbody2D>()));
+                }
             }
         }
     }

@@ -11,25 +11,27 @@ public class BattleController : MonoBehaviour
     public int currentSelectedSoldierContainer;
 
     public void Awake(){
+        Transform parentTransformSoldierContainers = PlayerSoldierContainers.transform;
+        parentTransformSoldierContainers.gameObject.GetComponent<PlayerSideSoldierContainersManager>().initContainers();
+
         currentSelectedSummonPoint = 0;
         currentSelectedSoldierContainer = 0;
 
         Transform parentTransformSummonPoints = PlayerSummonPoints.transform;
         parentTransformSummonPoints.GetChild(currentSelectedSummonPoint).GetComponent<SummonPointManager>().selected = true;
-
-        Transform parentTransformSoldierContainers = PlayerSoldierContainers.transform;
         parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().selected = true;
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
+        // update soldier containers
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             if (currentSelectedSummonPoint-1 >= 0){

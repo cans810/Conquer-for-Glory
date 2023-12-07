@@ -6,8 +6,8 @@ public class EnemySideSoldierContainersManager : MonoBehaviour
 {
     public GameObject SoldierContainerPrefab;
 
-    public void Awake(){
 
+    public void initContainers(){
         foreach (GameObject soldier in GameManager.Instance.CurrentEnemySoldiers){
 
             GameObject SoldierContainer = GameObject.Instantiate(SoldierContainerPrefab);
@@ -15,22 +15,8 @@ public class EnemySideSoldierContainersManager : MonoBehaviour
             SoldierContainer.transform.localScale = new Vector3(1,1,1);
 
             SoldierContainer.GetComponent<SoldierContainerManager>().SoldierContained = soldier;
-            SoldierContainer.GetComponent<SoldierContainerManager>().SoldierContained.GetComponent<Entity>().race = GameManager.Instance.CurrentEnemyRace;
             SetSummonTimers(SoldierContainer.GetComponent<SoldierContainerManager>().SoldierContained);
         }
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void SetSummonTimers(GameObject soldier){
@@ -45,7 +31,7 @@ public class EnemySideSoldierContainersManager : MonoBehaviour
                 soldier.GetComponent<Entity>().timeToSummon = 2.3f;
             }
             else if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 2.3f;
+                soldier.GetComponent<Entity>().timeToSummon = 3f;
             }
             else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
                 soldier.GetComponent<Entity>().timeToSummon = 2.3f;
@@ -65,7 +51,7 @@ public class EnemySideSoldierContainersManager : MonoBehaviour
                 soldier.GetComponent<Entity>().timeToSummon = 3f;
             }
             else if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 3f;
+                soldier.GetComponent<Entity>().timeToSummon = 2.8f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("Archer")){
@@ -183,6 +169,16 @@ public class EnemySideSoldierContainersManager : MonoBehaviour
         if (soldier.GetComponent<Entity>().soldierType.Equals("DoubleEdgedBladeMan")){
             if (soldier.GetComponent<Entity>().race.Equals("Orc")){
                 soldier.GetComponent<Entity>().timeToSummon = 7.2f;
+            }
+        }
+        if (soldier.GetComponent<Entity>().soldierType.Equals("SpearMaster")){
+            if (soldier.GetComponent<Entity>().race.Equals("Demon")){
+                soldier.GetComponent<Entity>().timeToSummon = 7.5f;
+            }
+        }
+        if (soldier.GetComponent<Entity>().soldierType.Equals("TrollGiant")){
+            if (soldier.GetComponent<Entity>().race.Equals("Troll")){
+                soldier.GetComponent<Entity>().timeToSummon = 18f;
             }
         }
     }

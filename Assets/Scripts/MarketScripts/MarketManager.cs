@@ -53,42 +53,108 @@ public class MarketManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void selectSoldier(){
-        
-    }
-
     public void buySelectedSoldier(){
         GameObject actualSoldierGameObject = null;
 
-        if (currentSelectedSoldier.name.Equals("AxeMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[0];
+        if (GameManager.Instance.PlayerRace.Equals("Human")){
+            if (currentSelectedSoldier.name.Equals("AxeMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[1];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[2];
+            }
+            else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[3];
+            }
+            else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[4];
+            }
+            else if (currentSelectedSoldier.name.Equals("KingsKnight")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[5];
+            }
         }
-        else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[1];
+        if (GameManager.Instance.PlayerRace.Equals("Elf")){
+            if (currentSelectedSoldier.name.Equals("AxeMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[0];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[1];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[2];
+            }
+            else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[3];
+            }
+            else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[4];
+            }
+            else if (currentSelectedSoldier.name.Equals("DoubleSwordsMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[5];
+            }
         }
-        else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[2];
+        if (GameManager.Instance.PlayerRace.Equals("Orc")){
+            if (currentSelectedSoldier.name.Equals("AxeMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[0];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[1];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[2];
+            }
+            else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[3];
+            }
+            else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[4];
+            }
+            else if (currentSelectedSoldier.name.Equals("DoubleEdgedBladeMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[5];
+            }
         }
-        else if (currentSelectedSoldier.name.Equals("HatchetMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[3];
+        if (GameManager.Instance.PlayerRace.Equals("Demon")){
+            if (currentSelectedSoldier.name.Equals("AxeMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[0];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[1];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[2];
+            }
+            else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[3];
+            }
+            else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[4];
+            }
+            else if (currentSelectedSoldier.name.Equals("SpearMaster")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[5];
+            }
         }
-        else if (currentSelectedSoldier.name.Equals("Sorcerer")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().commonBuyableSoldiers[4];
-        }
-        else if (currentSelectedSoldier.name.Equals("DoubleSwordsMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[0];
-        }
-        else if (currentSelectedSoldier.name.Equals("KingsKnight")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
-        }
-        else if (currentSelectedSoldier.name.Equals("DoubleEdgedBladeMan")){
-            actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
+        if (GameManager.Instance.PlayerRace.Equals("Troll")){
+            if (currentSelectedSoldier.name.Equals("AxeMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[0];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[1];
+            }
+            else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[2];
+            }
+            else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[3];
+            }
+            else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[4];
+            }
+            else if (currentSelectedSoldier.name.Equals("TrollGiant")){
+                actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[5];
+            }
         }
 
         GameManager.Instance.PlayerSoldiers.Add(actualSoldierGameObject);

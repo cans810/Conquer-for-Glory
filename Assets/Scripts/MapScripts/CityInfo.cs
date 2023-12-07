@@ -32,6 +32,7 @@ public class CityInfo : MonoBehaviour
         else{
             textObject.GetComponent<TextMeshProUGUI>().text = cityName;
         }
+
     }
 
     // Update is called once per frame
@@ -48,6 +49,5 @@ public class CityInfo : MonoBehaviour
         GameManager.Instance.CurrentEnemySoldiers = Soldiers;
 
         SceneManager.LoadScene("BattleScene");
-
     }
 }

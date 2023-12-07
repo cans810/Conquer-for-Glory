@@ -18,6 +18,7 @@ public class DoubleSwordsManController : MonoBehaviour
             entity.knockbackDuration = 0.1f;
             entity.speed = 0.9f;
         }
+        entity.canGetKnockedBack = true;
     }
 
     // Update is called once per frame
@@ -37,6 +38,15 @@ public class DoubleSwordsManController : MonoBehaviour
                     gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_1",false);
                     gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_2",true);
                 }
+
+                setAttackAnimPlaying();
+            }
+            else if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && playingAttackAnim && GetComponent<Entity>().gettingKnockedBack){
+                playingAttackAnim = false;
+                gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_1",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_2",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
             }
             else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding){
                 playingAttackAnim = false;

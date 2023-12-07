@@ -909,10 +909,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   racesContainerGameObject: {fileID: 438271095}
   currentRaceSelectedText: {fileID: 597594933}
-  baseSoldiers:
-  - {fileID: 6079369688937038354, guid: 6f82668ccc833f74fb1eb76d785ceb53, type: 3}
-  - {fileID: 6079369688937038354, guid: 6d60477fb4054ab449414bf1a406031a, type: 3}
-  - {fileID: 6079369688937038354, guid: ac36bc7cd19dbfc4b85688cfcc99b732, type: 3}
+  baseHumanSoldiers:
+  - {fileID: 6079369688937038354, guid: 539afcf4a43c41c4892023593a3422b4, type: 3}
+  - {fileID: 6079369688937038354, guid: f659b6d2ce27c054483e7c202df8a668, type: 3}
+  - {fileID: 6079369688937038354, guid: f77050027580bba4690921e89a5f5396, type: 3}
+  baseElfSoldiers:
+  - {fileID: 6079369688937038354, guid: ee7b8d7626f1a804fac1a291798573e5, type: 3}
+  - {fileID: 6079369688937038354, guid: 02847a5e956b2874d9db14cdd1562e58, type: 3}
+  - {fileID: 6079369688937038354, guid: 0ef20a3563e5f0d4a87c70435abd83dc, type: 3}
+  baseOrcSoldiers:
+  - {fileID: 6079369688937038354, guid: 763e161dfc0e18c47b80b2e9507ef02c, type: 3}
+  - {fileID: 6079369688937038354, guid: 8f43bbeb10dba6b458c136689b5a6346, type: 3}
+  - {fileID: 6079369688937038354, guid: c126b1c294220f8459d339e46f6c435d, type: 3}
+  baseDemonSoldiers:
+  - {fileID: 6079369688937038354, guid: 78410869892ef924db84cd15dde272d3, type: 3}
+  - {fileID: 6079369688937038354, guid: 4966e41b88ea8f84eb048031af766e0f, type: 3}
+  - {fileID: 6079369688937038354, guid: c3882a5507c5ac14581f639494ce71e7, type: 3}
+  baseTrollSoldiers:
+  - {fileID: 6079369688937038354, guid: b1df8240b20dcdb4781b1d4989c1dc56, type: 3}
+  - {fileID: 6079369688937038354, guid: f918f42d11ed2dd4691fb3bcd5182620, type: 3}
+  - {fileID: 6079369688937038354, guid: d96c1d22183816f4dab4096115bc05a6, type: 3}
 --- !u!1 &1183067396
 GameObject:
   m_ObjectHideFlags: 0

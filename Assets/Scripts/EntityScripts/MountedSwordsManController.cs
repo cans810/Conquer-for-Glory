@@ -44,6 +44,7 @@ public class MountedSwordsManController : MonoBehaviour
             entity.knockbackDuration = 0.2f;
             entity.speed = 1.2f;
         }
+        entity.canGetKnockedBack = true;
     }
 
     // Update is called once per frame
