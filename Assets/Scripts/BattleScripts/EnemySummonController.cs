@@ -49,6 +49,7 @@ public class EnemySummonController : MonoBehaviour
                     enemySoldier.GetComponent<Entity>().gameObject.tag = "Enemy";
                     enemySoldier.GetComponent<EntityCommonActions>().ChangeDirection("left");
                     enemySoldier.GetComponent<Entity>().direction = "left";
+                    enemySoldier.GetComponent<Entity>().spawnedAtRow = currentSelectedSummonPoint;
 
                     // summonladıktan sonra hepsini resetle
                     ResetPlayerSoldierContainers();

@@ -5,9 +5,12 @@ public class ArrowController : MonoBehaviour
     public GameObject sourceEntity;
     public Rigidbody2D rb;
     public float forwardForce = 5f;
+    public int spawnedAtRow;
 
     void Start()
     {
+        spawnedAtRow = sourceEntity.GetComponent<Entity>().spawnedAtRow;
+        
         if (sourceEntity.GetComponent<Entity>().direction.Equals("right")){
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
@@ -16,6 +19,10 @@ public class ArrowController : MonoBehaviour
         }
         rb = GetComponent<Rigidbody2D>();
         Vector2 direction = GetDirectionFromEntity();
+
+        int randomAngle = UnityEngine.Random.Range(-5,5);
+
+        direction = Quaternion.Euler(0, 0, randomAngle) * direction;
 
         // Apply force in the direction specified by the entity's direction string
         rb.velocity = direction * forwardForce;
@@ -60,7 +67,7 @@ public class ArrowController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if (sourceEntity.tag.Equals("Player")){
-            if (collision.CompareTag("Enemy"))
+            if (collision.CompareTag("Enemy") && spawnedAtRow==collision.gameObject.GetComponent<Entity>().spawnedAtRow)
             {
                 collision.GetComponent<Entity>().HP -= 1;
                 Debug.Log("hit");
@@ -68,7 +75,7 @@ public class ArrowController : MonoBehaviour
             }
         }
         else if (sourceEntity.tag.Equals("Enemy")){
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("Player") && spawnedAtRow==collision.gameObject.GetComponent<Entity>().spawnedAtRow)
             {
                 collision.GetComponent<Entity>().HP -= 1;
                 Debug.Log("hit");

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class MarketManager : MonoBehaviour
     public GameObject DemonMarket;
 
     public GameObject currentSelectedSoldier;
+    public GameObject currentSelectedSoldierInfoText;
 
     // Start is called before the first frame update
     void Start()
@@ -158,6 +160,12 @@ public class MarketManager : MonoBehaviour
         }
 
         GameManager.Instance.PlayerSoldiers.Add(actualSoldierGameObject);
+    }
+
+    public void Update(){
+        if (currentSelectedSoldier != null){
+            currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.name;
+        }
     }
 
     public void GoToMap(){

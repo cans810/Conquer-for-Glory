@@ -6,9 +6,12 @@ public class MagicBulbController : MonoBehaviour
     public Rigidbody2D rb;
     public float forwardForce = 7f;
     public float rotationSpeed = 200f;
+    public int spawnedAtRow;
 
     void Start()
     {
+        spawnedAtRow = sourceEntity.GetComponent<Entity>().spawnedAtRow;
+
         if (sourceEntity.GetComponent<Entity>().direction.Equals("right")){
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
@@ -17,6 +20,10 @@ public class MagicBulbController : MonoBehaviour
         }
         rb = GetComponent<Rigidbody2D>();
         Vector2 direction = GetDirectionFromEntity();
+
+        int randomAngle = UnityEngine.Random.Range(-5,5);
+
+        direction = Quaternion.Euler(0, 0, randomAngle) * direction;
 
         // Apply force in the direction specified by the entity's direction string
         rb.velocity = direction * forwardForce;
@@ -63,7 +70,7 @@ public class MagicBulbController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if (sourceEntity.tag.Equals("Player")){
-            if (collision.CompareTag("Enemy"))
+            if (collision.CompareTag("Enemy") && spawnedAtRow==collision.gameObject.GetComponent<Entity>().spawnedAtRow)
             {
                 collision.GetComponent<Entity>().HP -= 1.5f;
                 Debug.Log("hit");
@@ -71,7 +78,7 @@ public class MagicBulbController : MonoBehaviour
             }
         }
         else if (sourceEntity.tag.Equals("Enemy")){
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("Player") && spawnedAtRow==collision.gameObject.GetComponent<Entity>().spawnedAtRow)
             {
                 collision.GetComponent<Entity>().HP -= 1.5f;
                 Debug.Log("hit");

@@ -10,6 +10,12 @@ public class BattleController : MonoBehaviour
     public int currentSelectedSummonPoint;
     public int currentSelectedSoldierContainer;
 
+    public int playerProgress;
+
+    public bool playerWon;
+    public bool playerLost;
+    
+
     public void Awake(){
         Transform parentTransformSoldierContainers = PlayerSoldierContainers.transform;
         parentTransformSoldierContainers.gameObject.GetComponent<PlayerSideSoldierContainersManager>().initContainers();
@@ -20,12 +26,14 @@ public class BattleController : MonoBehaviour
         Transform parentTransformSummonPoints = PlayerSummonPoints.transform;
         parentTransformSummonPoints.GetChild(currentSelectedSummonPoint).GetComponent<SummonPointManager>().selected = true;
         parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().selected = true;
-        
+
+        playerProgress = 50;
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -102,10 +110,20 @@ public class BattleController : MonoBehaviour
 
                 playerSoldier.tag = "Player";
                 playerSoldier.GetComponent<Entity>().direction = "right";
+                playerSoldier.GetComponent<Entity>().spawnedAtRow = currentSelectedSummonPoint;
 
                 // summonladıktan sonra hepsini resetle
                 ResetPlayerSoldierContainers();
             }
+        }
+
+        if (playerWon){
+            // you won window
+            // give some coins
+        }
+        else if (playerLost){
+            // every soldier run back + you lost window
+            // dont give coins
         }
 
     }

@@ -1529,6 +1529,7 @@ GameObject:
   - component: {fileID: 3726741268169020223}
   - component: {fileID: 8599985373788224506}
   - component: {fileID: 8125665483364823793}
+  - component: {fileID: 3186362890592076420}
   m_Layer: 0
   m_Name: TrollGiant
   m_TagString: Untagged
@@ -1634,7 +1635,7 @@ MonoBehaviour:
   knockbackDuration: 0
   gettingKnockedBack: 0
   canGetKnockedBack: 0
-  timeToSummon: 0
+  timeToSummon: 18
   direction: 
   soldierType: TrollGiant
   dead: 0
@@ -1683,6 +1684,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3186362890592076420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6751278794164780428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79800ad1a5ab3b648b86512a50abac6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7651420232895652963
 GameObject:
   m_ObjectHideFlags: 0

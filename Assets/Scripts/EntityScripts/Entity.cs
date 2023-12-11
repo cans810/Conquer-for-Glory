@@ -21,6 +21,7 @@ public class Entity : MonoBehaviour
     public string direction;
     public string soldierType;
     public bool dead;
+    public int spawnedAtRow;
 
     public void Awake(){
     }

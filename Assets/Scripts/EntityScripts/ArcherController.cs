@@ -83,5 +83,4 @@ public class ArcherController : MonoBehaviour
         GameObject arrowObject = Instantiate(arrowPrefab,archerArm.transform.position,archerArm.transform.rotation);
         arrowObject.GetComponent<ArrowController>().sourceEntity = gameObject;
     }
-
 }

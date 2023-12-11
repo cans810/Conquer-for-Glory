@@ -58,6 +58,26 @@ public class DoubleSwordsManController : MonoBehaviour
         }
     }
 
+    public void damageOpponentLittle()
+    {
+        if (gameObject.GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null)
+        {
+            Entity opponentEntity = gameObject.GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent.GetComponent<Entity>();
+            
+            if (opponentEntity != null)
+            {
+                opponentEntity.HP -= gameObject.GetComponent<Entity>().damage/2;
+
+                Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
+
+                opponentEntity.GetComponent<Rigidbody2D>().AddForce(direction * gameObject.GetComponent<Entity>().knockbackForce/3, ForceMode2D.Impulse);
+                opponentEntity.GetComponent<Entity>().gettingKnockedBack = true;
+
+                StartCoroutine(gameObject.GetComponent<Entity>().StopKnockback(opponentEntity.GetComponent<Rigidbody2D>()));
+            }
+        }
+    }
+
     public void setAttackAnimPlaying(){
         playingAttackAnim = true;
     }
