@@ -32,7 +32,33 @@ public class EnemySummonController : MonoBehaviour
             }
 
             if (parentTransformSoldierContainers != null){
-                if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon){
+                GameObject battlecontroller = GameObject.Find("BattleController");
+
+                if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon && battlecontroller.GetComponent<BattleController>().playerDeathCounter >= 20){
+                    for (int i=0;i<8;i++){
+                        Transform summonPoint = parentTransformSummonPoints.GetChild(i);
+
+                        float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
+
+                        Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
+
+                        GameObject enemySoldier = Instantiate(
+                            parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
+                            spawnPosition,
+                            Quaternion.identity);
+
+                        enemySoldier.GetComponent<Entity>().gameObject.tag = "Enemy";
+                        enemySoldier.GetComponent<EntityCommonActions>().ChangeDirection("left");
+                        enemySoldier.GetComponent<Entity>().direction = "left";
+                        enemySoldier.GetComponent<Entity>().spawnedAtRow = i;
+                    }
+                    // summonladıktan sonra hepsini resetle
+                    ResetPlayerSoldierContainers();
+                    chosenRandomSoldier = false;
+                    battlecontroller.GetComponent<BattleController>().playerDeathCounter = 0;
+                }
+                
+                else if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon && battlecontroller.GetComponent<BattleController>().playerDeathCounter < 20){
                     chooseRandomSummonPoint();
 
                     Transform summonPoint = parentTransformSummonPoints.GetChild(currentSelectedSummonPoint);

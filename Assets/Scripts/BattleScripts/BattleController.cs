@@ -15,8 +15,13 @@ public class BattleController : MonoBehaviour
     public bool playerWon;
     public bool playerLost;
     
+    public int enemyDeathCounter;
+    public int playerDeathCounter;
+
+    public GameObject pressQText;
 
     public void Awake(){
+        pressQText.SetActive(false);
         Transform parentTransformSoldierContainers = PlayerSoldierContainers.transform;
         parentTransformSoldierContainers.gameObject.GetComponent<PlayerSideSoldierContainersManager>().initContainers();
 
@@ -115,6 +120,43 @@ public class BattleController : MonoBehaviour
                 // summonladıktan sonra hepsini resetle
                 ResetPlayerSoldierContainers();
             }
+        }
+
+        if (enemyDeathCounter >= 20){
+            pressQText.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                Transform parentTransform = PlayerSoldierContainers.transform;
+
+                if (parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon){
+                    Transform transformSummonPoint = PlayerSummonPoints.transform;
+
+                    for (int i=0;i<8;i++){
+                        Transform summonPoint = transformSummonPoint.GetChild(i);
+
+                        float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
+
+                        Vector3 spawnPosition = summonPoint.position - new Vector3(0.5f, summonPointHeight / 2f, 0);
+
+                        GameObject playerSoldier = Instantiate(
+                            parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
+                            spawnPosition,
+                            Quaternion.identity);
+
+                        playerSoldier.tag = "Player";
+                        playerSoldier.GetComponent<Entity>().direction = "right";
+                        playerSoldier.GetComponent<Entity>().spawnedAtRow = i;
+                    }
+
+                    // summonladıktan sonra hepsini resetle
+                    ResetPlayerSoldierContainers();
+                    enemyDeathCounter = 0;
+                }
+            }
+        }
+        else{
+            pressQText.SetActive(false);
         }
 
         if (playerWon){
