@@ -58,6 +58,15 @@ public class Entity : MonoBehaviour
             animator.SetBool("Death", true);
 
             StartCoroutine(DestroyAfterDelay(5f));
+
+            if (gameObject.tag.Equals("Enemy")){
+                GameObject battleController = GameObject.Find("BattleController");
+                battleController.GetComponent<BattleController>().enemyDeathCounter += 1;
+            }
+            else if (gameObject.tag.Equals("Player")){
+                GameObject battleController = GameObject.Find("BattleController");
+                battleController.GetComponent<BattleController>().playerDeathCounter += 1;
+            }
         }
     }
 

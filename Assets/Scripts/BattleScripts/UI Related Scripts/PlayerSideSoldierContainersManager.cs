@@ -14,7 +14,7 @@ public class PlayerSideSoldierContainersManager : MonoBehaviour
 
             GameObject SoldierContainer = GameObject.Instantiate(SoldierContainerPrefab);
             SoldierContainer.transform.SetParent(gameObject.transform);
-            SoldierContainer.transform.localScale = new Vector3(1,1,1);
+            SoldierContainer.transform.localScale = new Vector3(0.75f,0.75f,0.75f);
 
             SoldierContainer.GetComponent<SoldierContainerManager>().SoldierContained = soldier;
             SetSummonTimers(SoldierContainer.GetComponent<SoldierContainerManager>().SoldierContained);
