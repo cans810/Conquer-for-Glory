@@ -13,32 +13,35 @@ public class CityInfo : MonoBehaviour
 
     public GameObject textObject;
     public GameObject buttonObject;
-
+    public GameObject imageObject;
     public List<GameObject> Soldiers;
 
-    public void Awake(){
-        
-    }
+    public List<GameObject> Neighbours;
+
+    public bool canAttack;
 
     // Start is called before the first frame update
     void Start()
     {
         if (isConqueredByPlayer){
+            buttonObject.GetComponent<Button>().interactable = false;
             cityName = "You";
             cityRaceType = GameManager.Instance.PlayerRace;
             textObject.GetComponent<TextMeshProUGUI>().text = cityName;
-            buttonObject.GetComponent<Button>().interactable = false;
+
+            GameManager.Instance.playerLandColor = imageObject.GetComponent<SpriteRenderer>().color;
         }
         else{
+            if (!canAttack){
+                buttonObject.GetComponent<Button>().interactable = false;
+            }
+            else if (canAttack){
+                buttonObject.GetComponent<Button>().interactable = true;
+            }
+
             textObject.GetComponent<TextMeshProUGUI>().text = cityName;
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void enterBattle(){

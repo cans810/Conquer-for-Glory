@@ -32,7 +32,6 @@ RectTransform:
   - {fileID: 4060392573433084031}
   - {fileID: 757155835060805259}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -56,7 +55,11 @@ MonoBehaviour:
   cityRaceType: 
   textObject: {fileID: 5123868970250025913}
   buttonObject: {fileID: 4846154892583102588}
+  imageObject: {fileID: 8297242571710293561}
+  playerLandColor: {r: 0, g: 0, b: 0, a: 0}
   Soldiers: []
+  Neighbours: []
+  canAttack: 0
 --- !u!1 &4846154892583102588
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +93,6 @@ RectTransform:
   m_Children:
   - {fileID: 3952955037053211596}
   m_Father: {fileID: 1312390592720374190}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -222,7 +224,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 757155835060805259}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -356,7 +357,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1312390592720374190}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

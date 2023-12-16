@@ -52,14 +52,14 @@ public class AxeManController : MonoBehaviour
     {
         if(!GetComponent<Entity>().dead){
             if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null){
-            gameObject.GetComponent<Entity>().animator.SetBool("Walk",false);
-            gameObject.GetComponent<Entity>().animator.SetBool("Axeman_Attack",true);
-        }
-        else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack){
-            gameObject.GetComponent<Entity>().animator.SetBool("Axeman_Attack",false);
-            gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
-            GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
-        }
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Axeman_Attack",true);
+            }
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack){
+                gameObject.GetComponent<Entity>().animator.SetBool("Axeman_Attack",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
+            }
         }
     }
 }

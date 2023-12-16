@@ -9,7 +9,7 @@ public class SorcererController : MonoBehaviour
     public GameObject sorcererArm;
 
     public bool isWalking;
-    public bool shouldShoot;
+    public bool isSpelling;
     public float walkTimer;
 
     public void Start(){
@@ -53,7 +53,6 @@ public class SorcererController : MonoBehaviour
         }
 
         isWalking = true;
-        shouldShoot = false;
         walkTimer = 0;
         entity.canGetKnockedBack = true;
     }
@@ -61,20 +60,18 @@ public class SorcererController : MonoBehaviour
     void Update()
     {
         if (!gameObject.GetComponent<Entity>().dead){
-            if (isWalking && !shouldShoot && !GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack)
-            {
+
+            if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !isSpelling){
+                isSpelling = true;
+                gameObject.GetComponent<Entity>().animator.SetBool("Sorcerer_Attack",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+            }
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack && !isSpelling){
+
                 gameObject.GetComponent<Entity>().animator.SetBool("Sorcerer_Attack",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
                 GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
-                walkTimer += Time.deltaTime; 
-                if (walkTimer >= 2f){
-                    isWalking = false;
-                    shouldShoot = true;
-                }
-            }
-            else if(shouldShoot && !isWalking){
-                gameObject.GetComponent<Entity>().animator.SetBool("Sorcerer_Attack",true);
-                gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+
             }
         }
     }
@@ -86,6 +83,10 @@ public class SorcererController : MonoBehaviour
 
         GameObject magicBulbObject = Instantiate(magicBulbPrefab, spawnPosition, sorcererArm.transform.rotation);
         magicBulbObject.GetComponent<MagicBulbController>().sourceEntity = gameObject;
+    }
+
+    public void magicSpellEnded(){
+        isSpelling = false;
     }
 
 }

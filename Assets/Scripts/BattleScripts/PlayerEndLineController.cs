@@ -8,7 +8,7 @@ public class PlayerEndLineController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
         if (otherCollider.tag.Equals("Player")){
-            battleController.GetComponent<BattleController>().playerProgress += 1;
+            battleController.GetComponent<BattleController>().playerProgress += 2;
             Destroy(otherCollider.gameObject);
         }
     }

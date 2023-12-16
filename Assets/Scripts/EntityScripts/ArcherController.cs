@@ -9,8 +9,9 @@ public class ArcherController : MonoBehaviour
     public GameObject archerArm;
 
     public bool isWalking;
-    public bool shouldShoot;
+    public bool isShooting;
     public float walkTimer;
+
 
     public void Start(){
         GameObject entityObject = gameObject;
@@ -53,7 +54,6 @@ public class ArcherController : MonoBehaviour
         }
 
         isWalking = true;
-        shouldShoot = false;
         walkTimer = 0;
         entity.canGetKnockedBack = true;
     }
@@ -61,20 +61,18 @@ public class ArcherController : MonoBehaviour
     void Update()
     {
         if (!gameObject.GetComponent<Entity>().dead){
-            if (isWalking && !shouldShoot && !GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack)
-            {
+
+            if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !isShooting){
+                isShooting = true;
+                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+            }
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack && !isShooting){
+
                 gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
                 GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
-                walkTimer += Time.deltaTime; 
-                if (walkTimer >= 2.5f){
-                    isWalking = false;
-                    shouldShoot = true;
-                }
-            }
-            else if(shouldShoot && !isWalking){
-                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",true);
-                gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+
             }
         }
     }
@@ -82,5 +80,9 @@ public class ArcherController : MonoBehaviour
     public void InstantiateAndShootArrow(){
         GameObject arrowObject = Instantiate(arrowPrefab,archerArm.transform.position,archerArm.transform.rotation);
         arrowObject.GetComponent<ArrowController>().sourceEntity = gameObject;
+    }
+
+    public void shootingEnded(){
+        isShooting = false;
     }
 }
