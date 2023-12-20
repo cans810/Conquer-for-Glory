@@ -10,7 +10,7 @@ public class BattleController : MonoBehaviour
     public int currentSelectedSummonPoint;
     public int currentSelectedSoldierContainer;
 
-    public float playerProgress;
+    public int playerProgress;
 
     public bool playerWon;
     public bool playerLost;
@@ -19,12 +19,8 @@ public class BattleController : MonoBehaviour
     public int playerDeathCounter;
 
     public GameObject pressQText;
-    public GameObject winCanvas;
-    public GameObject loseCanvas;
 
     public void Awake(){
-        winCanvas.SetActive(false);
-        loseCanvas.SetActive(false);
         pressQText.SetActive(false);
         Transform parentTransformSoldierContainers = PlayerSoldierContainers.transform;
         parentTransformSoldierContainers.gameObject.GetComponent<PlayerSideSoldierContainersManager>().initContainers();
@@ -164,11 +160,11 @@ public class BattleController : MonoBehaviour
         }
 
         if (playerWon){
-            winCanvas.SetActive(true);
+            // you won window
             // give some coins
         }
         else if (playerLost){
-            loseCanvas.SetActive(true);
+            // every soldier run back + you lost window
             // dont give coins
         }
 

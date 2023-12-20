@@ -10,7 +10,7 @@ public class BattleController : MonoBehaviour
     public int currentSelectedSummonPoint;
     public int currentSelectedSoldierContainer;
 
-    public float playerProgress;
+    public int playerProgress;
 
     public bool playerWon;
     public bool playerLost;

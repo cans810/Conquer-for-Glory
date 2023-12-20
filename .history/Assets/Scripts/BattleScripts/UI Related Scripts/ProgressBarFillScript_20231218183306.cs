@@ -25,8 +25,5 @@ public class ProgressBarFillScript : MonoBehaviour
         if (battleController.GetComponent<BattleController>().playerProgress >= 100){
             battleController.GetComponent<BattleController>().playerWon = true;
         }
-        else if (battleController.GetComponent<BattleController>().playerProgress <= 0){
-            battleController.GetComponent<BattleController>().playerLost = true;
-        }
     }
 }

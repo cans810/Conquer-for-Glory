@@ -8,7 +8,7 @@ public class EnemyEndLineController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
         if (otherCollider.tag.Equals("Enemy")){
-            battleController.GetComponent<BattleController>().playerProgress -= 2.5f;
+            battleController.GetComponent<BattleController>().playerProgress -= 2;
             Destroy(otherCollider.gameObject);
         }
     }

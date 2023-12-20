@@ -22,9 +22,4 @@ public class BattleUIManager : MonoBehaviour
 
         SceneManager.LoadScene("MapScene");
     }
-
-    public void loseBattle(){
-
-        SceneManager.LoadScene("MapScene");
-    }
 }
