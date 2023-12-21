@@ -1549,7 +1549,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 42.28586, y: 8.996064}
+  m_Offset: {x: -1.5840766, y: 9.425101}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1560,7 +1560,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 94.10881, y: 3.2438393}
+  m_Size: {x: 4.389009, y: 11.4935055}
   m_EdgeRadius: 0
 --- !u!50 &7855149648092598505
 Rigidbody2D:
@@ -1657,7 +1657,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 6269902086951136706, guid: d66cace1f513449458ea295e0a02fbed, type: 3}
   archerArm: {fileID: 3281291810430104134}
   isWalking: 1
-  shouldShoot: 0
+  isShooting: 0
   walkTimer: 0
 --- !u!114 &9138387151500720390
 MonoBehaviour:

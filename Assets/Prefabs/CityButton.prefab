@@ -56,7 +56,6 @@ MonoBehaviour:
   textObject: {fileID: 5123868970250025913}
   buttonObject: {fileID: 4846154892583102588}
   imageObject: {fileID: 8297242571710293561}
-  playerLandColor: {r: 0, g: 0, b: 0, a: 0}
   Soldiers: []
   Neighbours: []
   canAttack: 0
@@ -96,8 +95,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 14.999, y: 0}
+  m_SizeDelta: {x: 130, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2873863516112270124
 CanvasRenderer:

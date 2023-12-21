@@ -145,6 +145,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrollLand_3
       objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -49
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33
+      objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -286,9 +294,33 @@ PrefabInstance:
       value: Troll
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: b1df8240b20dcdb4781b1d4989c1dc56, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f918f42d11ed2dd4691fb3bcd5182620, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: d96c1d22183816f4dab4096115bc05a6, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: a95a3b1ee9a15cd4193188b6d90a43aa, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 0ff28d852d13de8478b5f418609c7f07, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -342,6 +374,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: OrcCity_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -477,7 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
@@ -486,7 +526,23 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[0]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: c7c5d0637d82e604aa420ae7fd4c764d, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 763e161dfc0e18c47b80b2e9507ef02c, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 8f43bbeb10dba6b458c136689b5a6346, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 7370127f52837b441917d11a54fd16a8, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 4bdd9c926aa829d4a8083a760b37f23e, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 5b391606a86b67448b4397a993cc4fb9, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -659,6 +715,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ElfLand_4
       objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -800,9 +864,33 @@ PrefabInstance:
       value: Elf
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: ee7b8d7626f1a804fac1a291798573e5, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 02847a5e956b2874d9db14cdd1562e58, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 0ef20a3563e5f0d4a87c70435abd83dc, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 076315711602ec141808df6dda13358b, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 3aa764ae3032450439fe7e8f270437dd, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -852,6 +940,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: TrollLand_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -27
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -994,9 +1090,37 @@ PrefabInstance:
       value: Troll
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: b1df8240b20dcdb4781b1d4989c1dc56, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f918f42d11ed2dd4691fb3bcd5182620, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: a95a3b1ee9a15cd4193188b6d90a43aa, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 09d0f6029f8ea304ab40198cf0f67d75, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 0ff28d852d13de8478b5f418609c7f07, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[5]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: bed1bd784d01199488ce7c6359c29349, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -1180,9 +1304,33 @@ PrefabInstance:
       value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 78410869892ef924db84cd15dde272d3, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 4966e41b88ea8f84eb048031af766e0f, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c3882a5507c5ac14581f639494ce71e7, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 346f7d07a990b3846adc9e523ed0ac17, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: b009292fb8a6b654f9d4aad0e9a0848d, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -1236,6 +1384,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: HumanCity_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -1362,9 +1518,33 @@ PrefabInstance:
       value: Human
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 539afcf4a43c41c4892023593a3422b4, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f659b6d2ce27c054483e7c202df8a668, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 46df6969ee1915748ad8ab6d84a8d831, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: ddcda32a5aa35504fbd6f0a69949a2e9, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f77050027580bba4690921e89a5f5396, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -1410,6 +1590,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: ElfLand_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -1552,9 +1740,33 @@ PrefabInstance:
       value: Elf
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: ee7b8d7626f1a804fac1a291798573e5, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 02847a5e956b2874d9db14cdd1562e58, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 0ef20a3563e5f0d4a87c70435abd83dc, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 3aa764ae3032450439fe7e8f270437dd, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 6b3c9ebacc6f78642aacd5321d97aa22, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -1729,6 +1941,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: ElfLand_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -2193,6 +2413,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ElfLand_2
       objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -21
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8
+      objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2318,9 +2546,33 @@ PrefabInstance:
       value: Elf
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: ee7b8d7626f1a804fac1a291798573e5, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 02847a5e956b2874d9db14cdd1562e58, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 300f120456b6a9f4db60f8cabc0b9030, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 076315711602ec141808df6dda13358b, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 5e34687f4d1da3c4c8c17f605f93fd7e, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -2387,6 +2639,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: DemonLand_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -2529,9 +2789,33 @@ PrefabInstance:
       value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 78410869892ef924db84cd15dde272d3, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 4966e41b88ea8f84eb048031af766e0f, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 729e35008581119418cc71d3c44fefbc, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 31cbd2ebe178ece4f85bd01eaa2be898, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 729e35008581119418cc71d3c44fefbc, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -2583,6 +2867,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: OrcCity_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -2709,9 +3001,29 @@ PrefabInstance:
       value: Orc
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 763e161dfc0e18c47b80b2e9507ef02c, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 8f43bbeb10dba6b458c136689b5a6346, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c2792678cad04574bba9a8c4c5de65a6, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 2ca9da674ceb57845b757008ca3494a0, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -2918,7 +3230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
@@ -2935,9 +3247,13 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[2]
       value: 
-      objectReference: {fileID: 6751278794164780428, guid: 01cc39ce6b19d0c41b396911f96242b5, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: d96c1d22183816f4dab4096115bc05a6, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: bed1bd784d01199488ce7c6359c29349, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
       value: 
       objectReference: {fileID: 6751278794164780428, guid: 01cc39ce6b19d0c41b396911f96242b5, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
@@ -2985,6 +3301,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: DemonLand_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -3123,9 +3447,33 @@ PrefabInstance:
       value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 78410869892ef924db84cd15dde272d3, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 4966e41b88ea8f84eb048031af766e0f, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c3882a5507c5ac14581f639494ce71e7, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 23a748f3c3bd03f4e876850d6fdced21, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 729e35008581119418cc71d3c44fefbc, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -3268,6 +3616,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanCity_3
       objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
+      objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3393,9 +3749,33 @@ PrefabInstance:
       value: Human
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 539afcf4a43c41c4892023593a3422b4, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f659b6d2ce27c054483e7c202df8a668, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f77050027580bba4690921e89a5f5396, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 1f38421d68c7b1f48887f759612eee17, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: a7c2cbc7d19ff8947b41dcba4d066861, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -3453,6 +3833,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: OrcCity_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -3595,9 +3983,29 @@ PrefabInstance:
       value: Orc
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 763e161dfc0e18c47b80b2e9507ef02c, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 8f43bbeb10dba6b458c136689b5a6346, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 7370127f52837b441917d11a54fd16a8, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 4bdd9c926aa829d4a8083a760b37f23e, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -3883,6 +4291,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrollLand_2
       objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4024,9 +4440,33 @@ PrefabInstance:
       value: Troll
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: b1df8240b20dcdb4781b1d4989c1dc56, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f918f42d11ed2dd4691fb3bcd5182620, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 09d0f6029f8ea304ab40198cf0f67d75, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 979b5115e26e84f46a06b807c2514873, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: d96c1d22183816f4dab4096115bc05a6, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -4085,6 +4525,18 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: DemonLand_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -4219,9 +4671,37 @@ PrefabInstance:
       value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 78410869892ef924db84cd15dde272d3, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 4966e41b88ea8f84eb048031af766e0f, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c3882a5507c5ac14581f639494ce71e7, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 7772cdeece5d1e0428b1d71cde397a83, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 23a748f3c3bd03f4e876850d6fdced21, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[5]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 31cbd2ebe178ece4f85bd01eaa2be898, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -4272,6 +4752,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: HumanCity_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -4414,9 +4902,33 @@ PrefabInstance:
       value: Human
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 539afcf4a43c41c4892023593a3422b4, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f659b6d2ce27c054483e7c202df8a668, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: f77050027580bba4690921e89a5f5396, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: a7c2cbc7d19ff8947b41dcba4d066861, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: ddcda32a5aa35504fbd6f0a69949a2e9, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -4466,6 +4978,14 @@ PrefabInstance:
     - target: {fileID: 479109590638620588, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Name
       value: OrcCity_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
@@ -4608,9 +5128,37 @@ PrefabInstance:
       value: Orc
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 763e161dfc0e18c47b80b2e9507ef02c, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 8f43bbeb10dba6b458c136689b5a6346, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: c126b1c294220f8459d339e46f6c435d, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 7370127f52837b441917d11a54fd16a8, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[4]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: a5dc7a59ab581754790e81af293ea3ef, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[5]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 2ca9da674ceb57845b757008ca3494a0, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -4790,6 +5338,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanCity_1
       objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -49
+      objectReference: {fileID: 0}
+    - target: {fileID: 757155835060805259, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1312390592720374190, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4952,7 +5508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
@@ -4961,7 +5517,19 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6079369688937038354, guid: 539afcf4a43c41c4892023593a3422b4, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: fce53e1f85085c748a2698042bdcd8d0, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 46df6969ee1915748ad8ab6d84a8d831, type: 3}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: Soldiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 6079369688937038354, guid: 3e4128a51e8d643418655867ff3b4969, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
