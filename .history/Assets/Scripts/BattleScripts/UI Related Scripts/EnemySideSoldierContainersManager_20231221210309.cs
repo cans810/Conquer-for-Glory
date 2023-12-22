@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSideSoldierContainersManager : MonoBehaviour
+public class EnemySideSoldierContainersManager : MonoBehaviour
 {
     public GameObject SoldierContainerPrefab;
 
-    public void Awake(){
-    }
 
     public void initContainers(){
-        foreach (GameObject soldier in GameManager.Instance.PlayerSoldiers){
+        foreach (GameObject soldier in GameManager.Instance.CurrentEnemySoldiers){
 
             GameObject SoldierContainer = GameObject.Instantiate(SoldierContainerPrefab);
             SoldierContainer.transform.SetParent(gameObject.transform);

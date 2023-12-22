@@ -176,12 +176,7 @@ public class MarketManager : MonoBehaviour
     public void Update(){
         playerBalance.GetComponent<TextMeshProUGUI>().text = GameManager.Instance.balance.ToString();
 
-        if (currentSelectedSoldier == null){
-            currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = "";
-            selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = "";
-        }
-
-        else if (currentSelectedSoldier != null){
+        if (currentSelectedSoldier != null){
             currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.name;
             selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.GetComponent<SoldierMarketController>().price.ToString();
         }

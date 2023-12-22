@@ -172,8 +172,7 @@ public class BattleController : MonoBehaviour
         }
         else if (playerLost){
             loseCanvas.SetActive(true);
-
-            GameManager.Instance.balance -= 50;
+            // dont give coins
         }
 
     }

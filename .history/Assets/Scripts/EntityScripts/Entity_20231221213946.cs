@@ -62,7 +62,6 @@ public class Entity : MonoBehaviour
             if (gameObject.tag.Equals("Enemy")){
                 GameObject battleController = GameObject.Find("BattleController");
                 battleController.GetComponent<BattleController>().enemyDeathCounterUlti += 1;
-                battleController.GetComponent<BattleController>().enemyDeathCounterCoin += 1;
             }
             else if (gameObject.tag.Equals("Player")){
                 GameObject battleController = GameObject.Find("BattleController");

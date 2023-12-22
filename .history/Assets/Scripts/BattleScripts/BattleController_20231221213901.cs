@@ -17,7 +17,6 @@ public class BattleController : MonoBehaviour
     
     public int enemyDeathCounterUlti;
     public int playerDeathCounterUlti;
-    public int enemyDeathCounterCoin;
 
     public GameObject pressQText;
     public GameObject winCanvas;
@@ -38,7 +37,6 @@ public class BattleController : MonoBehaviour
         parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().selected = true;
 
         playerProgress = 50;
-        enemyDeathCounterCoin = 0;
     }
 
     // Start is called before the first frame update
@@ -167,13 +165,11 @@ public class BattleController : MonoBehaviour
 
         if (playerWon){
             winCanvas.SetActive(true);
-            
-            GameManager.Instance.balance += 300 + enemyDeathCounterCoin;
+            // give some coins
         }
         else if (playerLost){
             loseCanvas.SetActive(true);
-
-            GameManager.Instance.balance -= 50;
+            // dont give coins
         }
 
     }

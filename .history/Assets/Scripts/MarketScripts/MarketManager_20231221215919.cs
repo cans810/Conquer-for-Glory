@@ -62,26 +62,26 @@ public class MarketManager : MonoBehaviour
         GameObject actualSoldierGameObject = null;
 
         if (GameManager.Instance.balance >= currentSelectedSoldier.GetComponent<SoldierMarketController>().price){
-                if (GameManager.Instance.PlayerRace.Equals("Human")){
-                    if (currentSelectedSoldier.name.Equals("AxeMan")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
-                    }
-                    else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[1];
-                    }
-                    else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[2];
-                    }
-                    else if (currentSelectedSoldier.name.Equals("HatchetMan")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[3];
-                    }
-                    else if (currentSelectedSoldier.name.Equals("Sorcerer")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[4];
-                    }
-                    else if (currentSelectedSoldier.name.Equals("KingsKnight")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[5];
-                    }
+            if (GameManager.Instance.PlayerRace.Equals("Human")){
+                if (currentSelectedSoldier.name.Equals("AxeMan")){
+                    actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
                 }
+                else if (currentSelectedSoldier.name.Equals("MountedSpearMan")){
+                    actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[1];
+                }
+                else if (currentSelectedSoldier.name.Equals("MountedSwordsMan")){
+                    actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[2];
+                }
+                else if (currentSelectedSoldier.name.Equals("HatchetMan")){
+                    actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[3];
+                }
+                else if (currentSelectedSoldier.name.Equals("Sorcerer")){
+                    actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[4];
+                }
+                else if (currentSelectedSoldier.name.Equals("KingsKnight")){
+                    actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[5];
+                }
+            }
                 if (GameManager.Instance.PlayerRace.Equals("Elf")){
                     if (currentSelectedSoldier.name.Equals("AxeMan")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[0];
@@ -163,12 +163,7 @@ public class MarketManager : MonoBehaviour
                     }
                 }
 
-                GameManager.Instance.balance -= currentSelectedSoldier.GetComponent<SoldierMarketController>().price;
-                Destroy(currentSelectedSoldier);
-                GameManager.Instance.PlayerSoldiers.Add(actualSoldierGameObject);
-        }
-        else{
-            Debug.Log("Your balance is not enough");
+            GameManager.Instance.PlayerSoldiers.Add(actualSoldierGameObject);
         }
 
     }
@@ -176,12 +171,7 @@ public class MarketManager : MonoBehaviour
     public void Update(){
         playerBalance.GetComponent<TextMeshProUGUI>().text = GameManager.Instance.balance.ToString();
 
-        if (currentSelectedSoldier == null){
-            currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = "";
-            selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = "";
-        }
-
-        else if (currentSelectedSoldier != null){
+        if (currentSelectedSoldier != null){
             currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.name;
             selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.GetComponent<SoldierMarketController>().price.ToString();
         }

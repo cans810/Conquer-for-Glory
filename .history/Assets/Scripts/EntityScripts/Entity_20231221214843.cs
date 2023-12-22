@@ -23,6 +23,8 @@ public class Entity : MonoBehaviour
     public bool dead;
     public int spawnedAtRow;
 
+    public int price;
+
     public void Awake(){
     }
 

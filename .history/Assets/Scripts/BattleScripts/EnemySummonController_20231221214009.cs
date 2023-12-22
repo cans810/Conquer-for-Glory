@@ -55,10 +55,10 @@ public class EnemySummonController : MonoBehaviour
                     // summonladıktan sonra hepsini resetle
                     ResetPlayerSoldierContainers();
                     chosenRandomSoldier = false;
-                    battlecontroller.GetComponent<BattleController>().playerDeathCounterUlti = 0;
+                    battlecontroller.GetComponent<BattleController>().playerDeathCounter = 0;
                 }
                 
-                else if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon && battlecontroller.GetComponent<BattleController>().playerDeathCounterUlti < 20){
+                else if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().canSummon && battlecontroller.GetComponent<BattleController>().playerDeathCounter < 20){
                     chooseRandomSummonPoint();
 
                     Transform summonPoint = parentTransformSummonPoints.GetChild(currentSelectedSummonPoint);

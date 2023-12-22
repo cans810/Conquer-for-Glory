@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 
 
     public bool allLandsConquered;
-    public int balance;
 
     private void Awake()
     {

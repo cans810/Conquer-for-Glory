@@ -167,13 +167,11 @@ public class BattleController : MonoBehaviour
 
         if (playerWon){
             winCanvas.SetActive(true);
-            
-            GameManager.Instance.balance += 300 + enemyDeathCounterCoin;
+            // give some coins
         }
         else if (playerLost){
             loseCanvas.SetActive(true);
-
-            GameManager.Instance.balance -= 50;
+            // dont give coins
         }
 
     }
