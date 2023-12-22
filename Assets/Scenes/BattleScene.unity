@@ -926,7 +926,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 171176843}
         m_TargetAssemblyTypeName: BattleUIManager, Assembly-CSharp
-        m_MethodName: loseBattle
+        m_MethodName: loadMapScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1059,7 +1059,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 171176843}
         m_TargetAssemblyTypeName: BattleUIManager, Assembly-CSharp
-        m_MethodName: winBattle
+        m_MethodName: loadMapScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2447,8 +2447,10 @@ MonoBehaviour:
   playerProgress: 0
   playerWon: 0
   playerLost: 0
-  enemyDeathCounter: 0
-  playerDeathCounter: 0
+  battleEnded: 0
+  enemyDeathCounterUlti: 0
+  playerDeathCounterUlti: 0
+  enemyDeathCounterCoin: 0
   pressQText: {fileID: 19727287}
   winCanvas: {fileID: 1915937762}
   loseCanvas: {fileID: 1351229600}
