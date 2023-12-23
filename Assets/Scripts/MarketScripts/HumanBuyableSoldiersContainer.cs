@@ -9,4 +9,10 @@ public class HumanBuyableSoldiersContainer : MonoBehaviour
     public GameObject[] OrcSpecialBuyableSoldiers;
     public GameObject[] DemonSpecialBuyableSoldiers;
     public GameObject[] TrollSpecialBuyableSoldiers;
+
+    public GameObject[] HumanUpgradeSoldiers;
+    public GameObject[] ElfUpgradeSoldiers;
+    public GameObject[] OrcUpgradeSoldiers;
+    public GameObject[] DemonUpgradeSoldiers;
+    public GameObject[] TrollUpgradeSoldiers;
 }

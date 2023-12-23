@@ -21,35 +21,35 @@ public class ArcherController : MonoBehaviour
             entity.damage = 0.7f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
-            entity.speed = 0.8f;
+            entity.speed = 0.5f;
         }
         else if (entity.race.Equals("Orc")){
             entity.HP = 6;
             entity.damage = 0.7f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
-            entity.speed = 0.8f;
+            entity.speed = 0.5f;
         }
         else if (entity.race.Equals("Troll")){
             entity.HP = 5;
             entity.damage = 0.7f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
-            entity.speed = 0.8f;
+            entity.speed = 0.5f;
         }
         else if (entity.race.Equals("Demon")){
             entity.HP = 6;
             entity.damage = 0.7f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
-            entity.speed = 0.8f;
+            entity.speed = 0.5f;
         }
         else if (entity.race.Equals("Elf")){
             entity.HP = 5;
             entity.damage = 0.9f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
-            entity.speed = 0.8f;
+            entity.speed = 0.6f;
         }
 
         isWalking = true;

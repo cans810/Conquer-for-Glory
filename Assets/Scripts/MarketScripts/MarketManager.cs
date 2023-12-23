@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MarketManager : MonoBehaviour
-{
+{   
     public GameObject HumanMarket;
     public GameObject ElfMarket;
     public GameObject OrcMarket;
@@ -15,8 +16,14 @@ public class MarketManager : MonoBehaviour
     public GameObject currentSelectedSoldier;
     public GameObject currentSelectedSoldierInfoText;
 
+    public GameObject currentSelectedUpgrade;
+    public GameObject currentSelectedUpgradeInfoText;
+
+
     public GameObject playerBalance;
     public GameObject selectedSoldierPrice;
+
+    public GameObject selectedUpgradePrice;
 
     // Start is called before the first frame update
     void Start()
@@ -57,12 +64,131 @@ public class MarketManager : MonoBehaviour
             DemonMarket.SetActive(true);
         }
     }
+    public void buySelectedUpgrade(){
+        GameObject actualUpgradeGameObject =null;
+
+        if(GameManager.Instance.balance>=currentSelectedUpgrade.GetComponent<SoldierMarketController>().price){
+            if(GameManager.Instance.PlayerRace.Equals("Human")){
+                if(currentSelectedUpgrade.name.Equals("Speed Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().HumanUpgradeSoldiers[0];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Armour Increase")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().HumanUpgradeSoldiers[1];
+                }
+
+                else if(currentSelectedUpgrade.name.Equals("Archery")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().HumanUpgradeSoldiers[2];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Spear Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().HumanUpgradeSoldiers[3];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Sword Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().HumanUpgradeSoldiers[4];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Axe Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().HumanUpgradeSoldiers[5];
+                }
+            }
+
+            if(GameManager.Instance.PlayerRace.Equals("Elf")){
+                if(currentSelectedUpgrade.name.Equals("Speed Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().ElfUpgradeSoldiers[0];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Armour Increase")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().ElfUpgradeSoldiers[1];
+                }
+
+                else if(currentSelectedUpgrade.name.Equals("Archery")){
+                    actualUpgradeGameObject=GetComponent<HumanBuyableSoldiersContainer>().ElfUpgradeSoldiers[2];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Spear Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().ElfUpgradeSoldiers[3];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Sword Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().ElfUpgradeSoldiers[4];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Axe Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().ElfUpgradeSoldiers[5];
+                }
+            }
+
+            if(GameManager.Instance.PlayerRace.Equals("Orc")){
+                if(currentSelectedUpgrade.name.Equals("Speed Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().OrcUpgradeSoldiers[0];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Armour Increase")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().OrcUpgradeSoldiers[1];
+                }
+
+                else if(currentSelectedUpgrade.name.Equals("Archery")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().OrcUpgradeSoldiers[2];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Spear Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().OrcUpgradeSoldiers[3];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Sword Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().OrcUpgradeSoldiers[4];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Axe Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().OrcUpgradeSoldiers[5];
+                }
+            }
+
+            if(GameManager.Instance.PlayerRace.Equals("Demon")){
+                if(currentSelectedUpgrade.name.Equals("Speed Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().DemonUpgradeSoldiers[0];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Armour Increase")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().DemonUpgradeSoldiers[1];
+                }
+
+                else if(currentSelectedUpgrade.name.Equals("Archery")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().DemonUpgradeSoldiers[2];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Spear Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().DemonUpgradeSoldiers[3];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Sword Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().DemonUpgradeSoldiers[4];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Axe Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().DemonUpgradeSoldiers[5];
+                }
+            }
+
+            if(GameManager.Instance.PlayerRace.Equals("Troll")){
+                if(currentSelectedUpgrade.name.Equals("Speed Training")){
+                    actualUpgradeGameObject=GetComponent<HumanBuyableSoldiersContainer>().TrollUpgradeSoldiers[0];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Armour Increase")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().TrollUpgradeSoldiers[1];
+                }
+
+                else if(currentSelectedUpgrade.name.Equals("Archery")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().TrollUpgradeSoldiers[2];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Spear Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().TrollUpgradeSoldiers[3];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Sword Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().TrollUpgradeSoldiers[4];
+                }
+                else if(currentSelectedUpgrade.name.Equals("Axe Training")){
+                    actualUpgradeGameObject= GetComponent<HumanBuyableSoldiersContainer>().TrollUpgradeSoldiers[5];
+                }
+            }
+        }
+        else{
+            Debug.Log("Your balance is not enough");
+        }
+    }
 
     public void buySelectedSoldier(){
         GameObject actualSoldierGameObject = null;
 
         if (GameManager.Instance.balance >= currentSelectedSoldier.GetComponent<SoldierMarketController>().price){
                 if (GameManager.Instance.PlayerRace.Equals("Human")){
+
                     if (currentSelectedSoldier.name.Equals("AxeMan")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[0];
                     }
@@ -176,6 +302,10 @@ public class MarketManager : MonoBehaviour
     public void Update(){
         playerBalance.GetComponent<TextMeshProUGUI>().text = GameManager.Instance.balance.ToString();
 
+        if(currentSelectedUpgrade!=null){
+            Debug.Log("Thats ok it works");
+        }
+
         if (currentSelectedSoldier == null){
             currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = "";
             selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = "";
@@ -185,6 +315,15 @@ public class MarketManager : MonoBehaviour
             currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.name;
             selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = currentSelectedSoldier.GetComponent<SoldierMarketController>().price.ToString();
         }
+
+        else if(currentSelectedUpgrade ==null){
+           // currentSelectedUpgradeInfoText.GetComponent<TextMeshProGUI>().text="";
+           // selectedUpgradePrice.GetComponent<TextMeshProGUI>().text="";
+        }
+
+        if(currentSelectedUpgrade !=null){
+           currentSelectedUpgrade.transform.Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text = currentSelectedUpgrade.name;
+        } 
     }
 
     public void GoToMap(){
