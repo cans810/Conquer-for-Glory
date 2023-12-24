@@ -302,6 +302,10 @@ public class MarketManager : MonoBehaviour
     public void Update(){
         playerBalance.GetComponent<TextMeshProUGUI>().text = GameManager.Instance.balance.ToString();
 
+        if(currentSelectedUpgrade!=null){
+            Debug.Log("Thats ok it works");
+        }
+
         if (currentSelectedSoldier == null){
             currentSelectedSoldierInfoText.GetComponent<TextMeshProUGUI>().text = "";
             selectedSoldierPrice.GetComponent<TextMeshProUGUI>().text = "";
@@ -313,7 +317,7 @@ public class MarketManager : MonoBehaviour
         }
 
         if(currentSelectedUpgrade != null){
-            currentSelectedUpgradeInfoText.GetComponent<TextMeshProUGUI>().text = currentSelectedUpgrade.transform.Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text;
+           currentSelectedUpgrade.transform.Find("Text (TMP)").gameObject.GetComponent<TextMeshProUGUI>().text = currentSelectedUpgrade.name;
         } 
     }
 

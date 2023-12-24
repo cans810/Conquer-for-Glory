@@ -6953,7 +6953,7 @@ GameObject:
   - component: {fileID: 556470008}
   - component: {fileID: 556470007}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: UpgradesTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16282,7 +16282,7 @@ MonoBehaviour:
   currentSelectedSoldier: {fileID: 0}
   currentSelectedSoldierInfoText: {fileID: 1361562521}
   currentSelectedUpgrade: {fileID: 0}
-  currentSelectedUpgradeInfoText: {fileID: 556470005}
+  currentSelectedUpgradeInfoText: {fileID: 1174631902}
   playerBalance: {fileID: 1809921811}
   selectedSoldierPrice: {fileID: 1019939706}
   selectedUpgradePrice: {fileID: 0}
@@ -16378,8 +16378,8 @@ RectTransform:
   - {fileID: 1526595190}
   - {fileID: 1019939709}
   - {fileID: 725515100}
-  - {fileID: 556470006}
   - {fileID: 1399642888}
+  - {fileID: 556470006}
   - {fileID: 1174631903}
   - {fileID: 1415535865}
   - {fileID: 1037237000}
