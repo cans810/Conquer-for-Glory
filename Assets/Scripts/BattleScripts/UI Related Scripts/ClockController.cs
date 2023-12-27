@@ -20,14 +20,14 @@ public class ClockController : MonoBehaviour
         
         timer += Time.deltaTime;
 
-        float fillAmount = Mathf.Clamp01(timer / 300f);
+        float fillAmount = Mathf.Clamp01(timer / 360f);
 
         if (fillImage != null)
         {
             fillImage.GetComponent<Image>().fillAmount = fillAmount;
         }
 
-        if (timer >= 6000)
+        if (fillImage.GetComponent<Image>().fillAmount == 1)
         {
             GameObject battleController = GameObject.Find("BattleController");
             battleController.GetComponent<BattleController>().playerWon = false;
