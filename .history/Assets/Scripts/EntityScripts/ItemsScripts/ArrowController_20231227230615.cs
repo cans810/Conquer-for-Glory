@@ -24,6 +24,7 @@ public class ArrowController : MonoBehaviour
 
         direction = Quaternion.Euler(0, 0, randomAngle) * direction;
 
+        // Apply force in the direction specified by the entity's direction string
         rb.velocity = direction * forwardForce;
     }
 

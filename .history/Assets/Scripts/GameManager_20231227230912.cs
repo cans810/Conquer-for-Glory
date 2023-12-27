@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance; // Singleton instance
 
     public List<GameObject> PlayerSoldiers;
     public string PlayerRace;

@@ -18,8 +18,10 @@ public class EntityCommonActions : MonoBehaviour
 
     public void walk(string direction, float speed)
     {
+        // Convert the direction string to a Vector3 direction
         Vector3 moveDirection = Vector3.zero;
 
+        // Set the move direction based on the input direction string
         switch (direction.ToLower())
         {
             case "right":

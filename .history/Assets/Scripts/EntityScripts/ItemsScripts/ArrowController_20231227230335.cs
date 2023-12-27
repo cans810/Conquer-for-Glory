@@ -24,6 +24,7 @@ public class ArrowController : MonoBehaviour
 
         direction = Quaternion.Euler(0, 0, randomAngle) * direction;
 
+        // Apply force in the direction specified by the entity's direction string
         rb.velocity = direction * forwardForce;
     }
 
@@ -32,9 +33,10 @@ public class ArrowController : MonoBehaviour
         Entity entityComponent = sourceEntity.GetComponent<Entity>();
         if (entityComponent != null)
         {
-            string directionString = entityComponent.direction;
+            string directionString = entityComponent.direction; // Assuming direction is stored as a string in the Entity component
             Vector2 direction = Vector2.zero;
 
+            // Set the direction based on the string value
             switch (directionString)
             {
                 case "right":
@@ -43,11 +45,12 @@ public class ArrowController : MonoBehaviour
                 case "left":
                     direction = Vector2.left;
                     break;
+                // Add more cases for other directions if needed
                 default:
                     break;
             }
 
-            return direction.normalized;
+            return direction.normalized; // Normalize the direction vector before using it for velocity
         }
 
         return Vector2.zero;
