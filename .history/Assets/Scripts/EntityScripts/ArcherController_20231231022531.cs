@@ -11,9 +11,6 @@ public class ArcherController : MonoBehaviour
     public bool isWalking;
     public bool isShooting;
 
-    public float arrowLowerAngleBound;
-    public float arrowUpperAngleBound;
-
 
     public void Start(){
         GameObject entityObject = gameObject;
@@ -25,9 +22,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Orc")){
             entity.HP = 6;
@@ -35,9 +29,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Troll")){
             entity.HP = 5;
@@ -45,9 +36,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Demon")){
             entity.HP = 6;
@@ -55,9 +43,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Elf")){
             entity.HP = 5;
@@ -65,9 +50,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.6f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
 
         isWalking = true;
@@ -94,8 +76,39 @@ public class ArcherController : MonoBehaviour
     }
 
     public void InstantiateAndShootArrow(){
+        Vector2 direction = GetDirectionFromEntity();
+        int randomAngle = UnityEngine.Random.Range(-5,5);
+
+        direction = Quaternion.Euler(0, 0, randomAngle) * direction;
+
         GameObject arrowObject = Instantiate(arrowPrefab,archerArm.transform.position,archerArm.transform.rotation);
         arrowObject.GetComponent<ArrowController>().sourceEntity = gameObject;
+    }
+
+    Vector2 GetDirectionFromEntity()
+    {
+        Entity entityComponent = gameObject.GetComponent<Entity>();
+        if (entityComponent != null)
+        {
+            string directionString = entityComponent.direction;
+            Vector2 direction = Vector2.zero;
+
+            switch (directionString)
+            {
+                case "right":
+                    direction = Vector2.right;
+                    break;
+                case "left":
+                    direction = Vector2.left;
+                    break;
+                default:
+                    break;
+            }
+
+            return direction.normalized;
+        }
+
+        return Vector2.zero;
     }
 
     public void shootingEnded(){

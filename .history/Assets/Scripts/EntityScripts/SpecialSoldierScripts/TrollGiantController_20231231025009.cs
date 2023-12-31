@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KingsKnightController : MonoBehaviour
+public class TrollGiantController : MonoBehaviour
 {
 
     public bool playingAttackAnim;
@@ -11,15 +11,15 @@ public class KingsKnightController : MonoBehaviour
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
-        // only for elfs
-        if (entity.race.Equals("Human")){
-            entity.HP = 16;
-            entity.damage = 1.9f;
-            entity.knockbackForce = 1.5f;
-            entity.knockbackDuration = 0.15f;
-            entity.speed = 0.65f;
+        if (entity.race.Equals("Troll")){
+            entity.HP = 45;
+            entity.damage = 4f;
+            entity.knockbackForce = 1.7f;
+            entity.knockbackDuration = 0.20f;
+            entity.speed = 0.3f;
+
+            entity.canGetKnockedBack = false;
         }
-        entity.canGetKnockedBack = true;
     }
 
     // Update is called once per frame
@@ -29,24 +29,24 @@ public class KingsKnightController : MonoBehaviour
             if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !playingAttackAnim){
                 int randomAttack = UnityEngine.Random.Range(0,2);
 
-                gameObject.GetComponent<Entity>().animator.SetBool("Walk",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Giant_Walk",false);
 
                 if (randomAttack == 0){
-                    gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",false);
-                    gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",true);
+                    gameObject.GetComponent<Entity>().animator.SetBool("Giant_Attack_2",false);
+                    gameObject.GetComponent<Entity>().animator.SetBool("Giant_Attack_1",true);
                 }
                 else if (randomAttack == 1){
-                    gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",false);
-                    gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",true);
+                    gameObject.GetComponent<Entity>().animator.SetBool("Giant_Attack_1",false);
+                    gameObject.GetComponent<Entity>().animator.SetBool("Giant_Attack_2",true);
                 }
 
                 setAttackAnimPlaying();
             }
             else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim){
                 playingAttackAnim = false;
-                gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",false);
-                gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",false);
-                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("Giant_Attack_1",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Giant_Attack_2",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Giant_Walk",true);
                 GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
             }
         }
@@ -57,5 +57,6 @@ public class KingsKnightController : MonoBehaviour
     }
     public void AttackAnimOver(){
         playingAttackAnim = false;
+
     }
 }

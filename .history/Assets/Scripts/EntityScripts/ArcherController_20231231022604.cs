@@ -11,9 +11,6 @@ public class ArcherController : MonoBehaviour
     public bool isWalking;
     public bool isShooting;
 
-    public float arrowLowerAngleBound;
-    public float arrowUpperAngleBound;
-
 
     public void Start(){
         GameObject entityObject = gameObject;
@@ -25,9 +22,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Orc")){
             entity.HP = 6;
@@ -35,9 +29,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Troll")){
             entity.HP = 5;
@@ -45,9 +36,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Demon")){
             entity.HP = 6;
@@ -55,9 +43,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.5f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
         else if (entity.race.Equals("Elf")){
             entity.HP = 5;
@@ -65,9 +50,6 @@ public class ArcherController : MonoBehaviour
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.6f;
-
-            arrowLowerAngleBound = -5;
-            arrowUpperAngleBound = 5;
         }
 
         isWalking = true;

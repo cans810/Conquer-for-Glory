@@ -18,11 +18,8 @@ public class ArrowController : MonoBehaviour
             transform.eulerAngles = new Vector3(0f, 0f, 180f);
         }
         rb = GetComponent<Rigidbody2D>();
+        
         Vector2 direction = GetDirectionFromEntity();
-
-        float randomAngle = UnityEngine.Random.Range(sourceEntity.GetComponent<ArcherController>().arrowLowerAngleBound,sourceEntity.GetComponent<ArcherController>().arrowUpperAngleBound);
-
-        direction = Quaternion.Euler(0, 0, randomAngle) * direction;
 
         rb.velocity = direction * forwardForce;
     }

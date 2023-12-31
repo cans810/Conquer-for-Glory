@@ -42,7 +42,14 @@ public class KingsKnightController : MonoBehaviour
 
                 setAttackAnimPlaying();
             }
-            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim){
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && playingAttackAnim && GetComponent<Entity>().gettingKnockedBack){
+                playingAttackAnim = false;
+                gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
+            }
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding){
                 playingAttackAnim = false;
                 gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_1",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("KingsKnight_Attack_2",false);

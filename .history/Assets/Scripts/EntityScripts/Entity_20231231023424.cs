@@ -80,11 +80,8 @@ public class Entity : MonoBehaviour
         }
         if (tag.Equals("Player"))
         {
-            for (int i = 0; i < GameManager.Instance.playerUpgradeMap["Archery"]; i++)
-            {
-                GetComponent<ArcherController>().arrowLowerAngleBound += 0.2f;
-                GetComponent<ArcherController>().arrowUpperAngleBound -= 0.2f;
-            }
+            GetComponent<ArcherController>().arrowLowerAngleBound = -1;
+            GetComponent<ArcherController>().arrowUpperAngleBound = 1;
         }
     }
 

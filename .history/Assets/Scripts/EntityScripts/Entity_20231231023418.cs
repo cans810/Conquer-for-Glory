@@ -36,8 +36,6 @@ public class Entity : MonoBehaviour
         if (soldierType.Equals("Archer")){
             StartCoroutine(SetArcheryAfterWaiting());
         }
-
-
     }
 
     IEnumerator SetSpeedTrainingAfterWaiting()
@@ -78,13 +76,10 @@ public class Entity : MonoBehaviour
         {
             yield return null;
         }
-        if (tag.Equals("Player"))
+        if (tag.Equals("Player") && soldierType.Equals("Archer"))
         {
-            for (int i = 0; i < GameManager.Instance.playerUpgradeMap["Archery"]; i++)
-            {
-                GetComponent<ArcherController>().arrowLowerAngleBound += 0.2f;
-                GetComponent<ArcherController>().arrowUpperAngleBound -= 0.2f;
-            }
+            GetComponent<ArcherController>().arrowLowerAngleBound = -1;
+            GetComponent<ArcherController>().arrowUpperAngleBound = 1;
         }
     }
 

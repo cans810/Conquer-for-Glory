@@ -41,6 +41,13 @@ public class DoubleSwordsManController : MonoBehaviour
 
                 setAttackAnimPlaying();
             }
+            else if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && playingAttackAnim && GetComponent<Entity>().gettingKnockedBack){
+                playingAttackAnim = false;
+                gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_1",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_2",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
+            }
             else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim){
                 playingAttackAnim = false;
                 gameObject.GetComponent<Entity>().animator.SetBool("DoubleSwordsman_Attack_1",false);

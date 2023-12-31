@@ -11,8 +11,8 @@ public class ArcherController : MonoBehaviour
     public bool isWalking;
     public bool isShooting;
 
-    public float arrowLowerAngleBound;
-    public float arrowUpperAngleBound;
+    public int arrowLowerAngleBound;
+    public int arrowUpperAngleBound;
 
 
     public void Start(){

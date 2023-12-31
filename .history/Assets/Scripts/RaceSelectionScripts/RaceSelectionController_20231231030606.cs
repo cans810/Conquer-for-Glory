@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.U2D.Animation;
 
 public class RaceSelectionController : MonoBehaviour
 {
@@ -14,7 +13,6 @@ public class RaceSelectionController : MonoBehaviour
     int currentRace;
 
     public GameObject currentSoldierShowcase;
-    public List<SpriteLibraryAsset> RaceModels;
     public GameObject[] baseHumanSoldiers;
     public GameObject[] baseElfSoldiers;
     public GameObject[] baseOrcSoldiers;
@@ -31,7 +29,7 @@ public class RaceSelectionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentSoldierShowcase.GetComponent<SpriteLibrary>().spriteLibraryAsset = RaceModels[currentRace];
+        
     }
 
     public void nextRace(){

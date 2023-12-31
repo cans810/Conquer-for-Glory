@@ -20,7 +20,7 @@ public class ArrowController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Vector2 direction = GetDirectionFromEntity();
 
-        float randomAngle = UnityEngine.Random.Range(sourceEntity.GetComponent<ArcherController>().arrowLowerAngleBound,sourceEntity.GetComponent<ArcherController>().arrowUpperAngleBound);
+        int randomAngle = UnityEngine.Random.Range(-5,5);
 
         direction = Quaternion.Euler(0, 0, randomAngle) * direction;
 
