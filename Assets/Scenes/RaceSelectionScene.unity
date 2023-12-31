@@ -1169,7 +1169,10 @@ MonoBehaviour:
   - {fileID: 6079369688937038354, guid: b1d2fae0070d9804b9384a2c253dc4f8, type: 3}
   - {fileID: 6079369688937038354, guid: 34de3023ccdb3ac4e9ff37047050c399, type: 3}
   - {fileID: 6079369688937038354, guid: b4497f14ee407fe4c82ecf88147ed54a, type: 3}
-  baseWraithSoldiers: []
+  baseWraithSoldiers:
+  - {fileID: 6079369688937038354, guid: 745cb288ad3302e4ebc2eff598c46053, type: 3}
+  - {fileID: 6079369688937038354, guid: cd6a23ba9a1470648b71388f6a189ebd, type: 3}
+  - {fileID: 6079369688937038354, guid: b03ab7f05c4b26c42a84595389ee0b5b, type: 3}
 --- !u!1 &1183067396
 GameObject:
   m_ObjectHideFlags: 0
