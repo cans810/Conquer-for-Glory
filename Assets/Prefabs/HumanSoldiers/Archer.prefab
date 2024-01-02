@@ -1481,6 +1481,7 @@ GameObject:
   - component: {fileID: 9138387151500720390}
   - component: {fileID: 318671454321742506}
   - component: {fileID: 9068320562424304205}
+  - component: {fileID: -2889183955317758333}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -1657,8 +1658,9 @@ MonoBehaviour:
   arrowPrefab: {fileID: 6269902086951136706, guid: d66cace1f513449458ea295e0a02fbed, type: 3}
   archerArm: {fileID: 3281291810430104134}
   isWalking: 1
-  shouldShoot: 0
-  walkTimer: 0
+  isShooting: 0
+  arrowLowerAngleBound: 0
+  arrowUpperAngleBound: 0
 --- !u!114 &9138387151500720390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1708,6 +1710,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79800ad1a5ab3b648b86512a50abac6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2889183955317758333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079369688937038354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948beb2b62ea00e48ad4e38741055c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6424362667136975245

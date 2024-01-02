@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DetachEntityParts : MonoBehaviour
+{
+    GameObject head;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+
+    public void detachHead()
+    {
+        Transform foundHead = transform.Find("head");
+
+        if (foundHead != null)
+        {
+            Vector3 headPosition = foundHead.position;
+
+            GameObject detachedHead = new GameObject("DetachedHead");
+            detachedHead.transform.position = headPosition;
+            
+            foundHead.gameObject.SetActive(false);
+
+            Rigidbody2D rb = detachedHead.AddComponent<Rigidbody2D>();
+
+            rb.AddForce(Vector2.up * 10f, ForceMode2D.Impulse);
+
+        }
+        else
+        {
+            Debug.LogError("Head not found among children!");
+        }
+    }
+}

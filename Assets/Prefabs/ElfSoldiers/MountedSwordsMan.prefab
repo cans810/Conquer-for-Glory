@@ -1481,6 +1481,7 @@ GameObject:
   - component: {fileID: 9138387151500720390}
   - component: {fileID: 318671454321742506}
   - component: {fileID: -146034004561768901}
+  - component: {fileID: -6294708376307722610}
   m_Layer: 0
   m_Name: MountedSwordsMan
   m_TagString: Untagged
@@ -1550,7 +1551,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.172221, y: 11.033927}
+  m_Offset: {x: 1.6957704, y: 11.033927}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1561,7 +1562,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.901611, y: 11.8081875}
+  m_Size: {x: 10.948713, y: 11.8081875}
   m_EdgeRadius: 0
 --- !u!50 &7855149648092598505
 Rigidbody2D:
@@ -1643,6 +1644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98565c68c665cc45a3df3365b5ab4dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playingAttackAnim: 0
 --- !u!114 &5656764914482664436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,7 +1685,7 @@ Animator:
   m_GameObject: {fileID: 6079369688937038354}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a495066a849443240a254b4a8411fc3b, type: 2}
+  m_Controller: {fileID: 9100000, guid: c578b141dbd0ab04eb43b1eabdce00bc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1704,6 +1706,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79800ad1a5ab3b648b86512a50abac6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6294708376307722610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079369688937038354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948beb2b62ea00e48ad4e38741055c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6424362667136975245
@@ -1771,7 +1785,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2874384, y: 3.280087}
+  m_Offset: {x: 1.5838494, y: 3.280087}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1782,7 +1796,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.112001, y: 8.030058}
+  m_Size: {x: 12.7048235, y: 8.030058}
   m_EdgeRadius: 0
 --- !u!114 &6459925251251433555
 MonoBehaviour:

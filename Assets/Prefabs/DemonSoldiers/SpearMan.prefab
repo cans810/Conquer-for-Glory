@@ -1481,6 +1481,7 @@ GameObject:
   - component: {fileID: 9138387151500720390}
   - component: {fileID: 318671454321742506}
   - component: {fileID: 7657279842444569747}
+  - component: {fileID: -7095287250212963948}
   m_Layer: 0
   m_Name: SpearMan
   m_TagString: Untagged
@@ -1654,6 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750a35990d427e24f9dab51717108f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playingAttackAnim: 0
 --- !u!114 &9138387151500720390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,7 +1684,7 @@ Animator:
   m_GameObject: {fileID: 6079369688937038354}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a495066a849443240a254b4a8411fc3b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 39794043844d5d04d81ba49e485f5b2d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1703,6 +1705,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79800ad1a5ab3b648b86512a50abac6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7095287250212963948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079369688937038354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948beb2b62ea00e48ad4e38741055c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6424362667136975245

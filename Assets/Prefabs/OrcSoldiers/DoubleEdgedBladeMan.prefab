@@ -1481,6 +1481,7 @@ GameObject:
   - component: {fileID: 9138387151500720390}
   - component: {fileID: 318671454321742506}
   - component: {fileID: 7502095695407057373}
+  - component: {fileID: 7311836528406122815}
   m_Layer: 0
   m_Name: DoubleEdgedBladeMan
   m_TagString: Untagged
@@ -1642,7 +1643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47c1e9005906004e81d84ab023d8b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playingAttackAnim: 0
 --- !u!114 &5656764914482664436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,7 +1683,7 @@ Animator:
   m_GameObject: {fileID: 6079369688937038354}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a495066a849443240a254b4a8411fc3b, type: 2}
+  m_Controller: {fileID: 9100000, guid: d8dffba3e432ee542917d0ce4e8b5e03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1704,6 +1704,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79800ad1a5ab3b648b86512a50abac6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7311836528406122815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079369688937038354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948beb2b62ea00e48ad4e38741055c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6424362667136975245

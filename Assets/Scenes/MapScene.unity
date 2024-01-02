@@ -1966,7 +1966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
@@ -1987,7 +1987,7 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[3]
       value: 
-      objectReference: {fileID: 5261274045655513126, guid: ea8c24af8b9bb7f49ab23e11a469c8fc, type: 3}
+      objectReference: {fileID: 4628168783787214318, guid: 6e697023abad20440a76081ddd86f6ae, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[4]
       value: 
