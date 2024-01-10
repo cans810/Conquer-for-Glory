@@ -1,0 +1,89 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class CityInfo : MonoBehaviour
+{
+    public bool isConqueredByPlayer;
+    public string cityName;
+    public string cityRaceType;
+    public string difficulty;
+
+    public GameObject imageObject;
+    public List<GameObject> Soldiers;
+
+    public List<GameObject> Neighbours;
+
+    public bool canAttack;
+    public GameObject attackablePointerPrefab;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (isConqueredByPlayer){
+            cityName = "You";
+            cityRaceType = GameManager.Instance.PlayerRace;
+
+            GameManager.Instance.playerLandColor = imageObject.GetComponent<SpriteRenderer>().color;
+        }
+        else{
+            if (!canAttack){
+
+            }
+            if (canAttack) {
+                GameObject attackablePointer = Instantiate(attackablePointerPrefab, gameObject.transform.position, Quaternion.identity);
+                attackablePointer.transform.SetParent(gameObject.transform);
+                attackablePointer.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                
+                foreach (GameObject neighbour in Neighbours) {
+                    if (neighbour != null && neighbour.GetComponent<CityInfo>().isConqueredByPlayer) {
+
+                        Vector3 direction = neighbour.transform.position - gameObject.transform.position;
+                        float distance = direction.magnitude;
+
+                        attackablePointer.transform.localScale = new Vector3(distance/10f, 0.5f, 0.5f);
+
+                        Vector3 midpoint = (gameObject.transform.position + neighbour.transform.position) / 2f;
+                        attackablePointer.transform.position = midpoint;
+
+                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                        attackablePointer.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+                        attackablePointer.GetComponent<AttackablePointerController>().cityName = cityName;
+                        attackablePointer.GetComponent<AttackablePointerController>().cityRaceType = cityRaceType;
+                        attackablePointer.GetComponent<AttackablePointerController>().soldiers = Soldiers;
+
+                        Transform popupInfoTransform = attackablePointer.transform.Find("PopupInfo");
+                        RectTransform popupInfoRect = popupInfoTransform.GetComponent<RectTransform>();
+
+                        // Reset RectTransform properties
+                        popupInfoRect.localEulerAngles = Vector3.zero; // Reset rotation
+                        popupInfoRect.localScale = Vector3.one; // Reset scale
+                        popupInfoRect.anchoredPosition = Vector2.zero; // Reset anchored position
+                        popupInfoRect.sizeDelta = Vector2.zero; // Reset size
+                        popupInfoRect.pivot = new Vector2(0.5f, 0.5f); // Set pivot to center
+
+                        // Reset Transform properties
+                        popupInfoTransform.localPosition = Vector3.zero; // Reset position
+                        popupInfoTransform.localRotation = Quaternion.Euler(0,0,0); // Reset rotation
+                        popupInfoTransform.localScale = Vector3.one; // Reset scale
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    public void enterBattle(){
+        GameManager.Instance.CurrentEnemyName = cityName;
+        GameManager.Instance.CurrentEnemyRace = cityRaceType;
+
+        GameManager.Instance.CurrentEnemySoldiers = Soldiers;
+
+        SceneManager.LoadScene("BattleScene");
+    }
+}

@@ -175,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: {fileID: 8057697778567111045}
   price: 0
+  bg: {fileID: 2287890647248984780}
 --- !u!1 &5973655720981305004
 GameObject:
   m_ObjectHideFlags: 0
