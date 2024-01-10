@@ -227,6 +227,8 @@ public class MarketManager : MonoBehaviour
     }
 
     public void buySelectedSoldier(){
+        GameObject actualSoldierGameObject = null;
+
         findActualSoldierSelected();
 
         if (GameManager.Instance.balance >= currentSelectedSoldier.GetComponent<SoldierMarketController>().price){

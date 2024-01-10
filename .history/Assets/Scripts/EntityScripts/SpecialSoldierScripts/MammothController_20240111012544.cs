@@ -27,7 +27,7 @@ public class MammothController : MonoBehaviour
     {
         if (!GetComponent<Entity>().dead){
             if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !playingAttackAnim){
-                int randomAttack = UnityEngine.Random.Range(0,2);
+                int randomAttack = UnityEngine.Random.Range(0,1);
 
                 gameObject.GetComponent<Entity>().animator.SetBool("Mammoth_Walk",false);
 
@@ -35,9 +35,6 @@ public class MammothController : MonoBehaviour
 
                 if (randomAttack == 0){
                     gameObject.GetComponent<Entity>().animator.SetBool("Mammoth_Attack",true);
-                }
-                else if (randomAttack == 1){
-                    gameObject.GetComponent<Entity>().animator.SetBool("Mammoth_Attack_2",true);
                 }
             }
             else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim){
