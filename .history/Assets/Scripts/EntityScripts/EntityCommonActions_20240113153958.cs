@@ -29,6 +29,7 @@ public class EntityCommonActions : MonoBehaviour
                 moveDirection = -transform.right;
                 break;
             default:
+                Debug.LogWarning("Invalid direction input");
                 break;
         }
 
