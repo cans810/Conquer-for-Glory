@@ -33,7 +33,7 @@ public class AttackablePointerController : MonoBehaviour
         {
             popupInfo.SetActive(true);
             popupInfo.transform.Find("SelectedLandName").GetComponent<TextMeshProUGUI>().text = cityName;
-            popupInfo.transform.Find("SelectedLandInfo").GetComponent<TextMeshProUGUI>().text = "Race: " + cityRaceType + "\n" + "Difficulty: " + difficulty;
+            popupInfo.transform.Find("SelectedLandInfo").GetComponent<TextMeshProUGUI>().text = "Race: " + cityRaceType + "\n" + "Difficulty: " + ;
             ChangeAlpha(1f);
         }
         else

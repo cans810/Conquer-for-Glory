@@ -276,6 +276,10 @@ PrefabInstance:
       value: Goblin_4
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Very Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Demon
       objectReference: {fileID: 0}
@@ -302,15 +306,15 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[3]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: 7772cdeece5d1e0428b1d71cde397a83, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 23a748f3c3bd03f4e876850d6fdced21, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[4]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: 23a748f3c3bd03f4e876850d6fdced21, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 31cbd2ebe178ece4f85bd01eaa2be898, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[5]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: 31cbd2ebe178ece4f85bd01eaa2be898, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 7772cdeece5d1e0428b1d71cde397a83, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.data[0]
       value: 
@@ -529,6 +533,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Troll_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -768,6 +776,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Elf_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -1011,6 +1023,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Orc_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -1270,6 +1286,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Human_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Very Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: isConquered
@@ -1551,6 +1571,10 @@ PrefabInstance:
       value: Human_2
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Human
       objectReference: {fileID: 0}
@@ -1780,6 +1804,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Elf_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -2190,12 +2218,16 @@ PrefabInstance:
       value: Troll_1
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Impossible
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Wraith
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
@@ -2216,11 +2248,11 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[3]
       value: 
-      objectReference: {fileID: 4628168783787214318, guid: 6e697023abad20440a76081ddd86f6ae, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 3671043a8be7b964ab25573f8de1ec50, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[4]
       value: 
-      objectReference: {fileID: 5261274045655513126, guid: ea8c24af8b9bb7f49ab23e11a469c8fc, type: 3}
+      objectReference: {fileID: 4628168783787214318, guid: 6e697023abad20440a76081ddd86f6ae, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[5]
       value: 
@@ -2521,6 +2553,10 @@ PrefabInstance:
       value: Troll_4
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Troll
       objectReference: {fileID: 0}
@@ -2770,6 +2806,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Goblin_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -3145,6 +3185,10 @@ PrefabInstance:
       value: Elf_1
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Very Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Elf
       objectReference: {fileID: 0}
@@ -3167,15 +3211,15 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[2]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: 6bbed17784516a74ab9dde19bff43b05, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 6b3c9ebacc6f78642aacd5321d97aa22, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[3]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: 6b3c9ebacc6f78642aacd5321d97aa22, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 5e34687f4d1da3c4c8c17f605f93fd7e, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[4]
       value: 
-      objectReference: {fileID: 6079369688937038354, guid: 5e34687f4d1da3c4c8c17f605f93fd7e, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: 6bbed17784516a74ab9dde19bff43b05, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[5]
       value: 
@@ -3647,6 +3691,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Orc_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -4129,6 +4177,10 @@ PrefabInstance:
       value: Troll_3
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Troll
       objectReference: {fileID: 0}
@@ -4362,6 +4414,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Goblin_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -5034,12 +5090,16 @@ PrefabInstance:
       value: Troll_1
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Very Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: EasternHuman
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Neighbours.Array.size
@@ -5056,11 +5116,11 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[2]
       value: 
-      objectReference: {fileID: 5261274045655513126, guid: ea8c24af8b9bb7f49ab23e11a469c8fc, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: b4497f14ee407fe4c82ecf88147ed54a, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[3]
       value: 
-      objectReference: {fileID: 5261274045655513126, guid: ea8c24af8b9bb7f49ab23e11a469c8fc, type: 3}
+      objectReference: {fileID: 6079369688937038354, guid: ce8a40ffdf7c50648824b6c11684fd2c, type: 3}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: Soldiers.Array.data[4]
       value: 
@@ -5283,6 +5343,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Goblin_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -5578,6 +5642,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Human_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -5956,6 +6024,10 @@ PrefabInstance:
       value: Orc_4
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Orc
       objectReference: {fileID: 0}
@@ -6197,6 +6269,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Orc_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Very Hard
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
@@ -6572,6 +6648,10 @@ PrefabInstance:
       value: Elf_4
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Elf
       objectReference: {fileID: 0}
@@ -6823,6 +6903,10 @@ PrefabInstance:
       value: Troll_1
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Hard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: EasternHuman
       objectReference: {fileID: 0}
@@ -7058,6 +7142,10 @@ PrefabInstance:
       value: Troll_1
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Impossible
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
       value: Troll
       objectReference: {fileID: 0}
@@ -7283,6 +7371,10 @@ PrefabInstance:
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: raceType
       value: Human_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
+      propertyPath: difficulty
+      value: Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4070526207589324898, guid: 95c26b91c4030f04c8d3083cd0aad767, type: 3}
       propertyPath: cityRaceType
