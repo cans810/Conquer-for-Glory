@@ -105,7 +105,7 @@ ScriptedImporter:
       y: 4
       width: 726
       height: 726
-    spriteID: eb8b934385ecb604098360f483f531b0
+    spriteID: 86a6ce8dd6a4f0a4f90055cc392b3409
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,7 +153,7 @@ ScriptedImporter:
     spriteName: frame-gold-ring-vector-12173595
     isGroup: 0
     parentIndex: -1
-    spriteID: eb8b934385ecb604098360f483f531b0
+    spriteID: 86a6ce8dd6a4f0a4f90055cc392b3409
     layerID: 2
     mosaicPosition: {x: 4, y: 4}
     flatten: 0

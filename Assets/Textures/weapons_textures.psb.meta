@@ -269,8 +269,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 233
-      y: 1631
+      x: 478
+      y: 207
       width: 101
       height: 289
     spriteID: 7e549a454acabdc45bb2136d85922558
@@ -281,7 +281,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 233, y: 1631}
+    uvTransform: {x: 478, y: 207}
     spritePosition: {x: 230, y: 79}
   - name: axe_basic
     originalName: 
@@ -409,6 +409,27 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 152, y: 1169}
     spritePosition: {x: 193, y: 54}
+  - name: stormbringer_sword
+    originalName: 
+    pivot: {x: 0.49999976, y: 0.13259977}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 1631
+      width: 126
+      height: 408
+    spriteID: e688eb8b0cd05084b920fc69af837d99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 1631}
+    spritePosition: {x: 184, y: 41}
   characterData:
     bones: []
     parts: []
@@ -443,10 +464,20 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: weapons_group_1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 6add8649a66be1440ba17140254a3bc0
+    layerID: 43
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
   - name: giant_axe
     spriteName: giant_axe
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 10d1fe166d7ee0b4ebec0a5f26a65c68
     layerID: 38
     mosaicPosition: {x: 4, y: 379}
@@ -456,7 +487,7 @@ ScriptedImporter:
   - name: shield_tridentmaster
     spriteName: shield_tridentmaster
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: d28c9c9a222468b469c4564842d1cfc8
     layerID: 37
     mosaicPosition: {x: 4, y: 856}
@@ -466,7 +497,7 @@ ScriptedImporter:
   - name: trident
     spriteName: trident
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 2aca378b76400534a9745d2d94e35cfc
     layerID: 33
     mosaicPosition: {x: 256, y: 379}
@@ -476,7 +507,7 @@ ScriptedImporter:
   - name: sword_kingsknight
     spriteName: sword_kingsknight
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: e1eb5cc977f392a47894b934f62c9c8e
     layerID: 22
     mosaicPosition: {x: 4, y: 1169}
@@ -486,7 +517,7 @@ ScriptedImporter:
   - name: shield_kingsknight
     spriteName: shield_kingsknight
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 5007133ecc151f14cb52ef65db18b720
     layerID: 25
     mosaicPosition: {x: 4, y: 1631}
@@ -496,7 +527,7 @@ ScriptedImporter:
   - name: doubleedgedblade
     spriteName: doubleedgedblade
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: faa085583b0ecf145a1b11013fb5a2af
     layerID: 27
     mosaicPosition: {x: 376, y: 1447}
@@ -506,7 +537,7 @@ ScriptedImporter:
   - name: doublesword_basic
     spriteName: doublesword_basic
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 1939e10b356e5c14186dfd7f1ed111b7
     layerID: 18
     mosaicPosition: {x: 376, y: 960}
@@ -516,7 +547,7 @@ ScriptedImporter:
   - name: magic_bulb
     spriteName: magic_bulb
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 6f0739d270beea8418a635428ec3eea8
     layerID: 15
     mosaicPosition: {x: 478, y: 4}
@@ -526,17 +557,17 @@ ScriptedImporter:
   - name: hatchet_basic
     spriteName: hatchet_basic
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 7e549a454acabdc45bb2136d85922558
     layerID: 13
-    mosaicPosition: {x: 233, y: 1631}
+    mosaicPosition: {x: 478, y: 207}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: axe_basic
     spriteName: axe_basic
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: c778669735fd7954292f34e110f417eb
     layerID: 10
     mosaicPosition: {x: 376, y: 4}
@@ -546,7 +577,7 @@ ScriptedImporter:
   - name: arrow
     spriteName: arrow
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 3782d2a02d0d54446be2a2782820e3bf
     layerID: 9
     mosaicPosition: {x: 256, y: 810}
@@ -556,7 +587,7 @@ ScriptedImporter:
   - name: bow
     spriteName: bow
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: ee91ca9ec4ce0394a95e86d2986ea54d
     layerID: 8
     mosaicPosition: {x: 274, y: 1169}
@@ -566,7 +597,7 @@ ScriptedImporter:
   - name: spear_basic
     spriteName: spear_basic
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: f2d38ab5a24deb84898c7e744ab645ad
     layerID: 7
     mosaicPosition: {x: 376, y: 491}
@@ -576,7 +607,7 @@ ScriptedImporter:
   - name: shield_basic
     spriteName: shield_basic
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 2b41c33114278934f8764a3fa7580853
     layerID: 6
     mosaicPosition: {x: 4, y: 4}
@@ -586,10 +617,30 @@ ScriptedImporter:
   - name: sword_basic
     spriteName: sword_basic
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 8e173aede2fa8df49b567d3e47c524a0
     layerID: 5
     mosaicPosition: {x: 152, y: 1169}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: weapons_group_2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: bc291100fd8fa8f42acd1896b1286a86
+    layerID: 45
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: stormbringer_sword
+    spriteName: stormbringer_sword
+    isGroup: 0
+    parentIndex: 16
+    spriteID: e688eb8b0cd05084b920fc69af837d99
+    layerID: 47
+    mosaicPosition: {x: 233, y: 1631}
     flatten: 0
     isImported: 1
     isVisible: 1
