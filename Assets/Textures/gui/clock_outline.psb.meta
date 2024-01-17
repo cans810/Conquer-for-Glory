@@ -105,7 +105,7 @@ ScriptedImporter:
       y: 4
       width: 314
       height: 314
-    spriteID: 7a74a3803add18249bd8f22015f19a55
+    spriteID: 5653c4147b03ba04e940e1f472c49dce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,7 +153,7 @@ ScriptedImporter:
     spriteName: silver-metal-ring-isolated-white-background-empty-frame_149267-1541
     isGroup: 0
     parentIndex: -1
-    spriteID: 7a74a3803add18249bd8f22015f19a55
+    spriteID: 5653c4147b03ba04e940e1f472c49dce
     layerID: 3
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
