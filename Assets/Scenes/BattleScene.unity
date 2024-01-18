@@ -1807,7 +1807,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.111
-  m_Pitch: 0.88
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1903,7 +1903,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.111
-  m_Pitch: 0.88
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -2246,6 +2246,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8d21ee6e60f056544873d787b322eba3, type: 3}
   - {fileID: 8300000, guid: 6ed57345e872f8141b2880b998f0e720, type: 3}
   - {fileID: 8300000, guid: 24145ed679053374a849014e138f0ac2, type: 3}
+  fadeInDone: 0
 --- !u!82 &1019805075
 AudioSource:
   m_ObjectHideFlags: 0
