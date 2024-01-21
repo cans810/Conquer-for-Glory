@@ -314,6 +314,9 @@ public class MarketManager : MonoBehaviour
                     else if (currentSelectedSoldier.name.Equals("DoubleSwordsMan")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[5];
                     }
+                    else if (currentSelectedSoldier.name.Equals("Minotaur")){
+                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[6];
+                    }
                 }
                 if (GameManager.Instance.PlayerRace.Equals("Orc")){
                     if (currentSelectedSoldier.name.Equals("AxeMan")){

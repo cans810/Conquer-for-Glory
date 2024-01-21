@@ -212,6 +212,11 @@ public class PlayerSideSoldierContainersManager : MonoBehaviour
                 soldier.GetComponent<Entity>().timeToSummon = 12f;
             }
         }
+        if (soldier.GetComponent<Entity>().soldierType.Equals("Minotaur")){
+            if (soldier.GetComponent<Entity>().race.Equals("Elf")){
+                soldier.GetComponent<Entity>().timeToSummon = 29f;
+            }
+        }
         if (soldier.GetComponent<Entity>().soldierType.Equals("KingsKnight")){
             if (soldier.GetComponent<Entity>().race.Equals("Human")){
                 soldier.GetComponent<Entity>().timeToSummon = 14f;

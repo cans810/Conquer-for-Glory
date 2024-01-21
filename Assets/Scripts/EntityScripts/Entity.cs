@@ -114,7 +114,8 @@ public class Entity : MonoBehaviour
                 animator.SetBool("Mammoth_Death", true);
             }
             else{
-                if (!soldierType.Equals("TrollGiant") && !soldierType.Equals("EasternLion") && !soldierType.Equals("MountedSpearman") && !soldierType.Equals("MountedSwordsman")){
+                if (!soldierType.Equals("TrollGiant") && !soldierType.Equals("EasternLion") && !soldierType.Equals("MountedSpearman") && !soldierType.Equals("MountedSwordsman") &&
+                !soldierType.Equals("Minotaur")){
                     int randomDeathAnim = Random.Range(0,2);
 
                     if (gameObject.transform.Find("SoundManager")){
@@ -160,7 +161,7 @@ public class Entity : MonoBehaviour
                 opponentEntity.HP -= damage;
 
                 // eğer mammoth, trollgiant veya easternlion ise o zaman %100 karşı tarafı knockbackleyebiliyor ve klasik insan sesleri çıkartmıyor 
-                if (soldierType == "Mammoth" || soldierType == "TrollGiant" || soldierType == "EasternLion"){
+                if (soldierType == "Mammoth" || soldierType == "TrollGiant" || soldierType == "EasternLion" || soldierType == "Minotaur"){
                     if (opponentEntity.canGetKnockedBack){
                         Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
 
@@ -168,6 +169,11 @@ public class Entity : MonoBehaviour
                         opponentEntity.GetComponent<Entity>().gettingKnockedBack = true;
 
                         StartCoroutine(StopKnockback(opponentEntity.GetComponent<Rigidbody2D>()));
+                    }
+                    if (soldierType == "Minotaur"){
+                        EntitySoundManager entitySounds = gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>();
+                        
+                        entitySounds.playWeaponSound();
                     }
                 }
 

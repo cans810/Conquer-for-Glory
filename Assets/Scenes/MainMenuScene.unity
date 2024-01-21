@@ -317,6 +317,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 102784780}
+  fadeIn: 0
+  timer: 0
+  fadeInDuration: 0
 --- !u!1 &141375073
 GameObject:
   m_ObjectHideFlags: 0

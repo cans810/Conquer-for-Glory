@@ -12,6 +12,9 @@ public class BattleMusicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // menü müziğini durdur
+        MenusMusicController.Instance.musicSource.Pause();
+
         int randomMusic = Random.Range(0, musics.Count);
         musicSource.clip = musics[randomMusic];
 

@@ -78,6 +78,10 @@ public class StormBringerController : MonoBehaviour
         gameObject.GetComponent<Entity>().canGetKnockedBack = false;
     }
 
+    public void playThunderSound(){
+        gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>().playSpecialSoldierSound(3);
+    }
+
     public void stopAttackAnim(){
         playingAttackAnim = false;
         gameObject.GetComponent<Entity>().canGetKnockedBack = true;

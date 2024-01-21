@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class BattleUIManager : MonoBehaviour
 {
-    public void loadMapScene(){
+    public void loadMapScene()
+    {
         SceneManager.LoadScene("MapScene");
+
+        MenusMusicController.Instance.StartFadeIn();
     }
 
     public void winBattle(){

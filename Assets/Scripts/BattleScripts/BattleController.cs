@@ -131,6 +131,10 @@ public class BattleController : MonoBehaviour
                     if (parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
                         spawnPosition = summonPoint.position - new Vector3(0.5f, summonPointHeight / 2f + 0.02f, 0);
                     }
+                    // minotaur y koordinatı ayarlaması
+                    if (parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
+                        spawnPosition = summonPoint.position - new Vector3(0.5f, summonPointHeight / 2f + 0.02f, 0);
+                    }
 
                     GameObject playerSoldier = Instantiate(
                         parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
@@ -172,6 +176,10 @@ public class BattleController : MonoBehaviour
                                 spawnPosition = summonPoint.position - new Vector3(1f, -0.8f, 0);
                             }
                             // stormbringer y koordinatı ayarlaması
+                            if (parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
+                                spawnPosition = summonPoint.position - new Vector3(0.5f, summonPointHeight / 2f + 0.02f, 0);
+                            }
+                            // minotaur y koordinatı ayarlaması
                             if (parentTransform.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
                                 spawnPosition = summonPoint.position - new Vector3(0.5f, summonPointHeight / 2f + 0.02f, 0);
                             }
