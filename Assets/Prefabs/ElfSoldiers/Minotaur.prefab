@@ -644,6 +644,7 @@ MonoBehaviour:
   knockbackForce: 0
   knockbackDuration: 0
   gettingKnockedBack: 0
+  burning: 0
   canGetKnockedBack: 0
   timeToSummon: 0
   direction: 

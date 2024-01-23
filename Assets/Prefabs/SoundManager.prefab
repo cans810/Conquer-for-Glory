@@ -66,6 +66,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 33a735ea67c97bd4080af04efc563fab, type: 3}
   - {fileID: 8300000, guid: 1855a7e444eb5f841883660d9b1554f6, type: 3}
   - {fileID: 8300000, guid: d06178ef881175d4684818b59a5c7aff, type: 3}
+  - {fileID: 8300000, guid: 64b22d9ee8b2c704ea987b5650c881a9, type: 3}
   weaponSounds:
   - {fileID: 8300000, guid: 1e14cf11c112aed4ca4bf95bbe8cdf7b, type: 3}
   - {fileID: 8300000, guid: 17bf31e4ecab7254a8b47807c3a5beb6, type: 3}
@@ -94,12 +95,15 @@ MonoBehaviour:
   groundSounds:
   - {fileID: 8300000, guid: f1fee78283e82d1448b7b385d89bf4b8, type: 3}
   - {fileID: 8300000, guid: fb12bf1d7b7d67541b95e065a66bcc1a, type: 3}
+  - {fileID: 8300000, guid: 5a8030beef5f8aa4ca687f98f19afa87, type: 3}
   specialSoldierSounds:
   - {fileID: 8300000, guid: 84233f3c5ddd73345af2f1e2d66ed11c, type: 3}
   - {fileID: 8300000, guid: 9fecf14c3092c614b85849e5ed2ec751, type: 3}
   - {fileID: 8300000, guid: be118c45bef2f964781aca5ee499d524, type: 3}
   - {fileID: 8300000, guid: 8fb5ef65290a5b34ab7747e07b4caad6, type: 3}
   - {fileID: 8300000, guid: ebf94e780220b1d45a276081f619f997, type: 3}
+  - {fileID: 8300000, guid: 46983a92047c98f479ed28c1eab4e384, type: 3}
+  - {fileID: 8300000, guid: 7c781c15f1ed97547932b907a2d933c6, type: 3}
 --- !u!82 &7910755484441112163
 AudioSource:
   m_ObjectHideFlags: 0

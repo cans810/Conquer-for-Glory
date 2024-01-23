@@ -1627,6 +1627,7 @@ MonoBehaviour:
   knockbackForce: 0
   knockbackDuration: 0
   gettingKnockedBack: 0
+  gettingDragonAttacked: 0
   canGetKnockedBack: 0
   timeToSummon: 2.1
   direction: 
