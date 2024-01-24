@@ -100,6 +100,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: MountedSpearman_Attack
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Burn
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8661923611845680495}
   m_Solo: 0
@@ -297,6 +300,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: MountedSpearman_Attack_2
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Burn
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7189811242976650448}
