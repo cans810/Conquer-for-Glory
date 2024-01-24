@@ -14,6 +14,7 @@ public class WarlordController : MonoBehaviour
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
+        // only for elfs
         if (entity.race.Equals("EasternHuman")){
             entity.HP = 36;
             entity.damage = 3.2f;

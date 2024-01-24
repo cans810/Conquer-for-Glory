@@ -14,12 +14,13 @@ public class WarlordController : MonoBehaviour
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
+        // only for elfs
         if (entity.race.Equals("EasternHuman")){
             entity.HP = 36;
             entity.damage = 3.2f;
             entity.knockbackForce = 1.4f;
             entity.knockbackDuration = 0.13f;
-            entity.speed = 0.87f;
+            entity.speed = 0.95f;
             entity.canGetKnockedBack = false;
         }
 
