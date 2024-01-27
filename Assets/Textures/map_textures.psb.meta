@@ -70,6 +70,555 @@ ScriptedImporter:
     compressionQualitySet: 0
     textureFormatSet: 0
     applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: UnknownLands
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 340
+      width: 367
+      height: 388
+    spriteID: a1199761e2a71d246ae70e4b1a2bfb58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 340}
+    spritePosition: {x: 1433, y: 145}
+  - name: ocean
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 457
+      height: 328
+    spriteID: 6d3703e4911d6cb418432637ebc66e1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 418, y: 1}
+  - name: wraithland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1034
+      y: 950
+      width: 373
+      height: 180
+    spriteID: 250b561f7aa85e5459c6bcccc434b556
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1034, y: 950}
+    spritePosition: {x: 1427, y: 0}
+  - name: easternhumanland_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 1183
+      width: 206
+      height: 282
+    spriteID: ccf6127a096af864abc30b43faef05f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 1183}
+    spritePosition: {x: 1425, y: 244}
+  - name: easternhumanland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 379
+      y: 340
+      width: 406
+      height: 331
+    spriteID: b34f1fc7a009e544d9685fb921c65592
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 379, y: 340}
+    spritePosition: {x: 1394, y: 437}
+  - name: trollland_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1183
+      width: 219
+      height: 297
+    spriteID: 88447c358fc6b044fbb7802db260fac1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1183}
+    spritePosition: {x: 802, y: 153}
+  - name: trollland_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1371
+      y: 4
+      width: 337
+      height: 276
+    spriteID: ad15da173891c7f4b9ce8530689172ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1371, y: 4}
+    spritePosition: {x: 929, y: 187}
+  - name: trollland_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 978
+      y: 4
+      width: 385
+      height: 272
+    spriteID: 391a94323a9cf964087706dd4d1af4d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 4}
+    spritePosition: {x: 1027, y: 286}
+  - name: trollland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1280
+      y: 340
+      width: 397
+      height: 276
+    spriteID: a304641bedc9685419b1dc2772aa6294
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1280, y: 340}
+    spritePosition: {x: 1043, y: 492}
+  - name: goblinland_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1563
+      y: 1183
+      width: 145
+      height: 171
+    spriteID: 92f1067f07f03604396c6eeb3df58a88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1563, y: 1183}
+    spritePosition: {x: 522, y: 296}
+  - name: goblinland_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1716
+      y: 4
+      width: 309
+      height: 281
+    spriteID: 583dc475884d06845b85b9c71d31adfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1716, y: 4}
+    spritePosition: {x: 160, y: 0}
+  - name: goblinland_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1415
+      y: 950
+      width: 275
+      height: 205
+    spriteID: 8d30f19c677b38d47abdd37afcf95249
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1415, y: 950}
+    spritePosition: {x: 266, y: 266}
+  - name: goblinland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 736
+      width: 312
+      height: 439
+    spriteID: 5617de047d312e041943bda5aa846cbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 736}
+    spritePosition: {x: 0, y: 0}
+  - name: elfland_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 1183
+      width: 223
+      height: 163
+    spriteID: 08c9ef8d6fcc44a409c90e6dfc97f2df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 1183}
+    spritePosition: {x: 637, y: 299}
+  - name: elfland_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1685
+      y: 340
+      width: 316
+      height: 329
+    spriteID: 4fb75787af790a64799cface258ac3f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1685, y: 340}
+    spritePosition: {x: 748, y: 439}
+  - name: elfland_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 793
+      y: 340
+      width: 479
+      height: 230
+    spriteID: 9926eb5f8718095408cf324aafa02eba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 793, y: 340}
+    spritePosition: {x: 361, y: 419}
+  - name: elfland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 469
+      y: 4
+      width: 501
+      height: 211
+    spriteID: e339e09dec608a44a96a2ba445baab49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 469, y: 4}
+    spritePosition: {x: 465, y: 557}
+  - name: orcland_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1175
+      y: 1183
+      width: 149
+      height: 245
+    spriteID: a1682e8b246bcab429da2cd0a3d87fd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1175, y: 1183}
+    spritePosition: {x: 1291, y: 280}
+  - name: orcland_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 950
+      width: 351
+      height: 221
+    spriteID: 6f2db14cd6f1abd49b7258ecc50da363
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 950}
+    spritePosition: {x: 1089, y: 88}
+  - name: orcland_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 736
+      width: 443
+      height: 206
+    spriteID: 02ec90fd8189e5e40a813eaf4ada979c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 736}
+    spritePosition: {x: 832, y: 0}
+  - name: orcland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 892
+      y: 1183
+      width: 275
+      height: 170
+    spriteID: 62879fdb7deb010428aefde3369c15ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 892, y: 1183}
+    spritePosition: {x: 1165, y: 0}
+  - name: humandland_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1698
+      y: 950
+      width: 240
+      height: 202
+    spriteID: a378e91f49e728b4ba9b99c0214b7812
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1698, y: 950}
+    spritePosition: {x: 253, y: 566}
+  - name: humanland_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 1183
+      width: 229
+      height: 259
+    spriteID: fc8b0317e5979e6419e5828d3e1d0311
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 231, y: 1183}
+    spritePosition: {x: 162, y: 423}
+  - name: humanland_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 682
+      y: 1183
+      width: 202
+      height: 236
+    spriteID: 7a071faaa0834244e9f3b139ac7cb346
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 682, y: 1183}
+    spritePosition: {x: 0, y: 359}
+  - name: humanland_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 683
+      y: 950
+      width: 343
+      height: 223
+    spriteID: de4aab5038a55074bb18ebbcdb382d53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 683, y: 950}
+    spritePosition: {x: 0, y: 545}
   spriteImportData:
   - name: 
     originalName: 
@@ -92,7 +641,6 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
-  mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: UnknownLands
     originalName: 
@@ -619,15 +1167,16 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 683, y: 950}
     spritePosition: {x: 0, y: 545}
-  characterData:
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
     pivot: {x: 0, y: 0}
     boneReadOnly: 0
-  sharedRigSpriteImportData: []
-  sharedRigCharacterData:
+  characterData:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
@@ -644,13 +1193,335 @@ ScriptedImporter:
   generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 1
-  skeletonAssetReferenceID: 
   padding: 4
   spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
   spriteCategoryList:
     categories: []
   spritePackingTag: 
   resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: UnknownLands
+    spriteName: UnknownLands
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a1199761e2a71d246ae70e4b1a2bfb58
+    layerID: 45
+    mosaicPosition: {x: 4, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ocean
+    spriteName: ocean
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6d3703e4911d6cb418432637ebc66e1b
+    layerID: 33
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WraithLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: e18357a99c2108545b4d9e1508ff1ffc
+    layerID: 42
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: wraithland_1
+    spriteName: wraithland_1
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 250b561f7aa85e5459c6bcccc434b556
+    layerID: 44
+    mosaicPosition: {x: 1034, y: 950}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: EasternHumanLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 05255f8f51547fe44b34813eab237ea4
+    layerID: 39
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: easternhumanland_2
+    spriteName: easternhumanland_2
+    isGroup: 0
+    parentIndex: 4
+    spriteID: ccf6127a096af864abc30b43faef05f7
+    layerID: 41
+    mosaicPosition: {x: 468, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: easternhumanland_1
+    spriteName: easternhumanland_1
+    isGroup: 0
+    parentIndex: 4
+    spriteID: b34f1fc7a009e544d9685fb921c65592
+    layerID: 40
+    mosaicPosition: {x: 379, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TrollLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 3480af987b837614ca02da07d3b56d8b
+    layerID: 27
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: trollland_4
+    spriteName: trollland_4
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 88447c358fc6b044fbb7802db260fac1
+    layerID: 32
+    mosaicPosition: {x: 4, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: trollland_3
+    spriteName: trollland_3
+    isGroup: 0
+    parentIndex: 7
+    spriteID: ad15da173891c7f4b9ce8530689172ef
+    layerID: 31
+    mosaicPosition: {x: 1371, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: trollland_2
+    spriteName: trollland_2
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 391a94323a9cf964087706dd4d1af4d7
+    layerID: 30
+    mosaicPosition: {x: 978, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: trollland_1
+    spriteName: trollland_1
+    isGroup: 0
+    parentIndex: 7
+    spriteID: a304641bedc9685419b1dc2772aa6294
+    layerID: 29
+    mosaicPosition: {x: 1280, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GoblinLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 0d84a908bf90df14cac9138c5397bc69
+    layerID: 9
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: goblinland_4
+    spriteName: goblinland_4
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 92f1067f07f03604396c6eeb3df58a88
+    layerID: 26
+    mosaicPosition: {x: 1563, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: goblinland_3
+    spriteName: goblinland_3
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 583dc475884d06845b85b9c71d31adfb
+    layerID: 25
+    mosaicPosition: {x: 1716, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: goblinland_2
+    spriteName: goblinland_2
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 8d30f19c677b38d47abdd37afcf95249
+    layerID: 24
+    mosaicPosition: {x: 1415, y: 950}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: goblinland_1
+    spriteName: goblinland_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 5617de047d312e041943bda5aa846cbd
+    layerID: 23
+    mosaicPosition: {x: 4, y: 736}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ElfLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 7847f648b4f3369468abe586d78c6b8d
+    layerID: 7
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: elfland_4
+    spriteName: elfland_4
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 08c9ef8d6fcc44a409c90e6dfc97f2df
+    layerID: 22
+    mosaicPosition: {x: 1332, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: elfland_3
+    spriteName: elfland_3
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 4fb75787af790a64799cface258ac3f4
+    layerID: 21
+    mosaicPosition: {x: 1685, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: elfland_2
+    spriteName: elfland_2
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 9926eb5f8718095408cf324aafa02eba
+    layerID: 20
+    mosaicPosition: {x: 793, y: 340}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: elfland_1
+    spriteName: elfland_1
+    isGroup: 0
+    parentIndex: 17
+    spriteID: e339e09dec608a44a96a2ba445baab49
+    layerID: 19
+    mosaicPosition: {x: 469, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: OrcLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: c10dd4d6de0935e42a8a8a8560c8273b
+    layerID: 5
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: orcland_4
+    spriteName: orcland_4
+    isGroup: 0
+    parentIndex: 22
+    spriteID: a1682e8b246bcab429da2cd0a3d87fd8
+    layerID: 18
+    mosaicPosition: {x: 1175, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: orcland_3
+    spriteName: orcland_3
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 6f2db14cd6f1abd49b7258ecc50da363
+    layerID: 17
+    mosaicPosition: {x: 324, y: 950}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: orcland_2
+    spriteName: orcland_2
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 02ec90fd8189e5e40a813eaf4ada979c
+    layerID: 16
+    mosaicPosition: {x: 324, y: 736}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: orcland_1
+    spriteName: orcland_1
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 62879fdb7deb010428aefde3369c15ed
+    layerID: 15
+    mosaicPosition: {x: 892, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HumanLands
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ebebc861d8800bd43b68be6b5988a8da
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: humandland_4
+    spriteName: humandland_4
+    isGroup: 0
+    parentIndex: 27
+    spriteID: a378e91f49e728b4ba9b99c0214b7812
+    layerID: 14
+    mosaicPosition: {x: 1698, y: 950}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: humanland_3
+    spriteName: humanland_3
+    isGroup: 0
+    parentIndex: 27
+    spriteID: fc8b0317e5979e6419e5828d3e1d0311
+    layerID: 13
+    mosaicPosition: {x: 231, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: humanland_2
+    spriteName: humanland_2
+    isGroup: 0
+    parentIndex: 27
+    spriteID: 7a071faaa0834244e9f3b139ac7cb346
+    layerID: 12
+    mosaicPosition: {x: 682, y: 1183}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: humanland_1
+    spriteName: humanland_1
+    isGroup: 0
+    parentIndex: 27
+    spriteID: de4aab5038a55074bb18ebbcdb382d53
+    layerID: 11
+    mosaicPosition: {x: 683, y: 950}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: UnknownLands
@@ -974,7 +1845,6 @@ ScriptedImporter:
     isImported: 1
     isVisible: 1
   sharedRigPSDLayers: []
-  pSDLayerImportSetting: []
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   spriteSizeExpandChanged: 0

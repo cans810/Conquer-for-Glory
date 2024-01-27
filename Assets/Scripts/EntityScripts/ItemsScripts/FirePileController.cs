@@ -71,7 +71,8 @@ public class FirePileController : MonoBehaviour
                     collision.gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>().playBurningScreamSound(9);
 
                     if (collision.gameObject.GetComponent<Entity>().soldierType != "Mammoth" && collision.gameObject.GetComponent<Entity>().soldierType != "Minotaur" &&
-                    collision.gameObject.GetComponent<Entity>().soldierType != "TrollGiant" && collision.gameObject.GetComponent<Entity>().soldierType != "EasternLion"){
+                    collision.gameObject.GetComponent<Entity>().soldierType != "TrollGiant" 
+                    && collision.gameObject.GetComponent<Entity>().soldierType != "EasternLion" && collision.gameObject.GetComponent<Entity>().soldierType != "WraithCaller"){
                         collision.gameObject.GetComponent<Entity>().animator.SetBool("Burn",true);
                     }
 

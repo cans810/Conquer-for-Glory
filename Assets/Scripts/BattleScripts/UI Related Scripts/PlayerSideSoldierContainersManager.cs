@@ -239,5 +239,10 @@ public class PlayerSideSoldierContainersManager : MonoBehaviour
                 soldier.GetComponent<Entity>().timeToSummon = 30f;
             }
         }
+        if (soldier.GetComponent<Entity>().soldierType.Equals("WraithCaller")){
+            if (soldier.GetComponent<Entity>().race.Equals("Wraith")){
+                soldier.GetComponent<Entity>().timeToSummon = 1f;
+            }
+        }
     }
 }

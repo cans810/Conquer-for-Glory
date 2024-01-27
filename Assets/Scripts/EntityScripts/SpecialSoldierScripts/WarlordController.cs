@@ -15,8 +15,8 @@ public class WarlordController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("EasternHuman")){
-            entity.HP = 34;
-            entity.damage = 3.2f;
+            entity.HP = 32;
+            entity.damage = 3f;
             entity.knockbackForce = 1.4f;
             entity.knockbackDuration = 0.13f;
             entity.speed = 0.87f;

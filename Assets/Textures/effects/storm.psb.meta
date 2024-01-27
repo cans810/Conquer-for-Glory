@@ -70,6 +70,198 @@ ScriptedImporter:
     compressionQualitySet: 0
     textureFormatSet: 0
     applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: storm_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 370
+      width: 232
+      height: 84
+    spriteID: 6b70a7019efff8644ac0e1a349855229
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 370}
+    spritePosition: {x: 64, y: 306}
+  - name: storm_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 443
+      width: 212
+      height: 62
+    spriteID: f11c656f07aaee741a16c4e07da5b48e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 333, y: 443}
+    spritePosition: {x: 82, y: 324}
+  - name: storm_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 662
+      y: 404
+      width: 321
+      height: 68
+    spriteID: db5394b9963e4f54cacabdedbe89c594
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 662, y: 404}
+    spritePosition: {x: 40, y: 318}
+  - name: storm_4
+    originalName: 
+    pivot: {x: 0.48986703, y: 0.75654733}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 293
+      width: 321
+      height: 142
+    spriteID: c74097072541f7042b3451777efc7e0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 333, y: 293}
+    spritePosition: {x: 40, y: 240}
+  - name: storm_5
+    originalName: 
+    pivot: {x: 0.48986682, y: 0.751966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 662
+      y: 254
+      width: 321
+      height: 142
+    spriteID: 883312ec5cda7a2438def7937fe19a95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 662, y: 254}
+    spritePosition: {x: 40, y: 240}
+  - name: storm_6
+    originalName: 
+    pivot: {x: 0.4878405, y: 0.857523}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 662
+      y: 4
+      width: 321
+      height: 242
+    spriteID: bb61755c1eb56c041b9f174b90a7c10d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 662, y: 4}
+    spritePosition: {x: 40, y: 140}
+  - name: storm_7
+    originalName: 
+    pivot: {x: 0.49189353, y: 0.881984}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 4
+      width: 321
+      height: 281
+    spriteID: 957277e8cf2b27e4bb1a5d91862d1986
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 333, y: 4}
+    spritePosition: {x: 40, y: 101}
+  - name: storm_8
+    originalName: 
+    pivot: {x: 0.48581398, y: 0.9034016}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 321
+      height: 358
+    spriteID: 45ecabbb4eeb003468c464df5d8c5b9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 40, y: 24}
   spriteImportData:
   - name: 
     originalName: 
@@ -92,7 +284,6 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
-  mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: storm_1
     originalName: 
@@ -262,15 +453,16 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 40, y: 24}
-  characterData:
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
     pivot: {x: 0, y: 0}
     boneReadOnly: 0
-  sharedRigSpriteImportData: []
-  sharedRigCharacterData:
+  characterData:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
@@ -287,13 +479,95 @@ ScriptedImporter:
   generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 1
-  skeletonAssetReferenceID: 
   padding: 4
   spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
   spriteCategoryList:
     categories: []
   spritePackingTag: 
   resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: storm_1
+    spriteName: storm_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6b70a7019efff8644ac0e1a349855229
+    layerID: 3
+    mosaicPosition: {x: 4, y: 370}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_2
+    spriteName: storm_2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f11c656f07aaee741a16c4e07da5b48e
+    layerID: 2
+    mosaicPosition: {x: 333, y: 443}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_3
+    spriteName: storm_3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db5394b9963e4f54cacabdedbe89c594
+    layerID: 4
+    mosaicPosition: {x: 662, y: 404}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_4
+    spriteName: storm_4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c74097072541f7042b3451777efc7e0c
+    layerID: 5
+    mosaicPosition: {x: 333, y: 293}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_5
+    spriteName: storm_5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 883312ec5cda7a2438def7937fe19a95
+    layerID: 6
+    mosaicPosition: {x: 662, y: 254}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_6
+    spriteName: storm_6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb61755c1eb56c041b9f174b90a7c10d
+    layerID: 7
+    mosaicPosition: {x: 662, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_7
+    spriteName: storm_7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 957277e8cf2b27e4bb1a5d91862d1986
+    layerID: 9
+    mosaicPosition: {x: 333, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: storm_8
+    spriteName: storm_8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 45ecabbb4eeb003468c464df5d8c5b9a
+    layerID: 8
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: storm_1
@@ -377,7 +651,6 @@ ScriptedImporter:
     isImported: 1
     isVisible: 1
   sharedRigPSDLayers: []
-  pSDLayerImportSetting: []
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   spriteSizeExpandChanged: 0

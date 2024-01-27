@@ -402,6 +402,9 @@ public class MarketManager : MonoBehaviour
                     else if (currentSelectedSoldier.name.Equals("Mammoth")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().WraithSpecialBuyableSoldiers[4];
                     }
+                    else if (currentSelectedSoldier.name.Equals("WraithCaller")){
+                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().WraithSpecialBuyableSoldiers[5];
+                    }
                 }
     }
 }

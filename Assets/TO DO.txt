@@ -1,3 +1,9 @@
 yeniçeri - easternhuman - bi el tüfek, bi el kılıç - hem ranged hem melee
 büyücü - wraith - yerden adam çıkarma rastgele row'lara - belki ölüyü diriltme
+wraithcaller, melee gücünü arttır, skeletonların spawn olacağı yeri daha çok ayarla, yerden skeleton çıkma animasyonu yap
+
+
+
+
+
 mammoth giydir
