@@ -11,6 +11,7 @@ public class WraithCallerController : MonoBehaviour
     public GameObject skeletonPrefab;
 
     public int summonableSkeletonCount;
+    public bool isSpawning;
 
     void Start(){
         GameObject entityObject = gameObject;

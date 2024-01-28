@@ -35,5 +35,9 @@ public class EffectsManager : MonoBehaviour
         {
             bloodColor = new Color(70 / 255f, 79 / 255f, 113 / 255f, 0);
         }
+        else if (gameObject.transform.parent.gameObject.GetComponent<Entity>().race == "Skeleton")
+        {
+            bloodColor = new Color(70 / 255f, 79 / 255f, 113 / 255f, 0);
+        }
     }
 }
