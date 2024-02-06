@@ -20,6 +20,9 @@ public class TrollGiantController : MonoBehaviour
 
             entity.canGetKnockedBack = false;
         }
+
+        entity.canBurn = true;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame

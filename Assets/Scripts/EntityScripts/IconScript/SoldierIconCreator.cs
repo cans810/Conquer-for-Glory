@@ -42,8 +42,16 @@ public class SoldierIconCreator : MonoBehaviour
             newPosition += new Vector3(4f, -65f, 0f);
             newSoldierIcon.transform.localPosition = newPosition;
         }
+        else if(soldierContained.GetComponent<Entity>().soldierType == "TrollGiant"){
+            newPosition += new Vector3(24f, -24f, 0f);
+            newSoldierIcon.transform.localPosition = newPosition;
+        }
         else if(soldierContained.GetComponent<Entity>().soldierType == "Dragon"){
             newPosition += new Vector3(10f, -60f, 0f);
+            newSoldierIcon.transform.localPosition = newPosition;
+        }
+        else if(soldierContained.GetComponent<Entity>().soldierType == "OrcBeast"){
+            newPosition += new Vector3(19f, -23f, 0f);
             newSoldierIcon.transform.localPosition = newPosition;
         }
         else{
@@ -86,8 +94,16 @@ public class SoldierIconCreator : MonoBehaviour
             newPosition += new Vector3(-4f, -65f, 0f);
             newSoldierIcon.transform.localPosition = newPosition;
         }
+        else if(soldierContained.GetComponent<Entity>().soldierType == "TrollGiant"){
+            newPosition += new Vector3(-24f, -24f, 0f);
+            newSoldierIcon.transform.localPosition = newPosition;
+        }
         else if(soldierContained.GetComponent<Entity>().soldierType == "Dragon"){
             newPosition += new Vector3(-10f, -60f, 0f);
+            newSoldierIcon.transform.localPosition = newPosition;
+        }
+        else if(soldierContained.GetComponent<Entity>().soldierType == "OrcBeast"){
+            newPosition += new Vector3(-19f, -23f, 0f);
             newSoldierIcon.transform.localPosition = newPosition;
         }
         else{

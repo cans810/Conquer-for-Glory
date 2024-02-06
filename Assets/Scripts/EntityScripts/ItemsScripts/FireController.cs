@@ -7,13 +7,14 @@ public class FireController : MonoBehaviour
     public GameObject onEntity;
 
     public void Start(){
-        burn();
+        onEntity = transform.parent.gameObject;
+        if (onEntity.GetComponent<Entity>().canBurn){
+            burn();
+        }
     }
 
     public void burn()
     {
-        onEntity = transform.parent.gameObject;
-
         float damageTaken = 5f;
         float duration = 2.0f;
         float initialHP = onEntity.GetComponent<Entity>().HP;

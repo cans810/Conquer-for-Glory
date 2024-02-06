@@ -40,24 +40,7 @@ public class EnemySummonController : MonoBehaviour
 
                         float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
 
-                        Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
-
-                        // easternlion y koordinatı ayarlaması
-                        if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("EasternLion")){
-                            spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 1.12f, 0);
-                        }
-                        // mammoth y koordinatı ayarlaması
-                        if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("Mammoth")){
-                            spawnPosition = summonPoint.position - new Vector3(-1f, -0.8f, 0);
-                        }
-                        // stormbringer y koordinatı ayarlaması
-                        if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
-                            spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f + 0.02f, 0);
-                        }
-                        // minotaur y koordinatı ayarlaması
-                        if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
-                            spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f + 0.02f, 0);
-                        }
+                        Vector3 spawnPosition = summonPoint.position - new Vector3(-0.8f, summonPointHeight / 2f, 0);
 
                         GameObject enemySoldier = Instantiate(
                             parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,
@@ -88,24 +71,7 @@ public class EnemySummonController : MonoBehaviour
 
                     float summonPointHeight = summonPoint.GetComponent<Renderer>().bounds.size.y;
 
-                    Vector3 spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f, 0);
-
-                    // easternlion y koordinatı ayarlaması
-                    if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("EasternLion")){
-                            spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 1.12f, 0);
-                    }
-                    // mammoth y koordinatı ayarlaması
-                    if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("Mammoth")){
-                        spawnPosition = summonPoint.position - new Vector3(-1f, -0.8f, 0);
-                    }
-                    // stormbringer y koordinatı ayarlaması
-                    if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
-                        spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f + 0.02f, 0);
-                    }
-                    // minotaur y koordinatı ayarlaması
-                    if (parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained.name.Equals("StormBringer")){
-                        spawnPosition = summonPoint.position - new Vector3(-0.5f, summonPointHeight / 2f + 0.02f, 0);
-                    }
+                    Vector3 spawnPosition = summonPoint.position - new Vector3(-0.8f, summonPointHeight / 2f, 0);
 
                     GameObject enemySoldier = Instantiate(
                         parentTransformSoldierContainers.GetChild(currentSelectedSoldierContainer).GetComponent<SoldierContainerManager>().SoldierContained,

@@ -16,7 +16,7 @@ public class WarlordController : MonoBehaviour
 
         if (entity.race.Equals("EasternHuman")){
             entity.HP = 32;
-            entity.damage = 3f;
+            entity.damage = 2.5f;
             entity.knockbackForce = 1.4f;
             entity.knockbackDuration = 0.13f;
             entity.speed = 0.87f;
@@ -24,6 +24,9 @@ public class WarlordController : MonoBehaviour
         }
 
         throwableSpearCount = 3;
+
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

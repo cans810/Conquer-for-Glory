@@ -285,7 +285,7 @@ public class MarketManager : MonoBehaviour
                     else if (currentSelectedSoldier.name.Equals("Sorcerer")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[3];
                     }
-                    else if (currentSelectedSoldier.name.Equals("KingsKnight")){
+                    else if (currentSelectedSoldier.name.Equals("DoubleSwordsMan")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().HumanSpecialBuyableSoldiers[4];
                     }
                     else if (currentSelectedSoldier.name.Equals("StormBringer")){
@@ -305,7 +305,7 @@ public class MarketManager : MonoBehaviour
                     else if (currentSelectedSoldier.name.Equals("Sorcerer")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[3];
                     }
-                    else if (currentSelectedSoldier.name.Equals("DoubleSwordsMan")){
+                    else if (currentSelectedSoldier.name.Equals("KingsKnight")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().ElfSpecialBuyableSoldiers[4];
                     }
                     else if (currentSelectedSoldier.name.Equals("Minotaur")){
@@ -328,6 +328,9 @@ public class MarketManager : MonoBehaviour
                     else if (currentSelectedSoldier.name.Equals("DoubleEdgedBladeMan")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[4];
                     }
+                    else if (currentSelectedSoldier.name.Equals("OrcBeast")){
+                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().OrcSpecialBuyableSoldiers[5];
+                    }
                 }
                 if (GameManager.Instance.PlayerRace.Equals("Demon")){
                     if (currentSelectedSoldier.name.Equals("AxeMan")){
@@ -341,9 +344,6 @@ public class MarketManager : MonoBehaviour
                     }
                     else if (currentSelectedSoldier.name.Equals("Sorcerer")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[3];
-                    }
-                    else if (currentSelectedSoldier.name.Equals("SpearMaster")){
-                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[4];
                     }
                     else if (currentSelectedSoldier.name.Equals("Dragon")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().DemonSpecialBuyableSoldiers[5];
@@ -362,8 +362,11 @@ public class MarketManager : MonoBehaviour
                     else if (currentSelectedSoldier.name.Equals("Sorcerer")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[3];
                     }
-                    else if (currentSelectedSoldier.name.Equals("TrollGiant")){
+                    else if (currentSelectedSoldier.name.Equals("SpearMaster")){
                         actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[4];
+                    }
+                    else if (currentSelectedSoldier.name.Equals("TrollGiant")){
+                        actualSoldierGameObject = GetComponent<HumanBuyableSoldiersContainer>().TrollSpecialBuyableSoldiers[5];
                     }
                 }
                 if (GameManager.Instance.PlayerRace.Equals("EasternHuman")){

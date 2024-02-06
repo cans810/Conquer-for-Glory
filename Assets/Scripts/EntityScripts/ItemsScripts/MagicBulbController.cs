@@ -4,7 +4,7 @@ public class MagicBulbController : MonoBehaviour
 {
     public GameObject sourceEntity;
     public Rigidbody2D rb;
-    public float forwardForce = 7f;
+    public float forwardForce = 4f;
     public float rotationSpeed = 200f;
     public int spawnedAtRow;
 

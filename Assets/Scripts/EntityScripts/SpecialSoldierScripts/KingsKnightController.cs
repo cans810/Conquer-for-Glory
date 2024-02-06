@@ -12,7 +12,7 @@ public class KingsKnightController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         // only for elfs
-        if (entity.race.Equals("Human")){
+        if (entity.race.Equals("Elf")){
             entity.HP = 21;
             entity.damage = 1.9f;
             entity.knockbackForce = 1.1f;
@@ -20,6 +20,9 @@ public class KingsKnightController : MonoBehaviour
             entity.speed = 0.65f;
         }
         entity.canGetKnockedBack = true;
+
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

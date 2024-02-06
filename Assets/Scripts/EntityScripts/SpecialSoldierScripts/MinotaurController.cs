@@ -11,7 +11,7 @@ public class MinotaurController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Elf")){
-            entity.HP = 36;
+            entity.HP = 38;
             entity.damage = 3.6f;
             entity.knockbackForce = 1.7f;
             entity.knockbackDuration = 0.12f;
@@ -19,6 +19,9 @@ public class MinotaurController : MonoBehaviour
 
             entity.canGetKnockedBack = false;
         }
+
+        entity.canBurn = true;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame

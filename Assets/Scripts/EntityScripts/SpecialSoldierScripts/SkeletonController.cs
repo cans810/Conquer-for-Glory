@@ -20,14 +20,17 @@ public class SkeletonController : MonoBehaviour
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
-        if (entity.race.Equals("Skeleton")){
-            entity.HP = 8f;
-            entity.damage = 1.2f;
+        if (entity.race.Equals("Wraith")){
+            entity.HP = 6f;
+            entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.1f;
-            entity.speed = 0.77f;
+            entity.speed = 0.87f;
         }
         entity.canGetKnockedBack = true;
+
+        entity.canBurn = false;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame
@@ -50,7 +53,7 @@ public class SkeletonController : MonoBehaviour
                     gameObject.GetComponent<Entity>().animator.SetBool("Swordsman_Attack_2",true);
                 }
             }
-            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim && !GetComponent<Entity>().burning){
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim && !GetComponent<Entity>().burning && !isSpawning){
                 gameObject.GetComponent<Entity>().animator.SetBool("Swordsman_Attack",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("Swordsman_Attack_2",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);

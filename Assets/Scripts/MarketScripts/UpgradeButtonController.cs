@@ -38,11 +38,11 @@ public class UpgradeButtonController: MonoBehaviour
         level.GetComponent<TextMeshProUGUI>().text = GameManager.Instance.playerUpgradeMap[gameObject.name].ToString();
         if (isHovered)
         {
-            ChangeColor(new Color(0.5f, 0.1f, 0.1f, 1.0f));
+            ChangeColor(Color.green);
         }
         else
         {
-            ChangeColor(Color.grey);
+            ChangeColor(Color.white);
         }
     }
 

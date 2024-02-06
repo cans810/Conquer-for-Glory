@@ -12,7 +12,7 @@ public class EasterLionController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("EasternHuman")){
-            entity.HP = 31;
+            entity.HP = 29;
             entity.damage = 2.4f;
             entity.knockbackForce = 1.3f;
             entity.knockbackDuration = 0.18f;
@@ -20,6 +20,9 @@ public class EasterLionController : MonoBehaviour
 
             entity.canGetKnockedBack = false;
         }
+
+        entity.canBurn = true;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame

@@ -12,7 +12,7 @@ public class MammothController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Wraith")){
-            entity.HP = 50;
+            entity.HP = 43;
             entity.damage = 4.7f;
             entity.knockbackForce = 1.7f;
             entity.knockbackDuration = 0.18f;
@@ -20,6 +20,9 @@ public class MammothController : MonoBehaviour
 
             entity.canGetKnockedBack = false;
         }
+
+        entity.canBurn = true;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame

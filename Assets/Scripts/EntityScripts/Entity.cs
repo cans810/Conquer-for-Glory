@@ -18,6 +18,8 @@ public class Entity : MonoBehaviour
     public bool gettingKnockedBack;
     public bool burning;
     public bool canGetKnockedBack;
+    public bool canBeRipped;
+    public bool canBurn;
     public float timeToSummon;
     public string direction;
     public string soldierType;
@@ -93,6 +95,8 @@ public class Entity : MonoBehaviour
     void Update()
     {
         if (HP <= 0 && !dead){
+            GameObject killedBy = HitBox.GetComponent<HitBoxController>().currentHittingOpponent;
+
             dead = true;
             
             if (GetComponent<BoxCollider2D>() != null)
@@ -103,27 +107,21 @@ public class Entity : MonoBehaviour
             AnimatorControllerParameter[] parameters = animator.parameters;
 
             foreach (AnimatorControllerParameter param in parameters)
-            {
-                if (param.type == AnimatorControllerParameterType.Bool && param.name != "Death" || param.name != "Mammoth_Death")
+             {
+                if (param.type == AnimatorControllerParameterType.Bool && param.name != "Death" || param.name != "Death_2"
+                || param.name != "Death_3")
                 {
                     animator.SetBool(param.name, false);
                 }
             }
 
-            // bad code 
-            if(soldierType.Equals("Mammoth")){
-                animator.SetBool("Mammoth_Death", true);
-            }
-            else{
-                if (!soldierType.Equals("TrollGiant") && !soldierType.Equals("EasternLion") && !soldierType.Equals("MountedSpearman") && !soldierType.Equals("MountedSwordsman") &&
-                !soldierType.Equals("Minotaur") && !soldierType.Equals("Dragon") && !soldierType.Equals("WraithCaller")){
+            if (canBeRipped){
+                if (killedBy && killedBy.GetComponent<Entity>().soldierType.Equals("OrcBeast")){
+                    
+                    
+                }
+                else{
                     int randomDeathAnim = Random.Range(0,2);
-
-                    if (gameObject.transform.Find("SoundManager")){
-                        EntitySoundManager entitySounds = gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>();
-                        
-                        entitySounds.playDeathSound();
-                    }
 
                     if (randomDeathAnim == 0){
                         animator.SetBool("Death", true);
@@ -132,9 +130,15 @@ public class Entity : MonoBehaviour
                         animator.SetBool("Death_2", true);
                     }
                 }
-                else{
-                    animator.SetBool("Death", true);
+
+                if (gameObject.transform.Find("SoundManager")){
+                    EntitySoundManager entitySounds = gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>();
+                    
+                    entitySounds.playDeathSound();
                 }
+            }
+            else{
+                animator.SetBool("Death", true);
             }
 
             StartCoroutine(DestroyAfterDelay(5f));
@@ -163,7 +167,8 @@ public class Entity : MonoBehaviour
 
                 // eğer mammoth, trollgiant veya easternlion ise o zaman %100 karşı tarafı knockbackleyebiliyor ve klasik insan sesleri çıkartmıyor 
                 if (soldierType == "Mammoth" || soldierType == "TrollGiant" || soldierType == "EasternLion" 
-                || soldierType == "Minotaur" || soldierType == "Dragon" || soldierType == "WraithCaller"){
+                || soldierType == "Minotaur" || soldierType == "Dragon" || soldierType == "WraithCaller" 
+                || soldierType == "OrcBeast"){
                     if (opponentEntity.canGetKnockedBack){
                         Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;
 

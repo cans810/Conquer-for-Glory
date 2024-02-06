@@ -60,6 +60,8 @@ public class SwordsManController : MonoBehaviour
             entity.speed = 0.74f;
         }
         entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

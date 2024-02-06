@@ -92,6 +92,8 @@ public class ArcherController : MonoBehaviour
 
         isWalking = true;
         entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     void Update()

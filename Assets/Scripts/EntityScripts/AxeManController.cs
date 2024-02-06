@@ -61,6 +61,8 @@ public class AxeManController : MonoBehaviour
         }
 
         entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

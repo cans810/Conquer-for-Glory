@@ -1016,7 +1016,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 38.254898, y: 8.996064}
+  m_Offset: {x: 10.755382, y: 8.996064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1026,7 +1026,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 86.04689, y: 3.2438393}
+  m_Size: {x: 31.047873, y: 3.2438393}
   m_EdgeRadius: 0
 --- !u!114 &6782751509699855158
 MonoBehaviour:
@@ -2039,6 +2039,9 @@ MonoBehaviour:
   rangedHitBox: {fileID: 3424528214866248176}
   skeletonPrefab: {fileID: 6079369688937038354, guid: a73880f8b85d6c04a930ee36080d0e76, type: 3}
   summonableSkeletonCount: 0
+  isSpawning: 0
+  foundEnemy: {fileID: 0}
+  canSummon: 0
 --- !u!95 &318671454321742506
 Animator:
   serializedVersion: 7
@@ -2152,7 +2155,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.5670363, y: 8.996064}
+  m_Offset: {x: -0.8197359, y: 8.996064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2162,7 +2165,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.403018, y: 3.2438393}
+  m_Size: {x: 7.8976526, y: 3.2438393}
   m_EdgeRadius: 0
 --- !u!114 &6459925251251433555
 MonoBehaviour:

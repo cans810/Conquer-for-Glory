@@ -59,6 +59,8 @@ public class MountedSpearManController : MonoBehaviour
             entity.speed = 1.39f;
         }
         entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame

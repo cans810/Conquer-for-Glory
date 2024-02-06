@@ -11,7 +11,7 @@ public class SpearMasterController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         // only for elfs
-        if (entity.race.Equals("Demon")){
+        if (entity.race.Equals("Troll")){
             entity.HP = 20;
             entity.damage = 1.8f;
             entity.knockbackForce = 1.2f;
@@ -19,6 +19,8 @@ public class SpearMasterController : MonoBehaviour
             entity.speed = 0.85f;
             entity.canGetKnockedBack = true;
         }
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

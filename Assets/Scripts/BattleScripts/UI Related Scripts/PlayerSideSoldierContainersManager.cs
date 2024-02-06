@@ -185,23 +185,23 @@ public class PlayerSideSoldierContainersManager : MonoBehaviour
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("DoubleSwordsMan")){
-            if (soldier.GetComponent<Entity>().race.Equals("Elf")){
+            if (soldier.GetComponent<Entity>().race.Equals("Human")){
                 soldier.GetComponent<Entity>().timeToSummon = 12f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("Minotaur")){
             if (soldier.GetComponent<Entity>().race.Equals("Elf")){
-                soldier.GetComponent<Entity>().timeToSummon = 29f;
+                soldier.GetComponent<Entity>().timeToSummon = 24f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("KingsKnight")){
-            if (soldier.GetComponent<Entity>().race.Equals("Human")){
+            if (soldier.GetComponent<Entity>().race.Equals("Elf")){
                 soldier.GetComponent<Entity>().timeToSummon = 14f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("StormBringer")){
             if (soldier.GetComponent<Entity>().race.Equals("Human")){
-                soldier.GetComponent<Entity>().timeToSummon = 20f;
+                soldier.GetComponent<Entity>().timeToSummon = 22f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("DoubleEdgedBladeMan")){
@@ -209,39 +209,44 @@ public class PlayerSideSoldierContainersManager : MonoBehaviour
                 soldier.GetComponent<Entity>().timeToSummon = 12f;
             }
         }
+        if (soldier.GetComponent<Entity>().soldierType.Equals("OrcBeast")){
+            if (soldier.GetComponent<Entity>().race.Equals("Orc")){
+                soldier.GetComponent<Entity>().timeToSummon = 1f;
+            }
+        }
         if (soldier.GetComponent<Entity>().soldierType.Equals("SpearMaster")){
-            if (soldier.GetComponent<Entity>().race.Equals("Demon")){
+            if (soldier.GetComponent<Entity>().race.Equals("Troll")){
                 soldier.GetComponent<Entity>().timeToSummon = 13f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("Dragon")){
             if (soldier.GetComponent<Entity>().race.Equals("Demon")){
-                soldier.GetComponent<Entity>().timeToSummon = 1f;
+                soldier.GetComponent<Entity>().timeToSummon = 31f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("TrollGiant")){
             if (soldier.GetComponent<Entity>().race.Equals("Troll")){
-                soldier.GetComponent<Entity>().timeToSummon = 26f;
+                soldier.GetComponent<Entity>().timeToSummon = 23f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("EasternLion")){
             if (soldier.GetComponent<Entity>().race.Equals("EasternHuman")){
-                soldier.GetComponent<Entity>().timeToSummon = 19f;
+                soldier.GetComponent<Entity>().timeToSummon = 18f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("Warlord")){
             if (soldier.GetComponent<Entity>().race.Equals("EasternHuman")){
-                soldier.GetComponent<Entity>().timeToSummon = 1f;
+                soldier.GetComponent<Entity>().timeToSummon = 24f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("Mammoth")){
             if (soldier.GetComponent<Entity>().race.Equals("Wraith")){
-                soldier.GetComponent<Entity>().timeToSummon = 30f;
+                soldier.GetComponent<Entity>().timeToSummon = 28f;
             }
         }
         if (soldier.GetComponent<Entity>().soldierType.Equals("WraithCaller")){
             if (soldier.GetComponent<Entity>().race.Equals("Wraith")){
-                soldier.GetComponent<Entity>().timeToSummon = 1f;
+                soldier.GetComponent<Entity>().timeToSummon = 27f;
             }
         }
     }

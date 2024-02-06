@@ -17,7 +17,7 @@ public class DragonController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Demon")){
-            entity.HP = 60;
+            entity.HP = 50;
             entity.damage = 5f;
             entity.knockbackForce = 3f;
             entity.knockbackDuration = 0.18f;
@@ -26,6 +26,9 @@ public class DragonController : MonoBehaviour
             entity.canGetKnockedBack = false;
         }
         fireAttackDone = false;
+
+        entity.canBurn = false;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame

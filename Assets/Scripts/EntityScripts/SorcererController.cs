@@ -16,42 +16,42 @@ public class SorcererController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Human")){
-            entity.HP = 3f;
+            entity.HP = 2.5f;
             entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Orc")){
-            entity.HP = 3;
+            entity.HP = 2.5f;
             entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Troll")){
-            entity.HP = 3;
+            entity.HP = 2.5f;
             entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.87f;
         }
         else if (entity.race.Equals("Demon")){
-            entity.HP = 3f;
+            entity.HP = 2.5f;
             entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.8f;
         }
         else if (entity.race.Equals("Elf")){
-            entity.HP = 3f;
+            entity.HP = 2.5f;
             entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
             entity.speed = 0.8f;
         }
         else if (entity.race.Equals("EasternHuman")){
-            entity.HP = 3f;
+            entity.HP = 2.5f;
             entity.damage = 1.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.2f;
@@ -67,6 +67,8 @@ public class SorcererController : MonoBehaviour
 
         isWalking = true;
         entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     void Update()

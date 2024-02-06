@@ -11,13 +11,16 @@ public class StormBringerController : MonoBehaviour
         Entity entity = entityObject.GetComponent<Entity>();
 
         if (entity.race.Equals("Human")){
-            entity.HP = 28;
-            entity.damage = 2f;
+            entity.HP = 34;
+            entity.damage = 2.3f;
             entity.knockbackForce = 1f;
             entity.knockbackDuration = 0.1f;
             entity.speed = 0.85f;
         }
         entity.canGetKnockedBack = true;
+
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame
@@ -60,7 +63,7 @@ public class StormBringerController : MonoBehaviour
             
             if (opponentEntity != null)
             {
-                opponentEntity.HP -= gameObject.GetComponent<Entity>().damage*4.7f;
+                opponentEntity.HP -= gameObject.GetComponent<Entity>().damage*5f;
 
                 if (opponentEntity.canGetKnockedBack){
                     Vector2 direction = (opponentEntity.transform.position - transform.position).normalized;

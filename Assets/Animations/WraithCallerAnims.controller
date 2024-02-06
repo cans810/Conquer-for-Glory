@@ -292,6 +292,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: WraithCaller_Attack_2
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: WraithCaller_Attack_3
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8346411736759146128}
   m_Solo: 0

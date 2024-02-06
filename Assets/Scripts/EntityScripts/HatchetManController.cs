@@ -59,6 +59,8 @@ public class HatchetManController : MonoBehaviour
             entity.speed = 0.94f;
         }
         entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

@@ -71,7 +71,7 @@ public class ArrowController : MonoBehaviour
 
                 if (!collision.gameObject.GetComponent<Entity>().soldierType.Equals("TrollGiant") && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("EasternLion") 
                 && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("MountedSpearman") && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("MountedSwordsman")
-                && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("Minotaur")){
+                && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("Minotaur") && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("OrcBeast")){
                     collision.gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>().playHurtSound();
                 }
 
@@ -87,7 +87,7 @@ public class ArrowController : MonoBehaviour
                 
                 if (!collision.gameObject.GetComponent<Entity>().soldierType.Equals("TrollGiant") && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("EasternLion") 
                 && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("MountedSpearman") && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("MountedSwordsman")
-                && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("Minotaur")){
+                && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("Minotaur") && !collision.gameObject.GetComponent<Entity>().soldierType.Equals("OrcBeast")){
                     collision.gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>().playHurtSound();
                 }
 

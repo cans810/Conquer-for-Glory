@@ -11,7 +11,11 @@ public class WraithCallerController : MonoBehaviour
     public GameObject skeletonPrefab;
 
     public int summonableSkeletonCount;
-    public bool isSpawning;
+
+    public GameObject foundEnemy;
+
+    public bool canSummon;
+    bool searchingEnemy;
 
     void Start(){
         GameObject entityObject = gameObject;
@@ -28,16 +32,23 @@ public class WraithCallerController : MonoBehaviour
         }
 
         summonableSkeletonCount = 6;
+
+        entity.canBurn = false;
+        entity.canBeRipped = false;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        // if there is an enemy in ranged hitbox, summon skeleton soldier from ground, 
+    { 
         if (!GetComponent<Entity>().dead){
-            if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && 
-            GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !playingAttackAnim && !GetComponent<Entity>().burning){
+            if (!searchingEnemy && summonableSkeletonCount > 0){
+                StartCoroutine(ResetSummonTimer()); 
+            }
 
+            if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && 
+            GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !playingAttackAnim){
+
+                gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_3",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk",false);
 
                 int randomAttackAnim = Random.Range(0,2);
@@ -51,14 +62,12 @@ public class WraithCallerController : MonoBehaviour
                     gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_2",true);
                 }
             }
-            else if (rangedHitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && 
-            rangedHitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !playingAttackAnim && !GetComponent<Entity>().burning && summonableSkeletonCount > 0){
+            else if(!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !rangedHitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim && canSummon && summonableSkeletonCount > 0 && foundEnemy != null && !foundEnemy.GetComponent<Entity>().dead){
                 gameObject.GetComponent<Entity>().animator.SetBool("Walk",false);
 
-                playingAttackAnim = true;
-                gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_3",true);
+                summonSkeletonController();
             }
-            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !rangedHitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim && !GetComponent<Entity>().burning){
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !playingAttackAnim  && !canSummon){
                 gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_2",false);
                 gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_3",false);
@@ -75,22 +84,102 @@ public class WraithCallerController : MonoBehaviour
         gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_3",false);
     }
 
+    public void summonSkeletonController(){
+        if (foundEnemy == null || foundEnemy.GetComponent<Entity>().dead){
+
+        }
+        else{
+            playingAttackAnim = true;
+            gameObject.GetComponent<Entity>().animator.SetBool("WraithCaller_Attack_3",true);
+            canSummon = false;
+        }
+    }
+
     public void summonSkeleton(){
-        Vector3 offset = new Vector3(2f, 0f, 0f);
-        GameObject skeleton = Instantiate(skeletonPrefab,transform.position,Quaternion.identity);
+
+        GameObject skeleton = Instantiate(skeletonPrefab,foundEnemy.transform.position,Quaternion.identity);
+
+        Vector3 offset = new Vector3(0,0,0);
 
         if (gameObject.tag.Equals("Player")){
+            offset = new Vector3(-4f, -0.02f, 0f);
             skeleton.tag = "Player";
+            skeleton.GetComponent<EntityCommonActions>().ChangeDirection("right");
             skeleton.GetComponent<Entity>().direction = "right";
-            skeleton.GetComponent<Entity>().spawnedAtRow = gameObject.GetComponent<Entity>().spawnedAtRow;
+            skeleton.GetComponent<Entity>().spawnedAtRow = foundEnemy.GetComponent<Entity>().spawnedAtRow;
         }
         else if (gameObject.tag.Equals("Enemy")){
+            offset = new Vector3(+4f, -0.02f, 0f);
             skeleton.tag = "Enemy";
+            skeleton.GetComponent<EntityCommonActions>().ChangeDirection("left");
             skeleton.GetComponent<Entity>().direction = "left";
-            skeleton.GetComponent<Entity>().spawnedAtRow = gameObject.GetComponent<Entity>().spawnedAtRow;
+            skeleton.GetComponent<Entity>().spawnedAtRow = foundEnemy.GetComponent<Entity>().spawnedAtRow;
         }
 
         skeleton.transform.position += offset;
+        canSummon = false;
+        foundEnemy = null;
         summonableSkeletonCount -= 1;
+    }
+
+    public GameObject searchForEnemys(){
+
+        if (tag.Equals("Player")){
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+            if (enemies.Length > 0)
+            {
+                int randomIndex = Random.Range(0, enemies.Length);
+
+                GameObject randomEnemy = enemies[randomIndex];
+
+                foundEnemy = randomEnemy;
+
+                return randomEnemy;
+            }
+            else
+            {
+                foundEnemy = null;
+                return null;
+            }
+        }
+        else if (tag.Equals("Enemy")){
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Player");
+
+            if (enemies.Length > 0)
+            {
+                int randomIndex = Random.Range(0, enemies.Length);
+
+                GameObject randomEnemy = enemies[randomIndex];
+
+                foundEnemy = randomEnemy;
+
+                return randomEnemy;
+            }
+            else
+            {
+                foundEnemy = null;
+                return null;
+            }
+        }
+        else{
+            foundEnemy = null;
+            return null;
+        }
+    }
+
+    private IEnumerator ResetSummonTimer()
+    {
+        searchingEnemy = true;
+
+        yield return new WaitForSeconds(2.5f);
+
+        if (summonableSkeletonCount > 0 && searchForEnemys() != null && !foundEnemy.GetComponent<Entity>().dead){
+            canSummon = true;
+        }
+        else{
+            canSummon = false;
+        }
+        searchingEnemy = false;
     }
 }

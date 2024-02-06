@@ -10,8 +10,7 @@ public class DoubleSwordsManController : MonoBehaviour
         GameObject entityObject = gameObject;
         Entity entity = entityObject.GetComponent<Entity>();
 
-        // only for elfs
-        if (entity.race.Equals("Elf")){
+        if (entity.race.Equals("Human")){
             entity.HP = 18;
             entity.damage = 1.7f;
             entity.knockbackForce = 1.1f;
@@ -19,6 +18,9 @@ public class DoubleSwordsManController : MonoBehaviour
             entity.speed = 0.95f;
             entity.canGetKnockedBack = true;
         }
+
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

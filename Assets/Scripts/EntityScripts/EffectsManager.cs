@@ -21,7 +21,7 @@ public class EffectsManager : MonoBehaviour
         }
         else if (gameObject.transform.parent.gameObject.GetComponent<Entity>().race == "Orc")
         {
-            bloodColor = new Color(0, 41 / 255f, 145 / 255f);
+            bloodColor = new Color(4 / 255f, 0 / 255f, 113 / 255f);
         }
         else if (gameObject.transform.parent.gameObject.GetComponent<Entity>().race == "Troll")
         {
@@ -32,10 +32,6 @@ public class EffectsManager : MonoBehaviour
             bloodColor = new Color(43 / 255f, 2 / 255f, 0);
         }
         else if (gameObject.transform.parent.gameObject.GetComponent<Entity>().race == "Wraith")
-        {
-            bloodColor = new Color(70 / 255f, 79 / 255f, 113 / 255f, 0);
-        }
-        else if (gameObject.transform.parent.gameObject.GetComponent<Entity>().race == "Skeleton")
         {
             bloodColor = new Color(70 / 255f, 79 / 255f, 113 / 255f, 0);
         }

@@ -20,6 +20,9 @@ public class DoubleEdgedBladeManController : MonoBehaviour
             entity.speed = 0.8f;
         }
         entity.canGetKnockedBack = true;
+
+        entity.canBurn = true;
+        entity.canBeRipped = true;
     }
 
     // Update is called once per frame

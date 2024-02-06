@@ -10,17 +10,9 @@ public class FirePileController : MonoBehaviour
     public List<GameObject> currentHittingOpponents;
     public GameObject firePrefab;
 
-    public void Awake()
-    {
-    }
-
     public void Start(){
         GetComponent<SpriteRenderer>().sortingLayerName = entity.GetComponent<Entity>().spawnedAtRow.ToString();
         GetComponent<SpriteRenderer>().sortingOrder = 28;
-    }
-
-    void Update()
-    {
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,16 +27,22 @@ public class FirePileController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.transform.Find("Fire(Clone)")){
-            foreach (AnimatorControllerParameter parameter in collision.gameObject.GetComponent<Entity>().animator.parameters)
-            {
-                if (parameter.name == "Burn" && parameter.type == AnimatorControllerParameterType.Bool)
-                {
-                    collision.gameObject.GetComponent<Entity>().animator.SetBool("Burn",false);
-                    break;
+        //Debug.Log(collision.gameObject.GetComponent<Entity>() != null ? "not NULL" : "sadly null");
+
+        if (collision.gameObject.GetComponent<Entity>()){
+            if (collision.gameObject.GetComponent<Entity>().canBurn){
+                if (collision.gameObject.transform.Find("Fire(Clone)")){
+                    foreach (AnimatorControllerParameter parameter in collision.gameObject.GetComponent<Entity>().animator.parameters)
+                    {
+                        if (parameter.name == "Burn" && parameter.type == AnimatorControllerParameterType.Bool)
+                        {
+                            collision.gameObject.GetComponent<Entity>().animator.SetBool("Burn",false);
+                            break;
+                        }
+                    }
+                    collision.gameObject.transform.Find("Fire(Clone)").GetComponent<FireController>().stopFire();
                 }
             }
-            collision.gameObject.transform.Find("Fire(Clone)").GetComponent<FireController>().stopFire();
         }
 
         currentHittingOpponents.Remove(collision.gameObject);
@@ -66,13 +64,15 @@ public class FirePileController : MonoBehaviour
                 if (!currentHittingOpponents.Contains(collision.gameObject)){
                     currentHittingOpponents.Add(collision.gameObject);
                 }
-                if (!collision.gameObject.GetComponent<Entity>().burning){
+                if (!collision.gameObject.GetComponent<Entity>().burning && collision.gameObject.GetComponent<Entity>().canBurn){
                     collision.gameObject.GetComponent<Entity>().burning = true;
                     collision.gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>().playBurningScreamSound(9);
 
                     if (collision.gameObject.GetComponent<Entity>().soldierType != "Mammoth" && collision.gameObject.GetComponent<Entity>().soldierType != "Minotaur" &&
                     collision.gameObject.GetComponent<Entity>().soldierType != "TrollGiant" 
-                    && collision.gameObject.GetComponent<Entity>().soldierType != "EasternLion" && collision.gameObject.GetComponent<Entity>().soldierType != "WraithCaller"){
+                    && collision.gameObject.GetComponent<Entity>().soldierType != "EasternLion"
+                    && collision.gameObject.GetComponent<Entity>().soldierType != "WraithCaller"
+                    && collision.gameObject.GetComponent<Entity>().soldierType != "Skeleton"){
                         collision.gameObject.GetComponent<Entity>().animator.SetBool("Burn",true);
                     }
 
