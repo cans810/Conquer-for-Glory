@@ -364,6 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edddd57bd66324b96d601a3a63b553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldierID: OrcBeast
   HitBox: {fileID: 6022204615989111528}
   animator: {fileID: 4651586714209624492}
   race: Orc

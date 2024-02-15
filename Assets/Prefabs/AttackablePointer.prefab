@@ -110,6 +110,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -160,6 +162,7 @@ MonoBehaviour:
   cityName: 
   cityRaceType: 
   soldiers: []
+  difficulty: 
   popupInfo: {fileID: 498697595626562435}
   pointerImage: {fileID: 5968333380653003794}
 --- !u!61 &1581354044066020938
@@ -170,6 +173,7 @@ BoxCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5968333380653003794}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -193,7 +197,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +209,6 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 6.83, y: 1.26}
   m_EdgeRadius: 0
 --- !u!1001 &4146454986687717634
@@ -333,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7362662382533073900, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_Color.a
-      value: 0.8117647
+      value: 0.9098039
       objectReference: {fileID: 0}
     - target: {fileID: 8298258713167332404, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_Layer

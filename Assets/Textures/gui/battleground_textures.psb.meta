@@ -122,8 +122,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1452
-      y: 4
+      x: 4
+      y: 780
       width: 1440
       height: 768
     spriteID: 8b13a64b619dc73409b6c08ad34a7add
@@ -134,7 +134,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1452, y: 4}
+    uvTransform: {x: 4, y: 780}
     spritePosition: {x: 0, y: 0}
   - name: battleground_demon
     originalName: 
@@ -144,7 +144,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 780
+      y: 2323
       width: 1440
       height: 768
     spriteID: e02c4fc73882b3549815401170a17434
@@ -155,7 +155,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 780}
+    uvTransform: {x: 4, y: 2323}
     spritePosition: {x: 0, y: 0}
   - name: battleground_troll
     originalName: 
@@ -165,7 +165,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1452
-      y: 780
+      y: 4
       width: 1440
       height: 768
     spriteID: 2791707d8d2fbf64da6aca58c77d31f8
@@ -176,7 +176,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1452, y: 780}
+    uvTransform: {x: 1452, y: 4}
     spritePosition: {x: 0, y: 0}
   - name: battleground_orc
     originalName: 
@@ -185,8 +185,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1556
+      x: 1452
+      y: 780
       width: 1440
       height: 768
     spriteID: 06e655be4ee091a46bfced8071032832
@@ -197,7 +197,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1556}
+    uvTransform: {x: 1452, y: 780}
     spritePosition: {x: 0, y: 0}
   - name: battleground_human
     originalName: 
@@ -207,7 +207,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1452
-      y: 1556
+      y: 1555
       width: 1440
       height: 768
     spriteID: 6ea0664968261eb479c8280b3fba869b
@@ -218,7 +218,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1452, y: 1556}
+    uvTransform: {x: 1452, y: 1555}
     spritePosition: {x: 0, y: 0}
   - name: battleground_elf
     originalName: 
@@ -228,7 +228,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2332
+      y: 1555
       width: 1440
       height: 768
     spriteID: 8a37d956d33da854ab8162c6c7dc383a
@@ -239,7 +239,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 2332}
+    uvTransform: {x: 4, y: 1555}
     spritePosition: {x: 0, y: 0}
   spriteImportData:
   - name: 
@@ -498,7 +498,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8b13a64b619dc73409b6c08ad34a7add
     layerID: 47
-    mosaicPosition: {x: 1452, y: 4}
+    mosaicPosition: {x: 4, y: 780}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -508,7 +508,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: e02c4fc73882b3549815401170a17434
     layerID: 22
-    mosaicPosition: {x: 4, y: 780}
+    mosaicPosition: {x: 4, y: 2323}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -518,7 +518,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 2791707d8d2fbf64da6aca58c77d31f8
     layerID: 45
-    mosaicPosition: {x: 1452, y: 780}
+    mosaicPosition: {x: 1452, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -528,7 +528,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 06e655be4ee091a46bfced8071032832
     layerID: 2
-    mosaicPosition: {x: 4, y: 1556}
+    mosaicPosition: {x: 1452, y: 780}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -538,7 +538,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 6ea0664968261eb479c8280b3fba869b
     layerID: 9
-    mosaicPosition: {x: 1452, y: 1556}
+    mosaicPosition: {x: 1452, y: 1555}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -548,7 +548,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8a37d956d33da854ab8162c6c7dc383a
     layerID: 75
-    mosaicPosition: {x: 4, y: 2332}
+    mosaicPosition: {x: 4, y: 1555}
     flatten: 0
     isImported: 1
     isVisible: 1

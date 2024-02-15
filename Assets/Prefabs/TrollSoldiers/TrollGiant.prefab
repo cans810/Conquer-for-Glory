@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edddd57bd66324b96d601a3a63b553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldierID: TrollGiant
   HitBox: {fileID: 1649422950644325211}
   animator: {fileID: 4841276829732011938}
   race: Troll

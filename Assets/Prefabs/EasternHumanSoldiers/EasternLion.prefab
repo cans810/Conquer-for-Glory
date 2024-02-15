@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edddd57bd66324b96d601a3a63b553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldierID: EasternLion
   HitBox: {fileID: 8972313208621191693}
   animator: {fileID: 517362765319472573}
   race: EasternHuman

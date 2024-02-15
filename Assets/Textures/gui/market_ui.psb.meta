@@ -101,10 +101,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
+      x: 4
       y: 4
-      width: 151
-      height: 100
+      width: 297
+      height: 207
     spriteID: a8333ad4812f03c469da4599d7582d5c
     spriteBone: []
     spriteOutline: []
@@ -113,8 +113,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 4}
-    spritePosition: {x: 125, y: 150}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 51, y: 80}
   - name: border_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -123,7 +123,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 218
       width: 226
       height: 237
     spriteID: bd138d34f46c53b4da1040f3b2ef4ee3
@@ -134,7 +134,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 218}
     spritePosition: {x: 87, y: 81}
   - name: border_1
     originalName: 
@@ -144,7 +144,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 249
+      y: 463
       width: 400
       height: 59
     spriteID: 8b6ae488ed3ae32468a740975f72ef86
@@ -155,7 +155,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 249}
+    uvTransform: {x: 4, y: 463}
     spritePosition: {x: 0, y: 159}
   spriteImportData: []
   rigSpriteImportData: []
@@ -200,7 +200,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: a8333ad4812f03c469da4599d7582d5c
     layerID: 4
-    mosaicPosition: {x: 238, y: 4}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -210,7 +210,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: bd138d34f46c53b4da1040f3b2ef4ee3
     layerID: 3
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 218}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -220,7 +220,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8b6ae488ed3ae32468a740975f72ef86
     layerID: 2
-    mosaicPosition: {x: 4, y: 249}
+    mosaicPosition: {x: 4, y: 463}
     flatten: 0
     isImported: 1
     isVisible: 1

@@ -1639,6 +1639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edddd57bd66324b96d601a3a63b553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldierID: Skeleton
   HitBox: {fileID: 6424362667136975245}
   animator: {fileID: 318671454321742506}
   race: Wraith
@@ -1650,6 +1651,7 @@ MonoBehaviour:
   gettingKnockedBack: 0
   burning: 0
   canGetKnockedBack: 0
+  canBeRipped: 0
   canBurn: 0
   timeToSummon: 3
   direction: 

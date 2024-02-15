@@ -641,6 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38edddd57bd66324b96d601a3a63b553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldierID: Minotaur
   HitBox: {fileID: 462185757024600582}
   animator: {fileID: 8694384662724398455}
   race: Elf
