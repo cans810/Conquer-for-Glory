@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4953631822452203691}
   - component: {fileID: 2314484470845050508}
-  - component: {fileID: 7362662382533073900}
+  - component: {fileID: 7052332988015441441}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -163,15 +163,15 @@ RectTransform:
   m_GameObject: {fileID: 1556802457013189809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6156169331352630118}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.425995, y: -31.556}
-  m_SizeDelta: {x: 416.098, y: 261.72}
+  m_AnchoredPosition: {x: 70, y: -24}
+  m_SizeDelta: {x: 467.0339, y: 274.0934}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2314484470845050508
 CanvasRenderer:
@@ -181,7 +181,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556802457013189809}
   m_CullTransparentMesh: 1
---- !u!114 &7362662382533073900
+--- !u!114 &7052332988015441441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 443271249529431576}
   - component: {fileID: 1581354044066020938}
   m_Layer: 5
-  m_Name: AttackablePointer
+  m_Name: AttackablePointerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -5877882992049083862, guid: e08cad48b186ef5479026e3fc0207164, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eebfb1777ecd65418302a53811dff02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentLand: {fileID: 0}
   cityName: 
   cityRaceType: 
   soldiers: []
@@ -223,6 +224,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1492584226295327820, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1532475867078423415, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -273,15 +278,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,11 +318,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 159
+      value: 218
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 27
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6156169331352630118, guid: b988c7508df525b43a791ee7d1d8ab00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
