@@ -94,7 +94,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: menu_arrow
+  - name: lock
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,6 +102,27 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
+      y: 4
+      width: 185
+      height: 276
+    spriteID: 3576cac6958f7b24680c6e84f3a3525b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 113, y: 61}
+  - name: menu_arrow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 197
       y: 4
       width: 53
       height: 366
@@ -113,7 +134,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 197, y: 4}
     spritePosition: {x: 173, y: 19}
   spriteImportData: []
   rigSpriteImportData: []
@@ -152,13 +173,23 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
+  - name: lock
+    spriteName: lock
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3576cac6958f7b24680c6e84f3a3525b
+    layerID: 11
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: menu_arrow
     spriteName: menu_arrow
     isGroup: 0
     parentIndex: -1
     spriteID: 00ef555594e8b8c43b243d6ca4f978cf
     layerID: 8
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 197, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
