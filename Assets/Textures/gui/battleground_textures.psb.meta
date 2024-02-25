@@ -230,6 +230,27 @@ ScriptedImporter:
       x: 4
       y: 1555
       width: 1440
+      height: 760
+    spriteID: 76450d6ab428baf44859217a4944f747
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1555}
+    spritePosition: {x: 0, y: 4}
+  - name: battleground_seaelf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1452
+      y: 2323
+      width: 1440
       height: 768
     spriteID: 8a37d956d33da854ab8162c6c7dc383a
     spriteBone: []
@@ -239,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1555}
+    uvTransform: {x: 1452, y: 2323}
     spritePosition: {x: 0, y: 0}
   spriteImportData:
   - name: 
@@ -546,9 +567,19 @@ ScriptedImporter:
     spriteName: battleground_elf
     isGroup: 0
     parentIndex: -1
+    spriteID: 76450d6ab428baf44859217a4944f747
+    layerID: 84
+    mosaicPosition: {x: 4, y: 1555}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: battleground_seaelf
+    spriteName: battleground_seaelf
+    isGroup: 0
+    parentIndex: -1
     spriteID: 8a37d956d33da854ab8162c6c7dc383a
     layerID: 75
-    mosaicPosition: {x: 4, y: 1555}
+    mosaicPosition: {x: 1452, y: 2323}
     flatten: 0
     isImported: 1
     isVisible: 1

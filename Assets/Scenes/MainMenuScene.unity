@@ -838,8 +838,6 @@ MonoBehaviour:
   DynamicDifficulty: 0
   balance: 0
   Settings: {fileID: 72036531}
-  DemonUnlocked: 0
-  WraithUnlocked: 0
   finishedGameCtr: 0
 --- !u!4 &187005696
 Transform:
@@ -6148,6 +6146,14 @@ MonoBehaviour:
   - {fileID: 7094438671111045659, guid: 0234bad0b8a2f384e9a149d0308e76e8, type: 3}
   - {fileID: 7094438671111045659, guid: 85631a0b81235014c918cd6a351010a5, type: 3}
   - {fileID: 7094438671111045659, guid: 901c25c34232dc840863137bccc66db8, type: 3}
+  - {fileID: 7094438671111045659, guid: f26dec77fb7951946b5f48061f7cf005, type: 3}
+  - {fileID: 7094438671111045659, guid: 6acdb69e054d21f4aa5df929a6f0eb83, type: 3}
+  - {fileID: 7094438671111045659, guid: 6e4ff1d906ea1784f9385ea080bbdbb9, type: 3}
+  - {fileID: 7094438671111045659, guid: a668ed3d6a5a369449c6530b075b7220, type: 3}
+  - {fileID: 7094438671111045659, guid: a8e95cee2f477bd41afe7f62f6a53322, type: 3}
+  - {fileID: 7094438671111045659, guid: 0f71df2d84e7fef4d92de208f373e886, type: 3}
+  - {fileID: 7094438671111045659, guid: 93643161c2ca1d14992fa0847488bfdc, type: 3}
+  - {fileID: 8581143398105371388, guid: 6969fccebb0ee4646902e44205032fd1, type: 3}
   loadingText: {fileID: 696875825}
 --- !u!114 &1814978935
 MonoBehaviour:

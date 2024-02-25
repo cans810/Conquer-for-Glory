@@ -3150,12 +3150,13 @@ MonoBehaviour:
   weather: {fileID: 69829961}
   backgrounds:
   - {fileID: 4049247017304793564, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
-  - {fileID: 6152998985567315247, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
+  - {fileID: -5639806998438641364, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
   - {fileID: -2933157613084745823, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
   - {fileID: 2047503528313901111, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
   - {fileID: 2917490312516826104, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
   - {fileID: -1126244999051943836, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
   - {fileID: -1097675122061265666, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
+  - {fileID: 6152998985567315247, guid: f39a2e50781ecfe488c2054ddab63f8d, type: 3}
   weathers:
   - {fileID: 6499893856056252906, guid: 852f0e9cc9650ec409e1978f394ad36d, type: 3}
   - {fileID: 4844298975394989584, guid: 852f0e9cc9650ec409e1978f394ad36d, type: 3}

@@ -1,0 +1,68 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpearThrowerController : MonoBehaviour
+{
+
+    public GameObject spearPrefab;
+    public GameObject spearArm;
+
+    public bool isWalking;
+    public bool isShooting;
+
+    public float arrowLowerAngleBound;
+    public float arrowUpperAngleBound;
+    public float forwardForce = 5f;
+
+
+    public void Start(){
+        GameObject entityObject = gameObject;
+        Entity entity = entityObject.GetComponent<Entity>();
+
+        if (entity.race.Equals("SeaElf")){
+            entity.HP = 3;
+            entity.damage = 0.4f;
+            entity.knockbackForce = 1f;
+            entity.knockbackDuration = 0.2f;
+            entity.speed = 0.5f;
+
+            arrowLowerAngleBound = -7;
+            arrowUpperAngleBound = 7;
+        }
+
+        isWalking = true;
+        entity.canGetKnockedBack = true;
+        entity.canBurn = true;
+        entity.canBeRipped = true;
+    }
+
+    void Update()
+    {
+        if (!gameObject.GetComponent<Entity>().dead){
+
+            if (GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().currentHittingOpponent != null && !isShooting && !GetComponent<Entity>().burning){
+                isShooting = true;
+                gameObject.transform.Find("SoundManager").GetComponent<EntitySoundManager>().playArrowSound(1);
+                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",true);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk", false);
+            }
+            else if (!GetComponent<Entity>().HitBox.GetComponent<HitBoxController>().colliding && !GetComponent<Entity>().gettingKnockedBack && !isShooting && !GetComponent<Entity>().burning){
+
+                gameObject.GetComponent<Entity>().animator.SetBool("Archer_Attack",false);
+                gameObject.GetComponent<Entity>().animator.SetBool("Walk",true);
+                GetComponent<EntityCommonActions>().walk(GetComponent<Entity>().direction,GetComponent<Entity>().speed);
+
+            }
+        }
+    }
+
+    public void InstantiateAndShootArrow(){
+        GameObject arrowObject = Instantiate(arrowPrefab,archerArm.transform.position,archerArm.transform.rotation);
+        arrowObject.GetComponent<ArrowController>().sourceEntity = gameObject;
+    }
+
+    public void shootingEnded(){
+        isShooting = false;
+    }
+}
