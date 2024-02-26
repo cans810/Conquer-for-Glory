@@ -168,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: -3990681870818184976, guid: 97d6d12b8a918684e8c085473738a74a, type: 3}
+  m_Sprite: {fileID: -6615513970567056012, guid: 97d6d12b8a918684e8c085473738a74a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -860,9 +860,11 @@ MonoBehaviour:
   knockbackDuration: 0
   gettingKnockedBack: 0
   burning: 0
+  gettingDarkMagicEffect: 0
   canGetKnockedBack: 0
   canBeRipped: 0
   canBurn: 0
+  canDarkMagicEffect: 0
   timeToSummon: 0
   direction: 
   soldierType: HatchetMan

@@ -206,7 +206,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.58, y: 0.09, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_LocalScale: {x: 1.4999999, y: 1.4999999, z: 1.4999999}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2312631736988398569}
@@ -860,9 +860,11 @@ MonoBehaviour:
   knockbackDuration: 0
   gettingKnockedBack: 0
   burning: 0
+  gettingDarkMagicEffect: 0
   canGetKnockedBack: 0
   canBeRipped: 0
   canBurn: 0
+  canDarkMagicEffect: 0
   timeToSummon: 2.5
   direction: 
   soldierType: SpearMan

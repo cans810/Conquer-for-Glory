@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45e7b717fd59c16419bbfce279c6b345
+guid: 841e26e8622437a4599883787798e740
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -24,7 +24,7 @@ ScriptedImporter:
     flipGreenChannel: 0
     swizzle: 50462976
     isReadable: 0
-    streamingMipmaps: 1
+    streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
     ignoreMipmapLimit: 0
@@ -82,7 +82,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: 
+    spriteID: 61df494245cc1c54489abe6f86d09191
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -94,7 +94,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: dark_aura_3
+  - name: dark_magic_sent_4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -103,9 +103,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 229
-      height: 203
-    spriteID: 376044f658b519b49acc87a8a48d1504
+      width: 293
+      height: 362
+    spriteID: 7e859091199a0ca47b885564f5eda6fa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,40 +114,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 56, y: 105}
-  - name: dark_aura_2
+    spritePosition: {x: 408, y: 411}
+  - name: dark_magic_sent_3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 378
-      width: 179
-      height: 118
-    spriteID: 41398b26f73808e41aa434d5aa81a3d4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 378}
-    spritePosition: {x: 73, y: 111}
-  - name: dark_aura_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 338
+      x: 305
       y: 4
-      width: 106
-      height: 82
-    spriteID: 5557a3ec913815a4e8f8324e84986446
+      width: 201
+      height: 286
+    spriteID: b2c4eba5a4e45114cab6e9251ae01ca5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,20 +134,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 338, y: 4}
-    spritePosition: {x: 116, y: 115}
-  - name: dark_energy_3
+    uvTransform: {x: 305, y: 4}
+    spritePosition: {x: 500, y: 462}
+  - name: dark_magic_sent_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 215
-      width: 198
-      height: 155
-    spriteID: 7433488068ae720458e517b02c906d35
+      x: 305
+      y: 298
+      width: 110
+      height: 204
+    spriteID: 3cf77eff69467c74dbe13fe503ab9fc4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,147 +155,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 215}
-    spritePosition: {x: 65, y: 113}
-  - name: dark_energy_2
+    uvTransform: {x: 305, y: 298}
+    spritePosition: {x: 591, y: 512}
+  - name: dark_magic_sent_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 338
-      y: 94
-      width: 71
-      height: 93
-    spriteID: 13d9ce694ac4c044791c1159178fc89d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 338, y: 94}
-    spritePosition: {x: 139, y: 114}
-  - name: dark_energy_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 338
-      y: 195
-      width: 65
-      height: 45
-    spriteID: e2b0e6db5df24934c8afcca789c469a3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 338, y: 195}
-    spritePosition: {x: 139, y: 117}
-  - name: ghost_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 140
-      width: 85
-      height: 133
-    spriteID: 6cf59ee027d03e24dab5dbc8ff7021c5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 140}
-    spritePosition: {x: 279, y: 113}
-  - name: ghost_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 281
-      width: 72
-      height: 120
-    spriteID: 48b3c13602f687f4a92bdfc450c302c7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 281}
-    spritePosition: {x: 44, y: 129}
-  - name: ghost_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 4
-      width: 89
-      height: 128
-    spriteID: 866ea442179f76644ba9200ea5d3fbd9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 4}
-    spritePosition: {x: 149, y: 120}
-  - name: skull_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 409
-      width: 80
-      height: 98
-    spriteID: 2d1da6cfddbec00499538ca2b5959782
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 409}
-    spritePosition: {x: 156, y: 258}
-  spriteImportData:
-  - name: 
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 0
+      x: 423
+      y: 298
       width: 0
       height: 0
-    spriteID: 
+    spriteID: 2989743d283a2a54593dbc165e4bb5f5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -324,219 +176,31 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: 423, y: 298}
+    spritePosition: {x: 671, y: 559}
+  - name: dark_magic_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 421
+      y: 297
+      width: 33
+      height: 124
+    spriteID: ff43c7a8df30c984f95e25fc2390bce4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 421, y: 297}
     spritePosition: {x: 0, y: 0}
-  rigSpriteImportData:
-  - name: dark_aura_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 229
-      height: 203
-    spriteID: 376044f658b519b49acc87a8a48d1504
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 56, y: 105}
-  - name: dark_aura_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 378
-      width: 179
-      height: 118
-    spriteID: 41398b26f73808e41aa434d5aa81a3d4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 378}
-    spritePosition: {x: 73, y: 111}
-  - name: dark_aura_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 338
-      y: 4
-      width: 106
-      height: 82
-    spriteID: 5557a3ec913815a4e8f8324e84986446
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 338, y: 4}
-    spritePosition: {x: 116, y: 115}
-  - name: dark_energy_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 215
-      width: 198
-      height: 155
-    spriteID: 7433488068ae720458e517b02c906d35
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 215}
-    spritePosition: {x: 65, y: 113}
-  - name: dark_energy_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 338
-      y: 94
-      width: 71
-      height: 93
-    spriteID: 13d9ce694ac4c044791c1159178fc89d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 338, y: 94}
-    spritePosition: {x: 139, y: 114}
-  - name: dark_energy_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 338
-      y: 195
-      width: 65
-      height: 45
-    spriteID: e2b0e6db5df24934c8afcca789c469a3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 338, y: 195}
-    spritePosition: {x: 139, y: 117}
-  - name: ghost_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 140
-      width: 85
-      height: 133
-    spriteID: 6cf59ee027d03e24dab5dbc8ff7021c5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 140}
-    spritePosition: {x: 279, y: 113}
-  - name: ghost_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 281
-      width: 72
-      height: 120
-    spriteID: 48b3c13602f687f4a92bdfc450c302c7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 281}
-    spritePosition: {x: 44, y: 129}
-  - name: ghost_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 4
-      width: 89
-      height: 128
-    spriteID: 866ea442179f76644ba9200ea5d3fbd9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 4}
-    spritePosition: {x: 149, y: 120}
-  - name: skull_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 241
-      y: 409
-      width: 80
-      height: 98
-    spriteID: 2d1da6cfddbec00499538ca2b5959782
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 241, y: 409}
-    spritePosition: {x: 156, y: 258}
+  spriteImportData: []
+  rigSpriteImportData: []
   sharedRigSpriteImportData: []
   mosaicSpriteImportData: []
   sharedRigCharacterData:
@@ -572,208 +236,58 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
-  - name: dark_aura_3
-    spriteName: dark_aura_3
-    isGroup: 0
+  - name: dark magic sent
+    spriteName: 
+    isGroup: 1
     parentIndex: -1
-    spriteID: 376044f658b519b49acc87a8a48d1504
-    layerID: 22
+    spriteID: 8f95f2e008853f94f8a9e889fd736c85
+    layerID: 23
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: dark_magic_sent_4
+    spriteName: dark_magic_sent_4
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7e859091199a0ca47b885564f5eda6fa
+    layerID: 30
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: dark_aura_2
-    spriteName: dark_aura_2
+  - name: dark_magic_sent_3
+    spriteName: dark_magic_sent_3
     isGroup: 0
-    parentIndex: -1
-    spriteID: 41398b26f73808e41aa434d5aa81a3d4
-    layerID: 21
-    mosaicPosition: {x: 4, y: 378}
+    parentIndex: 0
+    spriteID: b2c4eba5a4e45114cab6e9251ae01ca5
+    layerID: 29
+    mosaicPosition: {x: 305, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: dark_aura_1
-    spriteName: dark_aura_1
+  - name: dark_magic_sent_2
+    spriteName: dark_magic_sent_2
     isGroup: 0
-    parentIndex: -1
-    spriteID: 5557a3ec913815a4e8f8324e84986446
-    layerID: 20
-    mosaicPosition: {x: 338, y: 4}
+    parentIndex: 0
+    spriteID: 3cf77eff69467c74dbe13fe503ab9fc4
+    layerID: 28
+    mosaicPosition: {x: 305, y: 298}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: dark_energy_3
-    spriteName: dark_energy_3
+  - name: dark_magic_sent_1
+    spriteName: dark_magic_sent_1
     isGroup: 0
-    parentIndex: -1
-    spriteID: 7433488068ae720458e517b02c906d35
-    layerID: 17
-    mosaicPosition: {x: 4, y: 215}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_energy_2
-    spriteName: dark_energy_2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 13d9ce694ac4c044791c1159178fc89d
-    layerID: 16
-    mosaicPosition: {x: 338, y: 94}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_energy_1
-    spriteName: dark_energy_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e2b0e6db5df24934c8afcca789c469a3
-    layerID: 15
-    mosaicPosition: {x: 338, y: 195}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ghost_3
-    spriteName: ghost_3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 6cf59ee027d03e24dab5dbc8ff7021c5
-    layerID: 14
-    mosaicPosition: {x: 241, y: 140}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ghost_2
-    spriteName: ghost_2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 48b3c13602f687f4a92bdfc450c302c7
-    layerID: 13
-    mosaicPosition: {x: 241, y: 281}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ghost_1
-    spriteName: ghost_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 866ea442179f76644ba9200ea5d3fbd9
-    layerID: 10
-    mosaicPosition: {x: 241, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: skull_1
-    spriteName: skull_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2d1da6cfddbec00499538ca2b5959782
-    layerID: 3
-    mosaicPosition: {x: 241, y: 409}
+    parentIndex: 0
+    spriteID: 2989743d283a2a54593dbc165e4bb5f5
+    layerID: 25
+    mosaicPosition: {x: 423, y: 298}
     flatten: 0
     isImported: 1
     isVisible: 1
   mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: dark_aura_3
-    spriteName: dark_aura_3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 376044f658b519b49acc87a8a48d1504
-    layerID: 22
-    mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_aura_2
-    spriteName: dark_aura_2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 41398b26f73808e41aa434d5aa81a3d4
-    layerID: 21
-    mosaicPosition: {x: 4, y: 378}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_aura_1
-    spriteName: dark_aura_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 5557a3ec913815a4e8f8324e84986446
-    layerID: 20
-    mosaicPosition: {x: 338, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_energy_3
-    spriteName: dark_energy_3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 7433488068ae720458e517b02c906d35
-    layerID: 17
-    mosaicPosition: {x: 4, y: 215}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_energy_2
-    spriteName: dark_energy_2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 13d9ce694ac4c044791c1159178fc89d
-    layerID: 16
-    mosaicPosition: {x: 338, y: 94}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: dark_energy_1
-    spriteName: dark_energy_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e2b0e6db5df24934c8afcca789c469a3
-    layerID: 15
-    mosaicPosition: {x: 338, y: 195}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ghost_3
-    spriteName: ghost_3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 6cf59ee027d03e24dab5dbc8ff7021c5
-    layerID: 14
-    mosaicPosition: {x: 241, y: 140}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ghost_2
-    spriteName: ghost_2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 48b3c13602f687f4a92bdfc450c302c7
-    layerID: 13
-    mosaicPosition: {x: 241, y: 281}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ghost_1
-    spriteName: ghost_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 866ea442179f76644ba9200ea5d3fbd9
-    layerID: 10
-    mosaicPosition: {x: 241, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: skull_1
-    spriteName: skull_1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2d1da6cfddbec00499538ca2b5959782
-    layerID: 3
-    mosaicPosition: {x: 241, y: 409}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
+  rigPSDLayers: []
   sharedRigPSDLayers: []
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
