@@ -24,7 +24,7 @@ ScriptedImporter:
     flipGreenChannel: 0
     swizzle: 50462976
     isReadable: 0
-    streamingMipmaps: 1
+    streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
     ignoreMipmapLimit: 0
@@ -82,7 +82,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: 
+    spriteID: 98ab39237d9cd4448a66f81f9e5f9dfa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -105,198 +105,7 @@ ScriptedImporter:
       y: 4
       width: 1440
       height: 768
-    spriteID: 9852a02509470234d9cd2398cec0ea0f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 0, y: 0}
-  - name: battleground_easternhuman
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 780
-      width: 1440
-      height: 768
-    spriteID: 8b13a64b619dc73409b6c08ad34a7add
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 780}
-    spritePosition: {x: 0, y: 0}
-  - name: battleground_demon
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2323
-      width: 1440
-      height: 768
-    spriteID: e02c4fc73882b3549815401170a17434
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 2323}
-    spritePosition: {x: 0, y: 0}
-  - name: battleground_troll
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1452
-      y: 4
-      width: 1440
-      height: 768
-    spriteID: 2791707d8d2fbf64da6aca58c77d31f8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1452, y: 4}
-    spritePosition: {x: 0, y: 0}
-  - name: battleground_orc
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1452
-      y: 780
-      width: 1440
-      height: 768
-    spriteID: 06e655be4ee091a46bfced8071032832
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1452, y: 780}
-    spritePosition: {x: 0, y: 0}
-  - name: battleground_human
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1452
-      y: 1555
-      width: 1440
-      height: 768
-    spriteID: 6ea0664968261eb479c8280b3fba869b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1452, y: 1555}
-    spritePosition: {x: 0, y: 0}
-  - name: battleground_elf
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1555
-      width: 1440
-      height: 768
-    spriteID: 76450d6ab428baf44859217a4944f747
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 1555}
-    spritePosition: {x: 0, y: 4}
-  - name: battleground_seaelf
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1452
-      y: 2323
-      width: 1440
-      height: 768
-    spriteID: 8a37d956d33da854ab8162c6c7dc383a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1452, y: 2323}
-    spritePosition: {x: 0, y: 0}
-  spriteImportData:
-  - name: 
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    spriteID: 
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-    spritePosition: {x: 0, y: 0}
-  rigSpriteImportData:
-  - name: battleground_wraith
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 1440
-      height: 768
-    spriteID: 9852a02509470234d9cd2398cec0ea0f
+    spriteID: eb6194f909806184799f889b2a56986f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -317,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 1440
       height: 768
-    spriteID: 8b13a64b619dc73409b6c08ad34a7add
+    spriteID: 3a70988c846646443af80e7f826abdf1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -338,7 +147,7 @@ ScriptedImporter:
       y: 780
       width: 1440
       height: 768
-    spriteID: e02c4fc73882b3549815401170a17434
+    spriteID: a09edc32b13bdff4bb200bfbfa6ad4b9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -359,7 +168,7 @@ ScriptedImporter:
       y: 780
       width: 1440
       height: 768
-    spriteID: 2791707d8d2fbf64da6aca58c77d31f8
+    spriteID: 5b9892aaeeee18245b359fa2981627c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -380,7 +189,7 @@ ScriptedImporter:
       y: 1556
       width: 1440
       height: 768
-    spriteID: 06e655be4ee091a46bfced8071032832
+    spriteID: 6e738dd8c45174b4e88b00580463730e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -401,7 +210,7 @@ ScriptedImporter:
       y: 1556
       width: 1440
       height: 768
-    spriteID: 6ea0664968261eb479c8280b3fba869b
+    spriteID: 5a1cd361c4e9d8a49a95a10330b3f026
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -422,7 +231,7 @@ ScriptedImporter:
       y: 2332
       width: 1440
       height: 768
-    spriteID: 8a37d956d33da854ab8162c6c7dc383a
+    spriteID: e3c4b2a3afd7e66419d6057cfdf1dd7e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,6 +241,29 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 2332}
     spritePosition: {x: 0, y: 0}
+  - name: battleground_seaelf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1452
+      y: 2332
+      width: 1440
+      height: 657
+    spriteID: 9e14646d4104309478c6f70a83c99842
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1452, y: 2332}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
   sharedRigSpriteImportData: []
   mosaicSpriteImportData: []
   sharedRigCharacterData:
@@ -452,7 +284,7 @@ ScriptedImporter:
   - name: DefaultTexturePlatform
     overridden: 0
     ignorePlatformSupport: 0
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -473,7 +305,7 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: Server
+  - name: Android
     overridden: 0
     ignorePlatformSupport: 0
     maxTextureSize: 2048
@@ -507,7 +339,7 @@ ScriptedImporter:
     spriteName: battleground_wraith
     isGroup: 0
     parentIndex: -1
-    spriteID: 9852a02509470234d9cd2398cec0ea0f
+    spriteID: eb6194f909806184799f889b2a56986f
     layerID: 64
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -517,89 +349,7 @@ ScriptedImporter:
     spriteName: battleground_easternhuman
     isGroup: 0
     parentIndex: -1
-    spriteID: 8b13a64b619dc73409b6c08ad34a7add
-    layerID: 47
-    mosaicPosition: {x: 4, y: 780}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_demon
-    spriteName: battleground_demon
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e02c4fc73882b3549815401170a17434
-    layerID: 22
-    mosaicPosition: {x: 4, y: 2323}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_troll
-    spriteName: battleground_troll
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2791707d8d2fbf64da6aca58c77d31f8
-    layerID: 45
-    mosaicPosition: {x: 1452, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_orc
-    spriteName: battleground_orc
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 06e655be4ee091a46bfced8071032832
-    layerID: 2
-    mosaicPosition: {x: 1452, y: 780}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_human
-    spriteName: battleground_human
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 6ea0664968261eb479c8280b3fba869b
-    layerID: 9
-    mosaicPosition: {x: 1452, y: 1555}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_elf
-    spriteName: battleground_elf
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 76450d6ab428baf44859217a4944f747
-    layerID: 84
-    mosaicPosition: {x: 4, y: 1555}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_seaelf
-    spriteName: battleground_seaelf
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8a37d956d33da854ab8162c6c7dc383a
-    layerID: 75
-    mosaicPosition: {x: 1452, y: 2323}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: battleground_wraith
-    spriteName: battleground_wraith
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 9852a02509470234d9cd2398cec0ea0f
-    layerID: 64
-    mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: battleground_easternhuman
-    spriteName: battleground_easternhuman
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8b13a64b619dc73409b6c08ad34a7add
+    spriteID: 3a70988c846646443af80e7f826abdf1
     layerID: 47
     mosaicPosition: {x: 1452, y: 4}
     flatten: 0
@@ -609,7 +359,7 @@ ScriptedImporter:
     spriteName: battleground_demon
     isGroup: 0
     parentIndex: -1
-    spriteID: e02c4fc73882b3549815401170a17434
+    spriteID: a09edc32b13bdff4bb200bfbfa6ad4b9
     layerID: 22
     mosaicPosition: {x: 4, y: 780}
     flatten: 0
@@ -619,7 +369,7 @@ ScriptedImporter:
     spriteName: battleground_troll
     isGroup: 0
     parentIndex: -1
-    spriteID: 2791707d8d2fbf64da6aca58c77d31f8
+    spriteID: 5b9892aaeeee18245b359fa2981627c7
     layerID: 45
     mosaicPosition: {x: 1452, y: 780}
     flatten: 0
@@ -629,7 +379,7 @@ ScriptedImporter:
     spriteName: battleground_orc
     isGroup: 0
     parentIndex: -1
-    spriteID: 06e655be4ee091a46bfced8071032832
+    spriteID: 6e738dd8c45174b4e88b00580463730e
     layerID: 2
     mosaicPosition: {x: 4, y: 1556}
     flatten: 0
@@ -639,7 +389,7 @@ ScriptedImporter:
     spriteName: battleground_human
     isGroup: 0
     parentIndex: -1
-    spriteID: 6ea0664968261eb479c8280b3fba869b
+    spriteID: 5a1cd361c4e9d8a49a95a10330b3f026
     layerID: 9
     mosaicPosition: {x: 1452, y: 1556}
     flatten: 0
@@ -649,15 +399,27 @@ ScriptedImporter:
     spriteName: battleground_elf
     isGroup: 0
     parentIndex: -1
-    spriteID: 8a37d956d33da854ab8162c6c7dc383a
-    layerID: 75
+    spriteID: e3c4b2a3afd7e66419d6057cfdf1dd7e
+    layerID: 84
     mosaicPosition: {x: 4, y: 2332}
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: battleground_seaelf
+    spriteName: battleground_seaelf
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9e14646d4104309478c6f70a83c99842
+    layerID: 75
+    mosaicPosition: {x: 1452, y: 2332}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
   sharedRigPSDLayers: []
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638404987633537485
+  platformSettingsDirtyTick: 638448247990198355
   spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: 
