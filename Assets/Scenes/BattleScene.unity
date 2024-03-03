@@ -499,6 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleController: {fileID: 1235147933}
+  fillAmount: 0
 --- !u!61 &88224776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1487,7 +1488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +300
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 905463882ad25a74e85cf5cd2a4c03aa, type: 2}
   m_sharedMaterial: {fileID: 8869158086671603689, guid: 905463882ad25a74e85cf5cd2a4c03aa, type: 2}
@@ -1756,7 +1757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +300
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 905463882ad25a74e85cf5cd2a4c03aa, type: 2}
   m_sharedMaterial: {fileID: 8869158086671603689, guid: 905463882ad25a74e85cf5cd2a4c03aa, type: 2}
@@ -3904,6 +3905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleController: {fileID: 1235147933}
+  fillAmount: 0
 --- !u!61 &1356121617
 BoxCollider2D:
   m_ObjectHideFlags: 0
