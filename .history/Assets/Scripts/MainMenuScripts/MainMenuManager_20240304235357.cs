@@ -45,7 +45,7 @@ public class MainMenuManager : MonoBehaviour
         howToUI.SetActive(false);
         loadGameUI.SetActive(true);
 
-        GameManager.Instance.LoadGameData();
+        GameManager.LoadGame();
 
         if (GameManager.Instance.gameData.PlayerRace != ""){
             loadGameUI.GetComponent<LoadSoldiers>().LoadGame();
