@@ -1,0 +1,27 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ButtonHighlightController : MonoBehaviour
+{
+    private Button button;
+    private Color originalColor;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        button = GetComponent<Button>();
+        originalColor = button.colors.normalColor;
+    }
+
+    public void OnButtonPressed()
+    {
+        button.image.color = new Color(button.image.color.r,button.image.color.g,button.image.color.b,1);
+
+        Invoke("ResetButtonColor", 0.2f);
+    }
+
+    private void ResetButtonColor()
+    {
+        button.image.color = originalColor;
+    }
+}

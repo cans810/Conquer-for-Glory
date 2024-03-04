@@ -102,7 +102,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 136
       width: 283
       height: 111
     spriteID: b886f1e5ab9511549abb684387f2cfd2
@@ -113,8 +113,50 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 136}
     spritePosition: {x: 72, y: 183}
+  - name: attack
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 308
+      height: 124
+    spriteID: 1174af3e5c01f194e8c7c4ea84c4b283
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 29, y: 65}
+  - name: summon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 374
+      width: 293
+      height: 60
+    spriteID: e8e9e3a2b811c534c94ece1cca624519
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 374}
+    spritePosition: {x: 62, y: 90}
   - name: next
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -123,7 +165,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 123
+      y: 255
       width: 283
       height: 111
     spriteID: 69ddf9ce0c5e19049a26427961feeda6
@@ -134,7 +176,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 123}
+    uvTransform: {x: 4, y: 255}
     spritePosition: {x: 72, y: 183}
   spriteImportData:
   - name: 
@@ -243,11 +285,11 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Android
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -278,7 +320,27 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b886f1e5ab9511549abb684387f2cfd2
     layerID: 24
+    mosaicPosition: {x: 4, y: 136}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: attack
+    spriteName: attack
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1174af3e5c01f194e8c7c4ea84c4b283
+    layerID: 27
     mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: summon
+    spriteName: summon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e8e9e3a2b811c534c94ece1cca624519
+    layerID: 25
+    mosaicPosition: {x: 4, y: 374}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -288,7 +350,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 69ddf9ce0c5e19049a26427961feeda6
     layerID: 23
-    mosaicPosition: {x: 4, y: 123}
+    mosaicPosition: {x: 4, y: 255}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -316,7 +378,7 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638447704321217323
+  platformSettingsDirtyTick: 638451696770547927
   spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: 

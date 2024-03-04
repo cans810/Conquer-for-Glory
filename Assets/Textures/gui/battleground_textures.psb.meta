@@ -251,7 +251,7 @@ ScriptedImporter:
       x: 1452
       y: 2332
       width: 1440
-      height: 657
+      height: 768
     spriteID: 9e14646d4104309478c6f70a83c99842
     spriteBone: []
     spriteOutline: []
@@ -306,11 +306,11 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Android
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -419,7 +419,7 @@ ScriptedImporter:
   rigPSDLayers: []
   sharedRigPSDLayers: []
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638448247990198355
+  platformSettingsDirtyTick: 638451777757997033
   spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: 
