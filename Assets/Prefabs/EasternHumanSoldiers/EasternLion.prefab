@@ -173,15 +173,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: d8a79a3134bf4e84e98e3cae06cc50c9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.08
+      value: 0.09000001
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: d8a79a3134bf4e84e98e3cae06cc50c9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.08
+      value: 0.09000001
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: d8a79a3134bf4e84e98e3cae06cc50c9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.08
+      value: 0.09000001
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: d8a79a3134bf4e84e98e3cae06cc50c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -363,9 +363,11 @@ MonoBehaviour:
   knockbackDuration: 0
   gettingKnockedBack: 0
   burning: 0
+  gettingDarkMagicEffect: 0
   canGetKnockedBack: 0
   canBeRipped: 0
   canBurn: 0
+  canDarkMagicEffect: 0
   timeToSummon: 0
   direction: 
   soldierType: EasternLion

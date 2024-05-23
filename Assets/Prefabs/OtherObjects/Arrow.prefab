@@ -30,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 6269902086951136706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.51, y: 0.51, z: 0.51}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2658693860693304646}
@@ -181,9 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sourceEntity: {fileID: 0}
-  rb: {fileID: 9117295731354737962}
   spawnedAtRow: 0
-  animator: {fileID: 7614716695193374040}
 --- !u!95 &7614716695193374040
 Animator:
   serializedVersion: 7

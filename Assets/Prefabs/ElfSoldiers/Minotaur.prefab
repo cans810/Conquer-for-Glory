@@ -299,15 +299,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 568b44e638cb5974d85c7a8f5b9605c5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.12
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 568b44e638cb5974d85c7a8f5b9605c5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.12
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 568b44e638cb5974d85c7a8f5b9605c5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.12
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 568b44e638cb5974d85c7a8f5b9605c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -652,9 +652,11 @@ MonoBehaviour:
   knockbackDuration: 0
   gettingKnockedBack: 0
   burning: 0
+  gettingDarkMagicEffect: 0
   canGetKnockedBack: 0
   canBeRipped: 0
   canBurn: 0
+  canDarkMagicEffect: 0
   timeToSummon: 0
   direction: 
   soldierType: Minotaur

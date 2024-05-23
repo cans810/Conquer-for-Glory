@@ -94,6 +94,27 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
+  - name: inside
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 387
+      width: 230
+      height: 278
+    spriteID: 156a809187924584eb16ac58052018bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 387}
+    spritePosition: {x: 85, y: 61}
   - name: soldier_frame
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -188,6 +209,16 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
+  - name: inside
+    spriteName: inside
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 156a809187924584eb16ac58052018bb
+    layerID: 4
+    mosaicPosition: {x: 4, y: 387}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: soldier_frame
     spriteName: soldier_frame
     isGroup: 0

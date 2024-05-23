@@ -345,15 +345,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: dcb5234068f85cd45995a4c4a42482fa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.056
+      value: 0.066
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: dcb5234068f85cd45995a4c4a42482fa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.056
+      value: 0.066
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: dcb5234068f85cd45995a4c4a42482fa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.056
+      value: 0.066
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: dcb5234068f85cd45995a4c4a42482fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -820,9 +820,11 @@ MonoBehaviour:
   knockbackDuration: 0
   gettingKnockedBack: 0
   burning: 0
+  gettingDarkMagicEffect: 0
   canGetKnockedBack: 0
   canBeRipped: 0
   canBurn: 0
+  canDarkMagicEffect: 0
   timeToSummon: 0
   direction: 
   soldierType: Sorcerer
